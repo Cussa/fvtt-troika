@@ -1,0 +1,28 @@
+{
+    "id": "troika",
+    "title": "Troika! (Unofficial)",
+    "description": "Fan-made Foundry VTT system for Troika! The System is an independedn production, and not affiliated with the Melsonian Arts Council.",
+    "url": "",
+    "license": "LICENSE.txt",
+    "version": "0.1.0",
+    "compatibility": {
+      "minimum": "10.284",
+      "verified": "10"
+    },
+    "esmodules": [
+      "module/troika.js"
+    ],
+    "styles": [
+      "css/troika.css"
+    ],
+    "languages": [
+    ],
+    "packs": [
+    ],
+    "manifest": "",
+    "download": "",
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "stamina",
+    "secondaryTokenAttribute": "luck"
+  }

@@ -1,0 +1,89 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="">
+      <div class="item-sheet-horizontal-grid-2col">
+
+        <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
+
+        <div class="item-sheet-horizontal-grid-2col">
+
+          <span class="resource-label">Name:</span>
+          <input name="name" type="text" value="{{item.name}}" /></h1>         
+              
+        </div>
+
+      </div>
+      <div class="skills-and-spells-grid item">
+        <h4 class="grid-header-label">Improve</h4>
+        <h4 class="grid-header-label">Name</h4>
+        <h4 class="grid-header-label">Cost</h4>
+        <h4 class="grid-header-label">Rank</h4>
+        <h4 class="grid-header-label">Other</h4>
+        <h4 class=""></h4>
+        <h4 class=""></h4>
+        <h4 class=""></h4>
+      </div>
+      <div class="skills-and-spells-grid item" data-item-id="{{item._id}}">         
+        <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" />
+        <h4>{{item.name}}</h4>
+
+        {{#if_eq item.type 'spell'}}           
+        <input class="center-aligned-input-text" inputmode="numeric" name="system.castingCost" value="{{item.system.castingCost}}" />
+        {{/if_eq}}
+
+        {{#if_eq item.type 'skill'}}
+        <span>-</span>
+        {{/if_eq}}
+
+        <input class="center-aligned-input-text" inputmode="numeric" name="system.rank" value="{{item.system.rank}}" />
+        <input class="center-aligned-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" />
+        <span></span>
+        <span></span>
+        <span></span>
+        
+      </div>
+      <div class="item-sheet-horizontal-grid-2col">
+
+        <h4 class="bolded-label">Can Be Used to Attack?</h4>         
+        <input type="checkbox" class="" name="system.canAttack" {{checked item.system.canAttack}} data-dtype="Boolean" />
+
+        {{#if item.system.canAttack}}
+          <span class="bolded-label">Damage Rolls</span>
+          <div>
+            
+            <div class="item-sheet-attack-grid">
+              <span class="bolded-label">1</span>
+              <span class="bolded-label">2</span>
+              <span class="bolded-label">3</span>
+              <span class="bolded-label">4</span>
+              <span class="bolded-label">5</span>
+              <span class="bolded-label">6</span>
+              <span class="bolded-label">7+</span>
+
+              <input name="system.attack.dr1" data-dtype="Numeric" value="{{item.system.attack.dr1}}" />
+              <input name="system.attack.dr2" data-dtype="Numeric" value="{{item.system.attack.dr2}}" />
+              <input name="system.attack.dr3" data-dtype="Numeric" value="{{item.system.attack.dr3}}" />
+              <input name="system.attack.dr4" data-dtype="Numeric" value="{{item.system.attack.dr4}}" />
+              <input name="system.attack.dr5" data-dtype="Numeric" value="{{item.system.attack.dr5}}" />
+              <input name="system.attack.dr6" data-dtype="Numeric" value="{{item.system.attack.dr6}}" />
+              <input name="system.attack.dr7" data-dtype="Numeric" value="{{item.system.attack.dr7}}" />              
+            </div>
+          </div>
+          {{/if}}
+      </div>
+      
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">Description</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        <div class="tab top-div-border" data-group="primary" data-tab="description">
+            {{editor enrichedDescription target="system.description" button=true owner=owner editable=editable}}
+        </div>
+    </section>
+</form>
