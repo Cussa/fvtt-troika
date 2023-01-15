@@ -1,15 +1,36 @@
+THIS SOFTWARE IS AN INDEPENDENT PRODUCTION BY AUTHOR (TheLastScrub) AND IS NOT 
+AFFILIATED WITH THE MELSONIAN ARTS COUNCIL.
+
+------------------------------------------------------------------------------------
+
+Troika! Compatibility and SRD License Terms from MELSONIAN ARTS COUNCIL:
+
+Anyone may publish free or commercial material based upon and/or declaring 
+compatibility with “Troika!” without express written permission from the publisher, 
+the Melsonian Arts Council, as long as they adhere to the following terms:
+
+If your product declares compatibility with Troika! you must state the following
+in your legal text and on any websites from which a commercial product is sold:
+
+“[product name] is an independent production by [publisher name] and is not 
+affiliated with the Melsonian Arts Council.”
+
+The Melsonian Arts Council takes no responsibility for any legal claims against 
+your product. 
+
+The mechanics and concepts of “Troika!” may be reused freely. 
+
+The text of “Troika!” may not be used verbatim.
+
+All artists maintain copyright of their work.  
+
+------------------------------------------------------------------------------------
+
+TROIKA SYSTEM (SOFTWARE) LICENSE FOR FOUNDRY VTT
+
 MIT License
 
-Copyright (c) 2022 TheLastScrub (https://github.com/TheLastScrub)
-
-THIS SOFTWARE IS AN INDEPENDENT PRODUCTION BY AUTHOR AND IS NOT AFFILIATED WITH THE MELSONIAN ARTS COUNCIL.
-
-Troika! License terms from MELSONIAN ARTS COUNCIL:
- * The Melsonian Arts Council takes no responsibility for any legal claims against your product. 
- * The mechanics and concepts of “Troika!” may be reused freely. 
- * The text of “Troika!” may not be used verbatim.
- * All artists maintain copyright of their work.
-
+Copyright (c) 2023 TheLastScrub (https://github.com/TheLastScrub)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
