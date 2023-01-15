@@ -109,6 +109,10 @@ header{
     width: 100%;
 }
 
+.bottom-margin-input-text{
+    margin-bottom: 5%;
+}
+
 .standard-width-center-aligned-numeric-input-text{
     text-align: center;
     width: 50px;
@@ -243,4 +247,19 @@ header{
 /* override default pause icon to something fun */
 #pause img {
     content: url(../assets/fortle_circular.webp);
+}
+
+.solid-divider{
+    border-top: 1px solid #bbb;
+    margin-left: 0px;
+    margin-right: 25px;
+}
+
+.labeled-input-container{
+    display: flex;
+    align-items: center;
+}
+
+.right-margin-5pct{
+    margin-right: 5%;
 }

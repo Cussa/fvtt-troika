@@ -1,17 +1,20 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="">
+
       <div class="item-sheet-horizontal-grid-2col">
 
         <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
 
-        <div class="item-sheet-horizontal-grid-2col">
+        <!-- <div class="item-sheet-horizontal-grid-2col"> -->
+        <div class="labeled-input-container">
 
-          <span class="resource-label">Name:</span>
+          <span class="bolded-label right-margin-5pct">Name:</span>
           <input name="name" type="text" value="{{item.name}}" /></h1>         
               
         </div>
 
       </div>
+      
       <div class="skills-and-spells-grid item">
         <h4 class="grid-header-label">Improve</h4>
         <h4 class="grid-header-label">Name</h4>

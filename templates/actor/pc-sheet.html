@@ -115,22 +115,15 @@
             <h4 class="grid-header-label">Edit</h4>
             <h4 class="grid-header-label">Delete</h4>
           </li>
-          {{#each actor.advancedSkillsAndSpells as |item id|}}
+          {{#each actor.advancedSkills as |item id|}}
           <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">            
             <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
             <h4>{{item.name}}</h4>
 
-            {{#if_eq item.type 'spell'}}           
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.castingCost" value="{{item.system.castingCost}}" readonly />
-            {{/if_eq}}
-
-            {{#if_eq item.type 'skill'}}
             <span>-</span>
-            {{/if_eq}}
-
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.rank" value="{{item.system.rank}}" readonly />
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly />
-            <input class="center-aligned-input-text" inputmode="numeric" value="{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}" readonly />
+            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.rank" value="{{item.system.rank}}" readonly />
+            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly />
+            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" value="{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}" readonly />
             
             <div class="">
               <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
@@ -140,6 +133,30 @@
             </div>
           </li>
           {{/each}}
+          
+          {{!-- put a divider inbetween skills and spells to make it easier to differentiate --}}
+          <hr class="solid-divider">
+
+          {{#each actor.spells as |item id|}}
+          <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">            
+            <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
+            <h4>{{item.name}}</h4>
+
+                     
+            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.castingCost" value="{{item.system.castingCost}}" readonly />
+            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.rank" value="{{item.system.rank}}" readonly />
+            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly />
+            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" value="{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}" readonly />
+            
+            <div class="">
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
+            </div>
+            <div class="" >
+              <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+
         </ol>
 
       </div>

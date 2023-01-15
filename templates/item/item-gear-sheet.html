@@ -1,15 +1,25 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="">
-      <div class="">
+
+      <div class="item-sheet-horizontal-grid-2col">
 
         <img class="item-img" src="{{item.img}}" data-edit="img" title="{{item.name}}"/>
 
-        <div class="item-sheet-horizontal-grid-2col">
+        <!-- <div class="item-sheet-horizontal-grid-2col"> -->
+        <div class="labeled-input-container">
 
-          <span class="bolded-label">Name:</span>
-          <input name="name" type="text" value="{{item.name}}" />        
-          
-          <span class="bolded-label">Type:</span>
+          <span class="bolded-label right-margin-5pct">Name:</span>
+          <input name="name" type="text" value="{{item.name}}" /></h1>         
+              
+        </div>
+
+      </div>
+
+      <div class="item-sheet-horizontal-grid-2col">
+
+        <div class="item-sheet-horizontal-grid-2col">
+                            
+          <span class="bolded-label right-margin-5pct">Type:</span>
           <select name="system.type" >
               <option {{#if_eq item.system.type 'regular'}}selected{{/if_eq}} value="normal">Regular</option>
               <option {{#if_eq item.system.type 'attack'}}selected{{/if_eq}} value="attack">Attack</option>
@@ -30,6 +40,7 @@
           {{/if_eq}}
 
           {{#if_eq item.system.type 'attack'}}
+
           <span class="bolded-label">Damage Rolls</span>
           <div>
             
@@ -51,7 +62,9 @@
               <input name="system.attack.dr7" data-dtype="Numeric" value="{{item.system.attack.dr7}}" />              
             </div>
           </div>
+
           {{/if_eq}}
+
         </div>
 
         
