@@ -49,7 +49,9 @@
         "npc":{
             "templates":[
                 "base"
-            ]
+            ],
+            "armor": 2,
+            "mien": ""
         }
     },
     "Item": {
@@ -83,7 +85,7 @@
             "inventorySlots": 1,
             "sortOrder": -1,
             "type": "normal",
-            "equipped": false,
+            "equipped": true,
             "armorProvided": 1
         },
         "skill":{

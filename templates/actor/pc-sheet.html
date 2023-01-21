@@ -10,17 +10,31 @@
         <h2 class="grid-item-stretch-height-to-fit">
           <input name="name" class="grid-item-stretch-height-to-fit" type="text" value="{{actor.name}}" title="" />
         </h2>
+        {{#if_eq actor.type 'pc'}}
         <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Background:</span></h3>
         <h3 class="grid-item-stretch-height-to-fit">
           <input name="system.background" class="grid-item-stretch-height-to-fit" type="text"
             value="{{actor.system.background}}" placeholder="" />
         </h3>
+        {{/if_eq}}
+        {{#if_eq actor.type 'npc'}}
+        <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Mien:</span></h3>
+        <h3 class="grid-item-stretch-height-to-fit">
+          <input name="system.mien" class="grid-item-stretch-height-to-fit" type="text"
+            value="{{actor.system.mien}}" placeholder="" />
+        </h3>
+        {{/if_eq}}
 
         <div class="attributes-container">
           <h3><i class="fas fa-sword"><span> Skill</span></i></h3>
           <h3><i class="fas fa-heart"><span> Stamina</span></i></h3>
           <h3><i class="fas fa-shield"><span> Armor</span></i></h3>
+          {{#if_eq actor.type 'pc'}}
           <h3><i class="fas fa-star"><span> Luck</span></i></h3>
+          {{/if_eq}}
+          {{#if_eq actor.type 'npc'}}
+          <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
+          {{/if_eq}}
 
           <div class="">
             <input class="center-aligned-input-text" inputmode="numeric" name="system.skill.value"
@@ -38,11 +52,18 @@
               value="{{actor.system.armor}}" />
           </div>
           <div class="attribute-container">
+            {{#if_eq actor.type 'pc'}}
             <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.value"
               value="{{actor.system.luck.value}}" />
             <span class="">/</span>
             <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.max"
               value="{{actor.system.luck.max}}" />
+            {{/if_eq}}
+            {{#if_eq actor.type 'npc'}}
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
+              value="{{actor.system.initiativeTokens}}" />
+            
+            {{/if_eq}}
           </div>
         </div>
 
