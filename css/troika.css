@@ -40,6 +40,10 @@
     font-family: "AveriaLibre", "Signika", sans-serif;
 }
 
+.journal-sheet.journal-entry{
+    font-family: "AveriaLibre", "Signika", sans-serif;
+}
+
 /*
 form.troika{
     min-width: 680px;
@@ -263,3 +267,4 @@ header{
 .right-margin-5pct{
     margin-right: 5%;
 }
+
