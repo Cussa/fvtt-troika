@@ -21,12 +21,14 @@
     src: url('../css/fonts/Averia_Libre/AveriaLibre-Italic.ttf') format('truetype'); 
 }
 
+/*
 @font-face {
     font-family: 'AveriaLibre';
     src: url('../css/fonts/Averia_Libre/AveriaLibre-LightItalic.ttf') format('truetype');
     font-weight: lighter;
     font-style: italic;
 }
+*/
 
 @font-face {
     font-family: 'AveriaLibre';
@@ -96,7 +98,7 @@ header{
     width: 90%;
     display: grid;
     align-content: center;
-    grid-template-columns: 14% 33% 10% 33%;
+    grid-template-columns: 14% 33% 15% 33%;
     gap: 3%;
     text-align: center;
 }
@@ -184,24 +186,28 @@ header{
   flex: auto;
 }
 
-.troika .tabs .item {
-    
-    vertical-align: middle !important;
-    line-height: inherit;
-    padding: 5px 10px 0px 10px;
-    border-radius: 5px 5px 0px 0px;
-    border-color: #000;
-    margin-top: 5px;
+.sheet-body{
+    margin-top: 15px;
 }
 
 .troika nav.sheet-tabs{
-    border-color: #782e22;
+    border-color: #782e22;   
+}
+
+.troika .tabs .item {
+    vertical-align: middle !important;
+    line-height: inherit;
+    padding: 5px 5px 5px 5px !important;
+    border-radius: 5px 5px 0px 0px;
+    border-color: #000;
+    margin-top: 5px;
+    font-weight: bold;
+    min-width: 100px;
 }
 
 .troika .tabs .item.active {
     text-shadow: none;
     font-style: italic;
-    font-weight: bold;
     border: #585854;
     border-width: 1px 1px 0px 1px;
     border-style: solid;    
@@ -215,10 +221,12 @@ header{
     display: grid;
     grid-template-columns: 55% 35%;
     column-gap: 3%;
+    row-gap: 5%;
 }
 
 .provisions-grid{
     display: grid;
+    margin-top: 4px;
     grid-template-columns: 10% 10% 10% 10% 10% 10%;
     column-gap: 3%;
 }
@@ -268,3 +276,34 @@ header{
     margin-right: 5%;
 }
 
+.bold-header{
+    font-weight: bold;
+}
+
+.no-underline{
+    border: #000 0px !important;
+}
+
+.small-bottom-margin{
+    margin-bottom: 1px;
+}
+
+.medium-bottom-margin{
+    margin-bottom: 5px !important;
+}
+
+.medium-bottom-padding{
+    padding-bottom: 5px !important;
+}
+
+.no-bottom-padding{
+    padding-bottom: 0% !important;
+}
+
+.top-margin-10px{
+    margin-top: 10px !important;
+}
+
+.bottom-margin-15px{
+    margin-bottom: 15px !important;
+}
