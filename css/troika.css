@@ -98,7 +98,7 @@ header{
     width: 90%;
     display: grid;
     align-content: center;
-    grid-template-columns: 14% 33% 15% 33%;
+    grid-template-columns: 16% 33% 18% 33%;
     gap: 3%;
     text-align: center;
 }
@@ -113,6 +113,7 @@ header{
 .center-aligned-input-text{
     text-align: center;
     width: 100%;
+    max-width: 65px;
 }
 
 .bottom-margin-input-text{
@@ -136,6 +137,7 @@ header{
     display: flex;
     justify-content:center;
     margin: 5px;
+    column-gap: 15px;
 }
 
 .skills-add-button{
@@ -171,10 +173,22 @@ header{
 
 .item-sheet-horizontal-grid-2col{
     display: grid;
-    grid-template-columns: auto 400px;
+    grid-template-columns: auto 300px;
     align-items: center;
+    justify-content: left;
     text-align: left;
     column-gap: 10px;
+    row-gap: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.item-sheet-horizontal-grid-4col{
+    display: grid;
+    grid-template-columns: auto 50px auto 50px;
+    justify-content: left;
+    text-align: left;
+    column-gap: 20px;
     row-gap: 10px;
     padding-bottom: 10px;
     padding-right: 5px;

@@ -28,7 +28,7 @@
         <div class="attributes-container">
           <h3><i class="fas fa-sword"><span> Skill</span></i></h3>
           <h3><i class="fas fa-heart"><span> Stamina</span></i></h3>
-          <h3><i class="fas fa-shield"><span> Armor</span></i></h3>
+          <h3><i class="fas fa-shield"><span> Armour</span></i></h3>
           {{#if_eq actor.type 'pc'}}
           <h3><i class="fas fa-star"><span> Luck</span></i></h3>
           {{/if_eq}}
@@ -48,8 +48,8 @@
               value="{{actor.system.stamina.max}}" />
           </div>
           <div>
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.armor"
-              value="{{actor.system.armor}}" />
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.armour"
+              value="{{actor.system.armour}}" />
           </div>
           <div class="attribute-container">
             {{#if_eq actor.type 'pc'}}
@@ -114,6 +114,7 @@
     </div>
 
       <div>
+
         <h3 class="bolded-label no-underline">Skills & Spells</h3>        
 
         <ol>
@@ -174,10 +175,10 @@
 
         <div class="skills-add-buttons-grid">
           <div class="item-controls skills-add-button">
-            <a class="item-control item-create" data-type="spell"><i class="fas fa-plus"></i>Add Spell</a>                  
+            <a class="item-control item-create" data-type="spell"><i class="fas fa-plus"></i>Add Spell <i class="fas fa-sparkles"></i></a>                  
           </div>
           <div class="item-controls skills-add-button">
-            <a class="item-control item-create" data-type="skill"><i class="fas fa-plus"></i>Add Skill</a>                  
+            <a class="item-control item-create" data-type="skill"><i class="fas fa-plus"></i>Add Advanced Skill <i class="fas fa-sword"></i></a>                  
           </div>
         </div>
 
@@ -260,7 +261,7 @@
 
       <div class="skills-add-buttons-grid">
         <div class="item-controls skills-add-button no-bottom-padding">
-          <a class="item-control item-create" data-type="gear"><i class="fas fa-plus"></i>Add Item</a>                  
+          <a class="item-control item-create" data-type="gear"><i class="fas fa-plus"></i>Add Item  <i class="fas fa-sack"></i></a>                  
         </div>
       </div>
 

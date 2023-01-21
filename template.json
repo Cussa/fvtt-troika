@@ -27,7 +27,7 @@
                 "max": 9
             },
             "monies": "",
-            "armor": 0,
+            "armour": 0,
             "background": "",
             "special": "",
             "provisions": {
@@ -50,7 +50,7 @@
             "templates":[
                 "base"
             ],
-            "armor": 2,
+            "armour": 0,
             "mien": ""
         }
     },
@@ -84,9 +84,11 @@
             ],                        
             "inventorySlots": 1,
             "sortOrder": -1,
-            "type": "normal",
+            "canAttack": false,
             "equipped": true,
-            "armorProvided": 1
+            "armourProvided": 0,
+            "requiresTwoHands": false,
+            "armourIgnored": 0
         },
         "skill":{
             "templates": [

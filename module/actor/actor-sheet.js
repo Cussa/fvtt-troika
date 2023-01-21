@@ -59,7 +59,7 @@ export class TroikaActorSheet extends ActorSheet {
             else if(i.type === 'gear'){
                 inventory.push(i);
 
-                if(i.system.type === 'attack' && i.system.equipped == true){
+                if(i.system.canAttack === true && i.system.equipped == true){
                     attacks.push(i);
                 }
             }
