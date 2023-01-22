@@ -25,6 +25,9 @@ export class TroikaActorSheet extends ActorSheet {
     async getData() {
         const data = super.getData();
 
+        data.enrichedSpecial = await TextEditor.enrichHTML(this.object.system.special, {async: true});
+        data.enrichedNotes = await TextEditor.enrichHTML(this.object.system.notes, {async: true});
+
         this._prepareCharacterItems(data);
         
         return data;

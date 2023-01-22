@@ -273,19 +273,27 @@
     </div>
   
     <div class="tab notes" data-tab="notes" data-group="primary" >
-      <div>
+
+      <div class="special-section">
+
         <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h3>
-        <div class="grid-item-stretch-height-to-fit">
-          <textarea class="grid-item-stretch-height-to-fit" rows="6" cols="1"
-            name="system.special">{{actor.system.special}}</textarea>
+      
+        <div class="special-editor">
+          {{editor enrichedSpecial target="system.special" button=true owner=owner editable=editable}}
         </div>
+               
       </div>
-      <div>
+
+      <div class="notes-section">
+
         <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Other Notes</h3>
-        <div class="grid-item-stretch-height-to-fit">
-          <textarea class="grid-item-stretch-height-to-fit" rows="15" cols="1"
-            name="system.notes">{{actor.system.notes}}</textarea>
+
+        <div class="notes-editor">
+
+          {{editor enrichedNotes target="system.notes" button=true owner=owner editable=editable}}
+
         </div>
+
       </div>
       
     </div>
