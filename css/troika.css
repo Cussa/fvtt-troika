@@ -134,6 +134,21 @@ header{
     text-align: center;
 }
 
+.item-sheet-skills-and-spells-grid{
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    grid-template-columns: 15% 15% 15% 25% 25%;
+    gap: 1%;
+    text-align: center;
+}
+
+.item-sheet-skills-and-spells-grid h4{
+    width: 100%;
+}
+
 .skills-add-buttons-grid{
     display: flex;
     justify-content:center;
@@ -223,13 +238,17 @@ header{
     margin-top: 5px;
     font-weight: bold;
     min-width: 100px;
+
+    border: #999999;
+    border-width: 2px 2px 0px 2px;
+    border-style: solid; 
 }
 
 .troika .tabs .item.active {
     text-shadow: none;
     font-style: italic;
     border: #000000;
-    border-width: 1px 1px 0px 1px;
+    border-width: 2px 2px 0px 2px;
     border-style: solid;    
 }
 
@@ -295,6 +314,10 @@ header{
 
 .item-sheet-attack-grid input{
     text-align: center;
+}
+
+.skill-attack-section{
+    margin-top: 5px;
 }
 
 /* override default pause icon to something fun */

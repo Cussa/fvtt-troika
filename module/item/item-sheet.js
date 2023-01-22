@@ -25,28 +25,7 @@ export class TroikaItemSheet extends ItemSheet {
 
   _prepareItemData(data){
     
-    const item = data.item;
-
-    item.system.displayName = item.name;
-    item.system.tooltip = "";
-
-    if(item.type === 'gear'){
-      
-      if(item.system.canAttack === true){
-        if(item.system.requiresTwoHands === true){
-          item.system.displayName += "*";
-          item.system.tooltip += "Requires two hands to use";
-        }
-        if(item.system.armourIgnored > 0){
-          item.system.displayName += "#";
-          if(item.tooltip !== ""){
-            item.system.tooltip += ", ";
-          }
-          item.system.tooltip += 'Item ignores ${item.system.armourIgnored} points of armour';
-        }
-      }
-    }
-    console.log(data);
+    
   }
 
   /** @override */

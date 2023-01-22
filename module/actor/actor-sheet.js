@@ -27,8 +27,6 @@ export class TroikaActorSheet extends ActorSheet {
 
         this._prepareCharacterItems(data);
 
-        //console.log(data);
-
         return data;
     }
 
@@ -112,7 +110,7 @@ export class TroikaActorSheet extends ActorSheet {
 
         // I think that everyone should have an unarmed attack, right?
         // Add sort of a transitory unarmed strike here, maybe come up with a better way to handle it later.
-        attacks.push({name: "Unarmed", system:{type:"attack", attack:{dr1: 1, dr2: 1, dr3: 1, dr4: 2, dr5: 2, dr6: 3, dr7: 4}}});
+        attacks.push({name: "Unarmed", system:{type:"attack", displayName:"Unarmed", attack:{dr1: 1, dr2: 1, dr3: 1, dr4: 2, dr5: 2, dr6: 3, dr7: 4}}});
 
         attacks.sort(function(a, b){
             let x = a.name.toLowerCase();
