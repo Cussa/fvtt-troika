@@ -99,23 +99,23 @@
           </li>
 
           {{#each actor.attacks as |item id|}}
-          <li class="attacks-grid item" data-item-id="{{item._id}}"> 
-            <h4>{{item.name}}</h4>
-            <h4>{{item.system.attack.dr1}}</h4>
-            <h4>{{item.system.attack.dr2}}</h4>
-            <h4>{{item.system.attack.dr3}}</h4>
-            <h4>{{item.system.attack.dr4}}</h4>
-            <h4>{{item.system.attack.dr5}}</h4>
-            <h4>{{item.system.attack.dr6}}</h4>
-            <h4>{{item.system.attack.dr7}}</h4>
+          <li class="attacks-grid item light-underline" data-item-id="{{item._id}}"> 
+            <span>{{item.name}}</span>
+            <span>{{item.system.attack.dr1}}</span>
+            <span>{{item.system.attack.dr2}}</span>
+            <span>{{item.system.attack.dr3}}</span>
+            <span>{{item.system.attack.dr4}}</span>
+            <span>{{item.system.attack.dr5}}</span>
+            <span>{{item.system.attack.dr6}}</span>
+            <span>{{item.system.attack.dr7}}</span>
           </li>
           {{/each}}
         </ol>
     </div>
 
-      <div>
+    <div class="skills-and-spells-section">
 
-        <h3 class="bolded-label no-underline">Skills & Spells</h3>        
+        <h3 class="bolded-label no-underline">Skills & Spells</h3>
 
         <ol>
 
@@ -124,21 +124,26 @@
             <h4 class="grid-header-label">Name</h4>
             <h4 class="grid-header-label">Cost</h4>
             <h4 class="grid-header-label">Rank</h4>
-            <h4 class="grid-header-label">Other</h4>
+            {{!-- <h4 class="grid-header-label">Other</h4> --}}
             <h4 class="grid-header-label">Total</h4>
             <h4 class="grid-header-label">Edit</h4>
             <h4 class="grid-header-label">Delete</h4>
           </li>
 
           {{#each actor.advancedSkills as |item id|}}
-          <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">            
-            <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
+          <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">
+            <div>
+              <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
+            </div>          
+            
             <h4>{{item.name}}</h4>
 
             <span>-</span>
-            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.rank" value="{{item.system.rank}}" readonly />
-            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly />
-            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" value="{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}" readonly />
+            
+            <span class="center-aligned-input-text">{{item.system.rank}}</span>
+            
+            {{!-- <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly /> --}}
+            <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}</span>
             
             <div class="">
               <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
@@ -153,15 +158,16 @@
           <hr class="solid-divider">
 
           {{#each actor.spells as |item id|}}
-          <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">            
-            <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
+          <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">
+            <div>
+              <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
+            </div>         
             <h4>{{item.name}}</h4>
 
-            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.castingCost" value="{{item.system.castingCost}}" readonly />
-            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.rank" value="{{item.system.rank}}" readonly />
-            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly />
-            <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" value="{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}" readonly />
-            
+            <span class="center-aligned-input-text">{{item.system.castingCost}}</span>
+            <span class="center-aligned-input-text">{{item.system.rank}}</span>
+            <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}</span>
+
             <div class="">
               <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
             </div>

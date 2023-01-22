@@ -128,7 +128,8 @@ header{
 .skills-and-spells-grid{
     display: grid;
     align-content: center;
-    grid-template-columns: 8% 35% 8% 8% 8% 8% 7% 7%;
+    align-items: center;
+    grid-template-columns: 8% 45% 8% 8% 8% 7% 7%;
     gap: 1%;
     text-align: center;
 }
@@ -171,14 +172,18 @@ header{
     border: 0px solid black;
 }
 
+.item-sheet-tall-img{
+    grid-row: 1 / 2;
+}
+
 .item-sheet-horizontal-grid-2col{
     display: grid;
-    grid-template-columns: auto 300px;
+    grid-template-columns: auto 400px;
     align-items: center;
     justify-content: left;
     text-align: left;
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 5px;
     padding-bottom: 10px;
     padding-right: 5px;
 }
@@ -222,7 +227,7 @@ header{
 .troika .tabs .item.active {
     text-shadow: none;
     font-style: italic;
-    border: #585854;
+    border: #000000;
     border-width: 1px 1px 0px 1px;
     border-style: solid;    
 }
@@ -245,17 +250,38 @@ header{
     column-gap: 3%;
 }
 
-.attacks.section{
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+.attacks-section{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
+.attacks-section h3{
+    margin-bottom: 5px;
+}
+
 .attacks-grid{
     display: grid;
     align-items: center;
     text-align: center;
     grid-template-columns: 34% 8% 8% 8% 8% 8% 8% 8%;
     column-gap: 1%;
-    
+}
+
+.attacks-grid h4{
+    margin-bottom: 0px !important;
+}
+
+.attacks-grid span{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.skills-and-spells-section{
+    margin-top: 15px;    
+    padding-bottom: 10px;
+}
+
+.skills-and-spells-section h3{
+    margin-bottom: 15px;
 }
 
 .item-sheet-attack-grid{
@@ -320,4 +346,8 @@ header{
 
 .bottom-margin-15px{
     margin-bottom: 15px !important;
+}
+
+.light-underline{
+    border-bottom: 1px solid rgba(117, 114, 114, 0.486) !important;
 }
