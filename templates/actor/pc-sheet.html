@@ -51,20 +51,23 @@
             <input class="center-aligned-input-text" inputmode="numeric" name="system.armour"
               value="{{actor.system.armour}}" />
           </div>
+          
+          {{#if_eq actor.type 'pc'}}
           <div class="attribute-container">
-            {{#if_eq actor.type 'pc'}}
             <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.value"
               value="{{actor.system.luck.value}}" />
             <span class="">/</span>
             <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.max"
               value="{{actor.system.luck.max}}" />
-            {{/if_eq}}
-            {{#if_eq actor.type 'npc'}}
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
-              value="{{actor.system.initiativeTokens}}" />
-            
-            {{/if_eq}}
           </div>
+          {{/if_eq}}
+          {{#if_eq actor.type 'npc'}}
+          <div>
+              <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
+              value="{{actor.system.initiativeTokens}}" />
+          </div>
+          {{/if_eq}}
+          
         </div>
 
       </div>
@@ -230,13 +233,12 @@
         <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Pack</h3>
       </div>
 
-      <div>
+      <div class="item-list fvtt-item-table">
         
         <ol>
           
           <li class="all-inventory-grid">            
-            <h4 class=""></h4>
-            <h4 class=""></h4>
+            
             <h4 class="grid-header-label">#</h4>
             <h4 class="grid-header-label">Name</h4>
             <h4 class="grid-header-label">Edit</h4>
@@ -244,10 +246,7 @@
           </li>
           {{#each actor.inventory as |item id|}}
           <li class="all-inventory-grid item" data-item-id="{{item._id}}">                                   
-
-            <a class="item-inventory-up"><i class="fa-solid fa-up"></i></a>
-
-            <a class="item-inventory-down"><i class="fa-solid fa-down"></i></a>
+            
 
             <h4>{{item.system.inventoryPosition}}</h4> 
 

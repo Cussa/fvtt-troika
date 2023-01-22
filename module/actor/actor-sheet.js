@@ -26,17 +26,17 @@ export class TroikaActorSheet extends ActorSheet {
         const data = super.getData();
 
         this._prepareCharacterItems(data);
-
+        
         return data;
     }
 
-    _prepareCharacterItems(sheetData){
+    async _prepareCharacterItems(sheetData){
 
         const actorData = sheetData.actor;
         const skills = [];
         const spells = [];
         const inventory = [];
-        const attacks = [];
+        const attacks = [];        
 
         for (let i of sheetData.items) {            
             
@@ -56,7 +56,7 @@ export class TroikaActorSheet extends ActorSheet {
             }
             else if(i.type === 'gear'){
                 inventory.push(i);
-
+                //i.sort = i.system.sortOrder;
                 if(i.system.canAttack === true && i.system.equipped == true){
                     attacks.push(i);
                 }
@@ -81,21 +81,10 @@ export class TroikaActorSheet extends ActorSheet {
 
         if(inventory.length > 0){
 
-            for(var i = 0; i < inventory.length; i++){
-                if(inventory[i].system.sortOrder === -1){
-                    let maxSort = Math.max.apply(Math, inventory.map(function(o){ return o.system.sortOrder; }))
-                    
-                    if(maxSort < 1){
-                        maxSort = 0;
-                    }
+            inventory.sort(function(a, b){ return a.sort - b.sort;});
 
-                    inventory[i].system.sortOrder = maxSort + 1;
-
-                    this.actor.updateEmbeddedDocuments("Item", [inventory[i]]);
-                }
-            }
-        
-            inventory.sort(function(a, b){ return a.system.sortOrder - b.system.sortOrder;});
+            // re-sort just in case we fixed any gaps in previous call
+            //inventory.sort(function(a, b){ return a.sort - b.sort;});
 
             let actualPos = 1;
             for(var i = 0; i < inventory.length; i++){
@@ -110,7 +99,7 @@ export class TroikaActorSheet extends ActorSheet {
 
         // I think that everyone should have an unarmed attack, right?
         // Add sort of a transitory unarmed strike here, maybe come up with a better way to handle it later.
-        attacks.push({name: "Unarmed", system:{type:"attack", displayName:"Unarmed", attack:{dr1: 1, dr2: 1, dr3: 1, dr4: 2, dr5: 2, dr6: 3, dr7: 4}}});
+        //attacks.push({name: "Unarmed", system:{type:"attack", displayName:"Unarmed", attack:{dr1: 1, dr2: 1, dr3: 1, dr4: 2, dr5: 2, dr6: 3, dr7: 4}}});
 
         attacks.sort(function(a, b){
             let x = a.name.toLowerCase();
@@ -163,7 +152,7 @@ export class TroikaActorSheet extends ActorSheet {
         this.actor.updateEmbeddedDocuments("Item", [item]);
     });
 
-    html.find('.item-inventory-up').click(ev => {
+    /* html.find('.item-inventory-up').click(ev => {
         const el = $(ev.currentTarget).parents(".item");
         const item = this.actor.items.get(el.data('item-id'));
         const actorData = this.actor;
@@ -175,59 +164,84 @@ export class TroikaActorSheet extends ActorSheet {
         const item = this.actor.items.get(el.data('item-id'));
         const actorData = this.actor;
         this._shiftItemSortDown(actorData, item);
-    });
+    }); */
   }
 
-  async _shiftItemSortUp(actorData, item){
+  /* async _fixInventorySort(inventory){
+    for(var i = 0; i < inventory.length; i++){
+        
+        if(inventory[i].sort < 0){
+            // new item, throw to bottom of list
+            let maxSort = Math.max.apply(Math, inventory.map(function(o){ return o.sort; }))
+
+            if(maxSort < 0){
+                maxSort = 0;
+            }
+            else{
+                maxSort += 1;
+            }
+
+            let item = this.actor.items.get(inventory[i]._id);
+            await item.update({'sort': maxSort, 'system.sortOrder': maxSort});
+        }
+        else if(inventory[i].sort !== i){
+            // item in the middle of the list was probably deleted or something, re-order things to ensure a nice ordered list
+            let item = this.actor.items.get(inventory[i]._id);
+            await item.update({'sort': i, 'system.sortOrder': i});
+        }
+    }
+  } */
+
+  /* async _shiftItemSortUp(actorData, item){
     
-        let currentPosition = item.system.sortOrder;
+        let currentPosition = item.sort;
 
         // if already at top, don't want to move it
         if(currentPosition == 1){return;}
 
         for(var i = 0; i < actorData.inventory.length; i++){
-            if(actorData.inventory[i].system.sortOrder === currentPosition - 1 && actorData.inventory[i]._id != item._id){
+            if(actorData.inventory[i].sort === currentPosition - 1 && actorData.inventory[i]._id != item._id){
                 
                 let prevItem = this.actor.items.get(actorData.inventory[i]._id);
 
-                prevItem.system.sortOrder = currentPosition;
+                //prevItem.system.sortOrder = currentPosition;
+                //prevItem.sort = currentPosition;
 
-                await this.actor.updateEmbeddedDocuments("Item", [prevItem]);
+                //await this.actor.updateEmbeddedDocuments("Item", [prevItem]);
+                await prevItem.update({'sort': currentPosition, 'system.sortOrder': currentPosition});
             }
         }
 
-        item.system.sortOrder = currentPosition - 1;
+        await item.update({'sort': currentPosition - 1, 'system.sortOrder': currentPosition - 1});
 
-        await this.actor.updateEmbeddedDocuments("Item", [item]);
+        //await this._fixInventorySort(actorData.inventory);
 
+        console.log(this.actor.items);
         this.actor.sheet.render();
   }
 
-  async _shiftItemSortDown(actorData, item){
-    let maxSort = Math.max.apply(Math, actorData.inventory.map(function(o){ return o.system.sortOrder; }))
-    let currentPosition = item.system.sortOrder;
+    async _shiftItemSortDown(actorData, item){
 
-    // if already at bottom, don't want to move it
-    if(currentPosition == maxSort){return;}
+        let maxSort = Math.max.apply(Math, actorData.inventory.map(function(o){ return o.sort; }))
+        let currentPosition = item.sort;
 
-    for(var i = 0; i < actorData.inventory.length; i++){
-        if(actorData.inventory[i].system.sortOrder === currentPosition + 1 && actorData.inventory[i]._id != item._id){
-            
-            let prevItem = this.actor.items.get(actorData.inventory[i]._id);
+        // if already at bottom, don't want to move it
+        if(currentPosition == maxSort){return;}
 
-            prevItem.system.sortOrder = currentPosition;
+        for(var i = 0; i < actorData.inventory.length; i++){
+            if(actorData.inventory[i].sort === currentPosition + 1 && actorData.inventory[i]._id != item._id){
+                
+                let prevItem = this.actor.items.get(actorData.inventory[i]._id);
 
-            await this.actor.updateEmbeddedDocuments("Item", [prevItem]);
+                await prevItem.update({'sort': currentPosition, 'system.sortOrder': currentPosition});
+            }
         }
+
+        await item.update({'sort': currentPosition + 1, 'system.sortOrder': currentPosition + 1});
+
+        this.actor.sheet.render();
     }
-
-    item.system.sortOrder = currentPosition + 1;
-
-    await this.actor.updateEmbeddedDocuments("Item", [item]);
-
-    this.actor.sheet.render();
-}
-
+ */
   _onItemCreate(event) {
 
     event.preventDefault();

@@ -174,7 +174,7 @@ header{
 .all-inventory-grid{
     display: grid;
     align-content: center;
-    grid-template-columns: 5% 5% 5% 65% 7% 7%;
+    grid-template-columns: 5% 75% 7% 7%;
     gap: 1%;
     text-align: center;
 }
