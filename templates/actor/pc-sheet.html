@@ -124,8 +124,8 @@
 
           <li class="skills-and-spells-grid item">
             <h4 class="grid-header-label">Improve</h4>
-            <h4 class="grid-header-label">Name</h4>
-            <h4 class="grid-header-label">Cost</h4>
+            <h4 class="grid-header-label">Name (Casting Cost)</h4>
+            {{!-- <h4 class="grid-header-label">Cost</h4> --}}
             <h4 class="grid-header-label">Rank</h4>
             {{!-- <h4 class="grid-header-label">Other</h4> --}}
             <h4 class="grid-header-label">Total</h4>
@@ -141,7 +141,7 @@
             
             <h4>{{item.name}}</h4>
 
-            <span>-</span>
+            {{!-- <span>-</span> --}}
             
             <span class="center-aligned-input-text">{{item.system.rank}}</span>
             
@@ -165,9 +165,9 @@
             <div>
               <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
             </div>         
-            <h4>{{item.name}}</h4>
+            <h4>{{item.name}} ({{item.system.castingCost}})</h4>
 
-            <span class="center-aligned-input-text">{{item.system.castingCost}}</span>
+              {{!-- <span class="center-aligned-input-text">{{item.system.castingCost}}</span> --}}
             <span class="center-aligned-input-text">{{item.system.rank}}</span>
             <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}</span>
 

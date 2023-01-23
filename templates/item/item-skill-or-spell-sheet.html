@@ -29,7 +29,7 @@
         </div>
 
         {{#if_eq item.type 'spell'}}           
-        <input class="center-aligned-input-text" inputmode="numeric" name="system.castingCost" value="{{item.system.castingCost}}" />
+        <input class="center-aligned-input-text" type="text" inputmode="String" name="system.castingCost" value="{{item.system.castingCost}}" />
         {{/if_eq}}
 
         {{#if_eq item.type 'skill'}}

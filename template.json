@@ -106,7 +106,7 @@
                 "attack"
             ], 
             "rank": 1,
-            "castingCost": 1,
+            "castingCost": "1",
             "modifier": 0,
             "improvement": false,
             "canAttack": false

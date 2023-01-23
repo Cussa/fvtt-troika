@@ -129,7 +129,7 @@ textarea {
     display: grid;
     align-content: center;
     align-items: center;
-    grid-template-columns: 8% 45% 8% 8% 8% 7% 7%;
+    grid-template-columns: 8% 53% 8% 8% 7% 7%;
     gap: 1%;
     text-align: center;
 }
@@ -249,7 +249,8 @@ textarea {
     font-style: italic;
     border: #000000;
     border-width: 2px 2px 0px 2px;
-    border-style: solid;    
+    border-style: solid;
+    background-color: rgba(0, 0 , 0, 0.05);;
 }
 
 .editor{
