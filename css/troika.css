@@ -419,4 +419,11 @@ textarea {
     font-size: large;
 }
 
+.center-align-div{
+    text-align: center;
+}
 
+.over-burdened-message{
+    font-style: italic;
+    color: #782e22;
+}

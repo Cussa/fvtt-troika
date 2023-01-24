@@ -59,7 +59,7 @@ export class TroikaActorSheet extends ActorSheet {
             }
             else if(i.type === 'gear'){
                 inventory.push(i);
-                //i.sort = i.system.sortOrder;
+                
                 if(i.system.canAttack === true && i.system.equipped == true){
                     attacks.push(i);
                 }
@@ -86,13 +86,20 @@ export class TroikaActorSheet extends ActorSheet {
 
             inventory.sort(function(a, b){ return a.sort - b.sort;});
 
-            // re-sort just in case we fixed any gaps in previous call
-            //inventory.sort(function(a, b){ return a.sort - b.sort;});
-
             let actualPos = 1;
             for(var i = 0; i < inventory.length; i++){
                 inventory[i].system.inventoryPosition = actualPos;
-                actualPos = actualPos + parseInt(inventory[i].system.inventorySlots);
+
+                inventory[i].system.inventoryPositionDisplay = actualPos.toString();
+
+                let endingVal = actualPos + parseInt(inventory[i].system.inventorySlots) - 1;
+
+                if(parseInt(inventory[i].system.inventorySlots) > 1){
+                    inventory[i].system.inventoryPositionDisplay += "-" + endingVal.toString();
+                }
+
+                actualPos = actualPos + parseInt(inventory[i].system.inventorySlots);                
+                
             }
 
             console.log(inventory);  
@@ -117,6 +124,22 @@ export class TroikaActorSheet extends ActorSheet {
         actorData.advancedSkills = skills;
         actorData.spells = spells;
         actorData.advancedSkillsAndSpells = skillsAndSpells;
+
+        let maxInventory = inventory[inventory.length - 1].system.inventoryPosition + (parseInt(inventory[inventory.length - 1].system.inventorySlots) - 1);
+
+        actorData.maxInventory = maxInventory;
+
+        actorData.inconvenientWeight = false;
+        actorData.overburdened = false;
+
+        if(maxInventory >= 18){
+            actorData.inconvenientWeight = true;
+            actorData.overburdened = true;
+        }
+        else if(maxInventory > 12){
+            actorData.inconvenientWeight = true;
+            actorData.overburdened = false;
+        }
     }
 
     /** @override */

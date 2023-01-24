@@ -232,6 +232,14 @@
       <div>
         <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Pack</h3>
       </div>
+      
+      <div class="center-align-div">
+      {{#if actor.overburdened}}
+        <span class="over-burdened-message">Overburdened! -4 to all rolls, you can hardly move, and you count as Unawares</span>
+      {{else if actor.inconvenientWeight}}        
+        <span class="over-burdened-message">Inconvenient Weight! -4 to all rolls</span>
+      {{/if}}
+      </div>
 
       <div class="item-list fvtt-item-table">
         
@@ -248,7 +256,7 @@
           <li class="all-inventory-grid item" data-item-id="{{item._id}}">                                   
             
 
-            <h4>{{item.system.inventoryPosition}}</h4> 
+            <h4>{{item.system.inventoryPositionDisplay}}</h4> 
 
             <h4>{{item.name}}</h4>
 
