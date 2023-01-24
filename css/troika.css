@@ -266,7 +266,7 @@ textarea {
 
 .provisions-grid{
     display: grid;
-    margin-top: 4px;
+    margin-top: 6px;
     grid-template-columns: 10% 10% 10% 10% 10% 10%;
     column-gap: 3%;
 }
