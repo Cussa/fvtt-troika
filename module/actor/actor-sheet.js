@@ -1,3 +1,4 @@
+import { simpleDiceRoll, dx6Roll, d36Roll, rollSkillTest} from "../other/roll.js"
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -125,7 +126,11 @@ export class TroikaActorSheet extends ActorSheet {
         actorData.spells = spells;
         actorData.advancedSkillsAndSpells = skillsAndSpells;
 
-        let maxInventory = inventory[inventory.length - 1].system.inventoryPosition + (parseInt(inventory[inventory.length - 1].system.inventorySlots) - 1);
+        let maxInventory = 0;
+
+        if(inventory.length > 0){
+            maxInventory = inventory[inventory.length - 1].system.inventoryPosition + (parseInt(inventory[inventory.length - 1].system.inventorySlots) - 1);
+        }        
 
         actorData.maxInventory = maxInventory;
 
@@ -178,7 +183,15 @@ export class TroikaActorSheet extends ActorSheet {
         this.actor.updateEmbeddedDocuments("Item", [item]);
     });
 
+    html.find('.rollable-skill-test').click(ev =>{
+        
+        const el = $(ev.currentTarget);
+        let rankTotal = el.data('roll-total');
+        rollSkillTest(this.actor, rankTotal);
+    });
+
   }
+
   _onItemCreate(event) {
 
     event.preventDefault();
@@ -200,4 +213,53 @@ export class TroikaActorSheet extends ActorSheet {
 
     return this.actor.createEmbeddedDocuments("Item", [itemData]);
   }
+
+  _getHeaderButtons(){
+    let buttons = super._getHeaderButtons();
+
+    buttons = [{
+        label: 'd3',
+        class: "d3-roll",
+        icon: "fas fa-dice",
+        onclick: (ev) => this.simpleDiceRoll(ev, 'd3', 'd3')
+      }].concat(buttons);
+    
+      buttons = [{
+        label: 'd6',
+        class: "d6-roll",
+        icon: "fas fa-dice",
+        onclick: (ev) => this.simpleDiceRoll(ev, 'd6', 'd6')
+      }].concat(buttons);
+
+      buttons = [{
+        label: '2d6',
+        class: "2d6-roll",
+        icon: "fas fa-dice",
+        onclick: (ev) => simpleDiceRoll(this.actor, '2d6', '2d6')
+      }].concat(buttons);
+
+      buttons = [{
+        label: 'd36',
+        class: "d36-roll",
+        icon: "fas fa-dice",
+        onclick: (ev) => d36Roll(this.actor)
+      }].concat(buttons);
+
+      buttons = [{
+        label: 'd66',
+        class: "d66-roll",
+        icon: "fas fa-dice",
+        onclick: (ev) => dx6Roll(this.actor, 2)
+      }].concat(buttons);
+
+      buttons = [{
+        label: 'd666',
+        class: "d666-roll",
+        icon: "fas fa-dice",
+        onclick: (ev) => dx6Roll(this.actor, 3)
+      }].concat(buttons);
+
+    return buttons;
+  }
+
 }

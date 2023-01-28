@@ -61,6 +61,12 @@ textarea {
     margin-bottom: 10px;
 }
 
+.rollable-skill-test:hover, .rollable-skill-test:focus {
+    color: #000;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
+  }
+
 .profile-img{
     max-height:150px;
     max-width: 100%;

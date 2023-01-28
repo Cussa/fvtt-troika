@@ -26,7 +26,7 @@
         {{/if_eq}}
 
         <div class="attributes-container">
-          <h3><i class="fas fa-sword"><span> Skill</span></i></h3>
+          <h3><i class="fas fa-sword rollable-skill-test" data-roll-total={{actor.system.skill.value}}><span> Skill</span></i></h3>
           <h3><i class="fas fa-heart"><span> Stamina</span></i></h3>
           <h3><i class="fas fa-shield"><span> Armour</span></i></h3>
           {{#if_eq actor.type 'pc'}}
