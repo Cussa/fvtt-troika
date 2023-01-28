@@ -1,4 +1,4 @@
-export async function rollSkillTest(actor, totalRank){
+export async function rollSkillTestOver(actor, totalRank){
 
     let formula = `2d6+${totalRank}`
     const roll = await new Roll(formula, {}).roll({async: true});
@@ -6,7 +6,85 @@ export async function rollSkillTest(actor, totalRank){
     roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: actor })
     });
-  }
+}
+
+export async function rollSkillTestUnder(actor, totalRank){
+
+    let formula = `2d6`
+    const roll = await new Roll(formula, {}).roll({async: true});
+
+    let style = "";
+    let isSuccess = false;
+
+    if(roll.total <= totalRank){
+        style = "color: green"
+        isSuccess = true;
+    }
+    else{
+        style = "color: red"
+    }
+
+    let html = '';
+
+    html = `<div class="dice-roll">`
+    html += `     <div class="dice-result">`
+    html += `     <div class="dice-formula">Rolling Under: ${totalRank}</div>`
+    html += `     <div class="dice-tooltip">`
+    html += `          <section class="tooltip-part">`
+    html += `               <div class="dice">`
+    html += `                    <header class="part-header flexrow">`
+    html += `                       <span class="part-formula">2d6</span>`
+    html += `                       <span class="part-total">${roll.total}</span>`
+    html += `                    </header>`
+    html += `                    <ol class="dice-rolls">`
+    html += `                         <li class="roll die d6">${roll.terms[0].results[0].result}</li>`
+    html += `                         <li class="roll die d6">${roll.terms[0].results[1].result}</li>`
+    html += `                    </ol>`
+    html += `               </div>`
+    html += `          </section>`
+    html += `     </div>`
+    html += `     <h4 class="dice-total" style="${style}">${roll.total}</h4>`
+    html += `</div>`
+
+    roll.toMessage({
+        speaker: ChatMessage.getSpeaker({ actor: actor }),
+        content: html
+    });
+}
+
+export async function showSkillTestDialog(actor, totalRank){
+
+    new Dialog({
+        title: "Skill",
+        default: "roll",
+        buttons: {
+          rollUnder:{
+            label: "Roll Under",
+    
+            callback: () => { 
+              try{
+                rollSkillTestUnder(actor, totalRank);
+              }
+              catch(ex){
+                console.log(ex);
+              }
+            }
+          },
+          rollOver:{
+            label: "Roll Over",
+    
+            callback: () => { 
+              try{
+                rollSkillTestOver(actor, totalRank);
+              }
+              catch(ex){
+                console.log(ex);
+              }
+            }
+          }
+        }
+    }).render(true);
+}
 
 export async function dx6Roll(actor, numberOfD6){
     let formula = numberOfD6.toString() + "d6";

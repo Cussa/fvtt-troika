@@ -1,4 +1,4 @@
-import { simpleDiceRoll, dx6Roll, d36Roll, rollSkillTest} from "../other/roll.js"
+import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog} from "../other/roll.js"
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -187,7 +187,8 @@ export class TroikaActorSheet extends ActorSheet {
         
         const el = $(ev.currentTarget);
         let rankTotal = el.data('roll-total');
-        rollSkillTest(this.actor, rankTotal);
+        //rollSkillTest(this.actor, rankTotal);
+        showSkillTestDialog(this.actor, rankTotal);
     });
 
   }
