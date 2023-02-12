@@ -104,8 +104,8 @@ textarea {
     width: 90%;
     display: grid;
     align-content: center;
-    grid-template-columns: 16% 33% 18% 33%;
-    gap: 3%;
+    grid-template-columns: 18% 25% 22% 18% 22%;
+    gap: 1%;
     text-align: center;
 }
 
@@ -120,6 +120,12 @@ textarea {
     text-align: center;
     width: 100%;
     max-width: 65px;
+}
+
+.center-aligned-input-text-small{
+    text-align: center;
+    width: 100%;
+    max-width: 40px;
 }
 
 .bottom-margin-input-text{

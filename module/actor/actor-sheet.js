@@ -1,4 +1,4 @@
-import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog} from "../other/roll.js"
+import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog, rollSkillTestUnder, rollSkillTestOver} from "../other/roll.js"
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -183,12 +183,24 @@ export class TroikaActorSheet extends ActorSheet {
         this.actor.updateEmbeddedDocuments("Item", [item]);
     });
 
-    html.find('.rollable-skill-test').click(ev =>{
+    html.find('.rollable-skill-test').click(ev => {
         
         const el = $(ev.currentTarget);
+        
         let rankTotal = el.data('roll-total');
-        //rollSkillTest(this.actor, rankTotal);
-        showSkillTestDialog(this.actor, rankTotal);
+        
+        let rollLabel = el.data('roll-label');
+
+        if(ev && ev.shiftKey){
+            rollSkillTestUnder(this.actor, rankTotal, rollLabel);
+        }
+        else if(ev && ev.ctrlKey){
+            rollSkillTestOver(this.actor, rankTotal, rollLabel);
+        }
+        else{
+            showSkillTestDialog(this.actor, rankTotal, rollLabel);
+        }        
+
     });
 
   }

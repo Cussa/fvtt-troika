@@ -1,17 +1,21 @@
-export async function rollSkillTestOver(actor, totalRank){
+export async function rollSkillTestOver(actor, totalRank, rollLabel){
 
     let formula = `2d6+${totalRank}`
     const roll = await new Roll(formula, {}).roll({async: true});
+    rollLabel += " (Roll Against)";
 
     roll.toMessage({
-        speaker: ChatMessage.getSpeaker({ actor: actor })
+        speaker: ChatMessage.getSpeaker({ actor: actor }),
+        flavor: rollLabel
     });
 }
 
-export async function rollSkillTestUnder(actor, totalRank){
+export async function rollSkillTestUnder(actor, totalRank, rollLabel){
 
-    let formula = `2d6`
+    let formula = `2d6`;
     const roll = await new Roll(formula, {}).roll({async: true});
+
+    rollLabel += " (Roll Under)";
 
     let style = "";
     let isSuccess = false;
@@ -28,7 +32,7 @@ export async function rollSkillTestUnder(actor, totalRank){
 
     html = `<div class="dice-roll">`
     html += `     <div class="dice-result">`
-    html += `     <div class="dice-formula">Rolling Under: ${totalRank}</div>`
+    html += `     <div class="dice-formula"><i class="fa-solid fa-crosshairs-simple"></i> ${totalRank}</div>`
     html += `     <div class="dice-tooltip">`
     html += `          <section class="tooltip-part">`
     html += `               <div class="dice">`
@@ -48,14 +52,15 @@ export async function rollSkillTestUnder(actor, totalRank){
 
     roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: actor }),
-        content: html
+        content: html,
+        flavor: rollLabel
     });
 }
 
-export async function showSkillTestDialog(actor, totalRank){
+export async function showSkillTestDialog(actor, totalRank, rollLabel){
 
     new Dialog({
-        title: "Skill",
+        title: rollLabel,
         default: "roll",
         buttons: {
           rollUnder:{
@@ -63,7 +68,7 @@ export async function showSkillTestDialog(actor, totalRank){
     
             callback: () => { 
               try{
-                rollSkillTestUnder(actor, totalRank);
+                rollSkillTestUnder(actor, totalRank, rollLabel);
               }
               catch(ex){
                 console.log(ex);
@@ -75,7 +80,7 @@ export async function showSkillTestDialog(actor, totalRank){
     
             callback: () => { 
               try{
-                rollSkillTestOver(actor, totalRank);
+                rollSkillTestOver(actor, totalRank, rollLabel);
               }
               catch(ex){
                 console.log(ex);

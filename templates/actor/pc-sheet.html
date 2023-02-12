@@ -26,15 +26,15 @@
         {{/if_eq}}
 
         <div class="attributes-container">
-          <h3><i class="fas fa-sword rollable-skill-test" data-roll-total={{actor.system.skill.value}}><span> Skill</span></i></h3>
+          <h3><i class="fas fa-sword rollable-skill-test" data-roll-total={{actor.system.skill.value}} data-roll-label="Skill"><span> Skill</span></i></h3>
           <h3><i class="fas fa-heart"><span> Stamina</span></i></h3>
           <h3><i class="fas fa-shield"><span> Armour</span></i></h3>
           {{#if_eq actor.type 'pc'}}
-          <h3><i class="fas fa-star"><span> Luck</span></i></h3>
+          <h3><i class="fas fa-star rollable-skill-test" data-roll-total={{actor.system.skill.value}} data-roll-label="Test Luck"><span> Luck</span></i></h3>
           {{/if_eq}}
-          {{#if_eq actor.type 'npc'}}
+          
           <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
-          {{/if_eq}}
+          
 
           <div class="">
             <input class="center-aligned-input-text" inputmode="numeric" name="system.skill.value"
@@ -61,12 +61,12 @@
               value="{{actor.system.luck.max}}" />
           </div>
           {{/if_eq}}
-          {{#if_eq actor.type 'npc'}}
+          
           <div>
               <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
               value="{{actor.system.initiativeTokens}}" />
           </div>
-          {{/if_eq}}
+          
           
         </div>
 
@@ -139,7 +139,7 @@
               <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
             </div>          
             
-            <h4>{{item.name}}</h4>
+            <h4 class="rollable-skill-test" data-roll-total={{../actor.system.skill.value}} data-roll-label="{{item.name}}">{{item.name}}</h4>
 
             {{!-- <span>-</span> --}}
             
