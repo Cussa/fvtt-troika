@@ -1,28 +1,28 @@
 {
-    "id": "troika",
-    "title": "Troika! (Unofficial)",
-    "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by the LastScrub, and is not affiliated with the Melsonian Arts Council.",
-    "url": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial",
-    "license": "LICENSE.txt",
-    "version": "0.2.3",
-    "compatibility": {
-      "minimum": "10.284",
-      "verified": "10"
-    },
-    "esmodules": [
-      "module/troika.js"
-    ],
-    "styles": [
-      "css/troika.css"
-    ],
-    "languages": [
-    ],
-    "packs": [
-    ],
-    "manifest": "https://raw.githubusercontent.com/TheLastScrub/troika-foundry-vtt-system-unofficial/main/system.json",
-    "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v0.2.3.zip",
-    "gridDistance": 1,
-    "gridUnits": "m",
-    "primaryTokenAttribute": "stamina",
-    "secondaryTokenAttribute": "luck"
-  }
+  "id": "troika",
+  "title": "Troika! (Unofficial)",
+  "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by the LastScrub, and is not affiliated with the Melsonian Arts Council.",
+  "url": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial",
+  "license": "LICENSE.txt",
+  "version": "0.2.4",
+  "compatibility": {
+    "minimum": "10.284",
+    "verified": "10"
+  },
+  "esmodules": [
+    "module/troika.js"
+  ],
+  "styles": [
+    "css/troika.css"
+  ],
+  "languages": [
+  ],
+  "packs": [
+  ],
+  "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
+  "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v0.2.4.zip",
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "stamina",
+  "secondaryTokenAttribute": "luck"
+}
