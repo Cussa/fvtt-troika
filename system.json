@@ -1,7 +1,7 @@
 {
   "id": "troika",
   "title": "Troika! (Unofficial)",
-  "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by the LastScrub, and is not affiliated with the Melsonian Arts Council.",
+  "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by the TheLastScrub, and is not affiliated with the Melsonian Arts Council.",
   "url": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial",
   "license": "LICENSE.txt",
   "version": "0.2.4",

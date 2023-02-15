@@ -139,14 +139,14 @@
               <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
             </div>          
             
-            <h4 class="rollable-skill-test" data-roll-total={{../actor.system.skill.value}} data-roll-label="{{item.name}}">{{item.name}}</h4>
+            <h4 class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}</h4>
 
             {{!-- <span>-</span> --}}
             
             <span class="center-aligned-input-text">{{item.system.rank}}</span>
             
             {{!-- <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly /> --}}
-            <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}</span>
+            <span class="center-aligned-input-text">{{item.system.total}}</span>
             
             <div class="">
               <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
@@ -165,9 +165,8 @@
             <div>
               <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
             </div>         
-            <h4>{{item.name}} ({{item.system.castingCost}})</h4>
+            <h4 class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}} ({{item.system.castingCost}})</h4>
 
-              {{!-- <span class="center-aligned-input-text">{{item.system.castingCost}}</span> --}}
             <span class="center-aligned-input-text">{{item.system.rank}}</span>
             <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}</span>
 

@@ -50,6 +50,8 @@ export class TroikaActorSheet extends ActorSheet {
                 if(i.system.canAttack === true){
                     attacks.push(i);
                 }
+
+                i.system.total = parseInt(actorData.system.skill.value) + parseInt(i.system.rank) + parseInt(i.system.modifier);
             }
             else if(i.type === 'spell'){
                 spells.push(i);
@@ -57,6 +59,8 @@ export class TroikaActorSheet extends ActorSheet {
                 if(i.system.canAttack === true){
                     attacks.push(i);
                 }
+
+                i.system.total = parseInt(actorData.system.skill.value) + parseInt(i.system.rank) + parseInt(i.system.modifier);
             }
             else if(i.type === 'gear'){
                 inventory.push(i);
