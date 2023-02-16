@@ -238,14 +238,14 @@ export class TroikaActorSheet extends ActorSheet {
         label: 'd3',
         class: "d3-roll",
         icon: "fas fa-dice",
-        onclick: (ev) => this.simpleDiceRoll(ev, 'd3', 'd3')
+        onclick: (ev) => simpleDiceRoll(ev, 'd3', 'd3')
       }].concat(buttons);
     
       buttons = [{
         label: 'd6',
         class: "d6-roll",
         icon: "fas fa-dice",
-        onclick: (ev) => this.simpleDiceRoll(ev, 'd6', 'd6')
+        onclick: (ev) => simpleDiceRoll(ev, 'd6', 'd6')
       }].concat(buttons);
 
       buttons = [{
