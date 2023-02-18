@@ -269,13 +269,6 @@ export class TroikaActorSheet extends ActorSheet {
         onclick: (ev) => dx6Roll(this.actor, 2)
       }].concat(buttons);
 
-      buttons = [{
-        label: 'd666',
-        class: "d666-roll",
-        icon: "fas fa-dice",
-        onclick: (ev) => dx6Roll(this.actor, 3)
-      }].concat(buttons);
-
     return buttons;
   }
 
