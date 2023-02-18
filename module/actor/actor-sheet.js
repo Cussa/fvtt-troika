@@ -1,4 +1,4 @@
-import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog, rollSkillTestUnder, rollSkillTestOver} from "../other/roll.js"
+import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog, rollSkillTestUnder, rollSkillTestOver, rollDamageForItem} from "../other/roll.js"
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -207,6 +207,14 @@ export class TroikaActorSheet extends ActorSheet {
 
     });
 
+    html.find('.rollable-attack-damage').click(ev => {
+
+        const el = $(ev.currentTarget).parents(".item");
+        const item = this.actor.items.get(el.data('item-id'));
+        
+        rollDamageForItem(this.actor, item, 0);        
+        
+    });
   }
 
   _onItemCreate(event) {

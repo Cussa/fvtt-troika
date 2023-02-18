@@ -61,11 +61,11 @@ textarea {
     margin-bottom: 10px;
 }
 
-.rollable-skill-test:hover, .rollable-skill-test:focus {
+.rollable-attack-damage:hover, .rollable-attack-damage:focus .rollable-skill-test:hover, .rollable-skill-test:focus {
     color: #000;
     text-shadow: 0 0 10px red;
     cursor: pointer;
-  }
+}
 
 .profile-img{
     max-height:150px;
@@ -299,6 +299,25 @@ textarea {
     column-gap: 1%;
 }
 
+.attacks-grid-chat{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 13% 13% 13% 13% 13% 13% 13%;
+    column-gap: 1%;
+    row-gap: 0%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.italicized{
+    font-style: italic;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
 .attacks-grid h4{
     margin-bottom: 0px !important;
 }
@@ -387,6 +406,10 @@ textarea {
 
 .light-underline{
     border-bottom: 1px solid rgba(117, 114, 114, 0.486) !important;
+}
+
+.dark-underline{
+    border-bottom: 1px solid rgba(67, 66, 66, 0.486) !important;
 }
 
 

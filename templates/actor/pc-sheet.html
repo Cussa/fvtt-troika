@@ -35,7 +35,6 @@
           
           <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
           
-
           <div class="">
             <input class="center-aligned-input-text" inputmode="numeric" name="system.skill.value"
               value="{{actor.system.skill.value}}" />
@@ -66,8 +65,7 @@
               <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
               value="{{actor.system.initiativeTokens}}" />
           </div>
-          
-          
+                    
         </div>
 
       </div>
@@ -103,7 +101,7 @@
 
           {{#each actor.attacks as |item id|}}
           <li class="attacks-grid item light-underline" data-item-id="{{item._id}}"> 
-            <span title="{{item.system.attackTooltip}}">{{item.system.displayName}}</span>
+            <span class="rollable-attack-damage" title="{{item.system.attackTooltip}}">{{item.system.displayName}}</span>
             <span>{{item.system.attack.dr1}}</span>
             <span>{{item.system.attack.dr2}}</span>
             <span>{{item.system.attack.dr3}}</span>
@@ -250,8 +248,7 @@
             <h4 class="grid-header-label">Delete</h4>
           </li>
           {{#each actor.inventory as |item id|}}
-          <li class="all-inventory-grid item" data-item-id="{{item._id}}">                                   
-            
+          <li class="all-inventory-grid item" data-item-id="{{item._id}}">                                               
 
             <h4>{{item.system.inventoryPositionDisplay}}</h4> 
 
