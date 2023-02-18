@@ -14,6 +14,7 @@ export async function rollSkillTestUnder(actor, totalRank, rollLabel){
 
     let formula = `2d6`;
     const roll = await new Roll(formula, {}).roll({async: true});
+    let dieResult = roll.total;
 
     rollLabel += " (Roll Under)";
 
@@ -41,13 +42,13 @@ export async function rollSkillTestUnder(actor, totalRank, rollLabel){
     html += `                       <span class="part-total">${roll.total}</span>`
     html += `                    </header>`
     html += `                    <ol class="dice-rolls">`
-    html += `                         <li class="roll die d6">${roll.terms[0].results[0].result}</li>`
-    html += `                         <li class="roll die d6">${roll.terms[0].results[1].result}</li>`
+    html += `                         <li class="roll die d6 ${dieResult === 1 ? "max" : ""} ${dieResult === 6 ? "min" : ""}">${roll.terms[0].results[0].result}</li>`
+    html += `                         <li class="roll die d6 ${dieResult === 1 ? "max" : ""} ${dieResult === 6 ? "min" : ""}">${roll.terms[0].results[1].result}</li>`
     html += `                    </ol>`
     html += `               </div>`
     html += `          </section>`
     html += `     </div>`
-    html += `     <h4 class="dice-total" style="${style}">${roll.total}</h4>`
+    html += `     <h4 class="dice-total" style="${style}">${roll.total} ${isSuccess ? '<i class="fa-solid fa-check"></i>' : '<i class="fa-solid fa-xmark"></i>'}</h4>`
     html += `</div>`
 
     roll.toMessage({
@@ -57,20 +58,112 @@ export async function rollSkillTestUnder(actor, totalRank, rollLabel){
     });
 }
 
-export async function rollDamageForItem(actor, item, damageModifier){
-    console.log(item.system.attack);
+export async function showDamageRollDialog(actor, item){
+
+    let damageModifier = 0;
+    let isMightyBlow = false;
+
+    let html = "";
+
+    html += `<div class="modify-damage-dialog">`;
+    html += `     <label for="targetModifier">Modifier:</label>`
+    html += `     <input class="center-aligned-input-text-small" type="number" name="damageModifier" value="0" title="+/- Modifier for armour, item bonuses, etc." />`
+    html += `     <label for="isMightyBlow">Mighty Blow:</label>`
+    html += `     <input class="center-aligned-input-text-small" type="checkbox" name="isMightyBlow" value="0" title="Mighty Blow (x2 Damage)" />`
+    html += `</div>`;
+    html += `<div class="modify-damage-dialog">*ctrl+click or shift-click to bypass this window and roll with no modifier.</div>`;
+
+
+    new Dialog({
+        title: "Modify Damage Roll",
+        default: "rollDamage",
+        content: html,
+        buttons: {
+          rollDamage:{
+            label: "Roll",
+            callback: html => { 
+              try{
+                damageModifier = parseInt(html.find("[name='damageModifier']").val());
+                isMightyBlow = html.find("[name=isMightyBlow]")[0].checked;
+                rollDamageForItem(actor, item, damageModifier, isMightyBlow);
+              }
+              catch(ex){
+                console.log(ex);
+              }
+            },
+          },
+          rollDamageMinusThree:{
+            label: "-3",
+            callback: html =>{
+                isMightyBlow = html.find("[name=isMightyBlow]")[0].checked;
+                rollDamageForItem(actor, item, -3, isMightyBlow);
+            }
+          },
+          rollDamageMinusTwo:{
+            label: "-2",
+            callback: html =>{
+                isMightyBlow = html.find("[name=isMightyBlow]")[0].checked;
+                rollDamageForItem(actor, item, -2, isMightyBlow);
+            }
+          },
+          rollDamageMinusOne:{
+            label: "-1",
+            callback: html =>{
+                isMightyBlow = html.find("[name=isMightyBlow]")[0].checked;
+                rollDamageForItem(actor, item, -1, isMightyBlow);
+            }
+          },
+          rollDamagePlusOne:{
+            label: "+1",
+            callback: html =>{
+                isMightyBlow = html.find("[name=isMightyBlow]")[0].checked;
+                rollDamageForItem(actor, item, 1, isMightyBlow);
+            }
+          },
+          rollDamagePlusTwo:{
+            label: "+2",
+            callback: html =>{
+                isMightyBlow = html.find("[name=isMightyBlow]")[0].checked;
+                rollDamageForItem(actor, item, 2, isMightyBlow);
+            }
+          },
+          rollDamagePlusThree:{
+            label: "+3",
+            callback: html =>{
+                isMightyBlow = html.find("[name=isMightyBlow]")[0].checked;
+                rollDamageForItem(actor, item, 3, isMightyBlow);
+            }
+          }
+        }
+    }).render(true);
+
+}
+
+export async function rollDamageForItem(actor, item, damageModifier, isMightyBlow){
 
     let label = `Rolling damage for ${item.name}`;
     let formula = "1d6";
     let damage = 0;
+    let damageModifierLabel = ""
     
-    if (damageModifier != 0){
+    if (damageModifier > 0){
+        damageModifierLabel = "+" + damageModifier.toString();
+        formula += "+" + damageModifier.toString();
+    }
+    else if(damageModifier < 0){
+        damageModifierLabel = damageModifier.toString();
         formula += damageModifier.toString();
     }
 
     const roll = await new Roll(formula, {}).roll({async: true});
 
-    let result = roll.terms[0].results[0].result;
+    let dieResult = roll.terms[0].results[0].result;
+    let actualResult = roll.total;
+    let result = roll.total;
+
+    if (result < 1){
+        result = 1;
+    }
 
     if(result === 1){
         damage = item.system.attack.dr1;
@@ -98,7 +191,7 @@ export async function rollDamageForItem(actor, item, damageModifier){
 
     html =  `<div class="dice-roll">`
     html += `     <div class="dice-result">`
-    html += `     <div class="dice-formula">Rolling damage for <i>${item.name}</i></div>`
+    html += `     <div class="dice-formula">Damage for <i>${item.name} </i>${damageModifier != 0 ? " [" + damageModifierLabel + "]" : ""} ${isMightyBlow ? "<b>[Mighty Blow]</b>" : ""}</div>`
     html += `     <div class="dice-formula">`
     html += `          <div class="attacks-grid-chat">`
     html += `               <span class="dark-underline ${result === 1 ? "bolded" : ""}">1</span>`
@@ -122,15 +215,20 @@ export async function rollDamageForItem(actor, item, damageModifier){
     html += `               <div class="dice">`
     html += `                    <header class="part-header flexrow">`
     html += `                       <span class="part-formula">${formula}</span>`
-    html += `                       <span class="part-total">${damage}</span>`
+    html += `                       <span class="part-total">${actualResult}</span>`
     html += `                    </header>`
     html += `                    <ol class="dice-rolls">`    
-    html += `                         <li class="roll die d6">${result}</li>`
+    html += `                         <li class="roll die d6 ${dieResult === 6 ? "max" : ""} ${dieResult === 1 ? "min" : ""}">${dieResult}</li>`
     html += `                    </ol>`
     html += `               </div>`
     html += `          </section>`
     html += `     </div>`
-    html += `     <h4 class="dice-total">${damage}</h4>`
+    if(isMightyBlow){
+        html += `     <h4 class="dice-total">${damage}x2 = ${damage*2} <i class="fas fa-heart-crack"></h4>`
+    }
+    else{
+        html += `     <h4 class="dice-total">${damage} <i class="fas fa-heart-crack"></h4>`
+    }
     html += `</div>`
 
     roll.toMessage({
@@ -138,7 +236,6 @@ export async function rollDamageForItem(actor, item, damageModifier){
         content: html
     });
 
-    console.log(result.toString() + " - " + damage.toString());
 }
 
 // show a dialog that requests a choice of roll under or roll against, and then calls the appropriate function
