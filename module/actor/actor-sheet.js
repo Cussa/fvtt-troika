@@ -11,7 +11,7 @@ export class TroikaActorSheet extends ActorSheet {
         classes: ["troika", "sheet", "actor"],
         template: "systems/troika/templates/actor/pc-sheet.html",
         width: 700,
-        height: 700,
+        height: 800,
         tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
         });
     }
