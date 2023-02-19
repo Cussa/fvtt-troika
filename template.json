@@ -88,7 +88,8 @@
             "equipped": true,
             "armourProvided": 0,
             "requiresTwoHands": false,
-            "armourIgnored": 0
+            "armourIgnored": 0,
+            "quantity": 1
         },
         "skill":{
             "templates": [

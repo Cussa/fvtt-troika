@@ -11,7 +11,7 @@ export class TroikaActorSheet extends ActorSheet {
         classes: ["troika", "sheet", "actor"],
         template: "systems/troika/templates/actor/pc-sheet.html",
         width: 700,
-        height: 800,
+        height: 700,
         tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
         });
     }
@@ -176,15 +176,15 @@ export class TroikaActorSheet extends ActorSheet {
         this.actor.deleteEmbeddedDocuments("Item", [el.data('item-id')], options);
     });
 
+    // let user check off an 'improve' checkbox right from the sheet
     html.find('.item-improve-checkbox').click(ev => {
         
         const el = $(ev.currentTarget).parents(".item");
         const item = this.actor.items.get(el.data('item-id'));
         let value = ev.target.checked;
 
-        item.system.improvement = value;
+        item.update({["system.improvement"]: value});
 
-        this.actor.updateEmbeddedDocuments("Item", [item]);
     });
 
     html.find('.rollable-skill-test').click(ev => {
@@ -221,6 +221,25 @@ export class TroikaActorSheet extends ActorSheet {
         }                
         
     });
+    
+    html.find('.item-quantity-up').click(ev => {
+        
+        const el = $(ev.currentTarget).parents(".item");
+        const item = this.actor.items.get(el.data('item-id'));
+        let change = parseInt(item.system.quantity) + 1;
+        this._editItemQuantity(item, change);
+    });
+
+    html.find('.item-quantity-down').click(ev => {
+        const el = $(ev.currentTarget).parents(".item");
+        const item = this.actor.items.get(el.data('item-id'));
+        let change = parseInt(item.system.quantity) - 1;
+        this._editItemQuantity(item, change);
+    });
+  }
+
+  async _editItemQuantity(item, newQuantity){
+    await item.update({["system.quantity"]: newQuantity});
   }
 
   _onItemCreate(event) {

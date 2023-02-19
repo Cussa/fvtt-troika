@@ -1,9 +1,15 @@
 {
   "id": "troika",
   "title": "Troika! (Unofficial)",
-  "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by the TheLastScrub, and is not affiliated with the Melsonian Arts Council.",
+  "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by author(s), and is not affiliated with the Melsonian Arts Council.",
   "url": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial",
   "license": "LICENSE.txt",
+  "authors": [
+    {
+      "name": "N. Eimers",
+      "discord": "TheLastScrub#7146"
+    }    
+  ],
   "version": "0.2.7",
   "compatibility": {
     "minimum": "10.284",
@@ -18,6 +24,24 @@
   "languages": [
   ],
   "packs": [
+    {
+      "name": "srd-spells",
+      "label": "Troika SRD Spells",
+      "system": "troika",
+      "path": "packs/srd-spells.db",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    },
+    {
+      "name": "srd-spells",
+      "label": "Troika SRD Roll Tables",
+      "system": "troika",
+      "path": "packs/srd-roll-tables.db",
+      "private": false,
+      "type": "RollTable",
+      "flags": {}
+    }
   ],
   "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
   "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v0.2.7.zip",
