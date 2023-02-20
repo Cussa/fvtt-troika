@@ -51,7 +51,57 @@
                 "base"
             ],
             "armour": 0,
-            "mien": ""
+            "mien": "",
+            "mienOptions":[
+                {
+                    "number": 1,
+                    "description": ""
+                },
+                {
+                    "number": 2,
+                    "description": ""
+                },
+                {
+                    "number": 3,
+                    "description": ""
+                },
+                {
+                    "number": 4,
+                    "description": ""
+                },
+                {
+                    "number": 5,
+                    "description": ""
+                },
+                {
+                    "number": 6,
+                    "description": ""
+                }
+            ]
+        },
+        "npc-complex":{
+            "templates":[
+                "base"
+            ],
+            "monies": "",
+            "armour": 0,
+            "mien": "",
+            "special": "",
+            "provisions": {
+                "p1": true,
+                "p2": true,
+                "p3": true,
+                "p4": true,
+                "p5": true,
+                "p6": true,
+                "p7": false,
+                "p8": false,
+                "p9": false,
+                "p10": false,
+                "p11": false,
+                "p12": false
+            },
+            "notes": ""
         }
     },
     "Item": {

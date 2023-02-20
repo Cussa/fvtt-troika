@@ -1,0 +1,189 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+  <header class="">
+
+    <div class="grid header-grid-2col">
+
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+      <div class="name-grid-2col">
+        <h2 class="grid-item-stretch-height-to-fit"><span class="bold-header">Name:</span></h2>
+        <h2 class="grid-item-stretch-height-to-fit">
+          <input name="name" class="grid-item-stretch-height-to-fit" type="text" value="{{actor.name}}" title="" />
+        </h2>
+        {{#if_eq actor.type 'pc'}}
+        <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Background:</span></h3>
+        <h3 class="grid-item-stretch-height-to-fit">
+          <input name="system.background" class="grid-item-stretch-height-to-fit" type="text"
+            value="{{actor.system.background}}" placeholder="" />
+        </h3>
+        
+        {{else}}
+        <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Mien:</span></h3>
+        <h3 class="grid-item-stretch-height-to-fit">
+          <input name="system.mien" class="grid-item-stretch-height-to-fit" type="text"
+            value="{{actor.system.mien}}" placeholder="" />
+        </h3>
+        {{/if_eq}}
+
+        <div class="attributes-container-npc">
+          <h3><i class="fas fa-sword rollable-skill-test" data-roll-total={{actor.system.skill.value}} data-roll-label="Skill"><span> Skill</span></i></h3>
+          <h3><i class="fas fa-heart"><span> Stamina</span></i></h3>
+          <h3><i class="fas fa-shield"><span> Armour</span></i></h3>
+          <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
+          
+          <div class="">
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.skill.value"
+              value="{{actor.system.skill.value}}" />
+          </div>
+          <div class="attribute-container">
+            <input class="center-aligned-input-text" name="system.stamina.value"
+              value="{{actor.system.stamina.value}}" />
+            <span class="">/</span>
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.stamina.max"
+              value="{{actor.system.stamina.max}}" />
+          </div>
+          <div>
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.armour"
+              value="{{actor.system.armour}}" />
+          </div>                                      
+          
+          <div>
+              <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
+              value="{{actor.system.initiativeTokens}}" />
+          </div>
+                    
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+      <a class="item" data-tab="skills"><h3 class="no-underline">Attacks & Notes</h3></a>
+      <a class="item" data-tab="inventory"><h3 class="no-underline">Other</h3></a>    
+  </nav>
+
+  <section class="sheet-body">
+
+    <div class="tab" data-tab="skills" data-group="primary">
+
+      <div class="attacks-section">
+        <h3 class="bolded-label no-underline">Attacks</h3>
+        <ol>
+          <li class="attacks-grid">
+            <h4 class="grid-header-label">Name</h4>
+            <h4 class="grid-header-label">1</h4>
+            <h4 class="grid-header-label">2</h4>
+            <h4 class="grid-header-label">3</h4>
+            <h4 class="grid-header-label">4</h4>
+            <h4 class="grid-header-label">5</h4>
+            <h4 class="grid-header-label">6</h4>
+            <h4 class="grid-header-label">7+</h4>
+          </li>
+
+          {{#each actor.attacks as |item id|}}
+          <li class="attacks-grid item light-underline" data-item-id="{{item._id}}"> 
+            <span class="rollable-attack-damage" title="{{item.system.attackTooltip}}">{{item.system.displayName}}</span>
+            <span>{{item.system.attack.dr1}}</span>
+            <span>{{item.system.attack.dr2}}</span>
+            <span>{{item.system.attack.dr3}}</span>
+            <span>{{item.system.attack.dr4}}</span>
+            <span>{{item.system.attack.dr5}}</span>
+            <span>{{item.system.attack.dr6}}</span>
+            <span>{{item.system.attack.dr7}}</span>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+
+      <div class="special-section">
+
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h3>
+      
+        <div class="special-editor">
+          {{editor enrichedSpecial target="system.special" button=true owner=owner editable=editable}}
+        </div>
+               
+      </div>
+
+      <div class="notes-section">
+
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Other Notes</h3>
+
+        <div class="notes-editor">
+
+          {{editor enrichedNotes target="system.notes" button=true owner=owner editable=editable}}
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tab" data-tab="inventory" data-group="primary" >
+
+      <div>
+        <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Mien</h3>
+      </div>
+      
+      <div>
+        {{#each actor.system.mienOptions as |mien|}}
+        {{log @index}}
+        <div class="mien-flex-box">
+          <input name="system.mienOptions.{{@index}}.number" type="numeric" inputmode="numeric" value="{{mien.number}}" placeholder="" />
+          <input name="system.mienOptions.{{@index}}.description" type="text" value="{{mien.description}}" placeholder="" />
+        </div>        
+        {{/each}}
+      </div>
+
+      <div>
+        <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Inventory/Attacks/Etc.</h3>
+      </div>
+
+      <div class="item-list fvtt-item-table">
+        
+        <ol>
+          
+          <li class="all-inventory-grid">            
+            
+            <span></span>
+            <h4 class="grid-header-label">Name</h4>
+            <h4 class="grid-header-label">Quanity</h4>
+            <h4 class="grid-header-label">Edit</h4>
+            <h4 class="grid-header-label">Delete</h4>
+          </li>
+          {{#each actor.inventory as |item id|}}
+          <li class="all-inventory-grid item" data-item-id="{{item._id}}">                                               
+
+            <span></span> 
+
+            <h4>{{item.name}}</span>
+            
+            <h4><i class="item-quantity-up fas fa-plus"></i> {{item.system.quantity}} <i class="item-quantity-down fas fa-minus"></i></h4>                         
+
+            <div class="">
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
+            </div>
+            <div class="" >
+              <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+
+          </li>
+          {{/each}}
+        </ol>
+
+      </div>
+
+      <div class="skills-add-buttons-grid">
+        <div class="item-controls skills-add-button no-bottom-padding">
+          <a class="item-control item-create" data-type="gear"><i class="fas fa-plus"></i>Add Item  <i class="fas fa-sack"></i></a>                  
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  
+</form>

@@ -11,14 +11,21 @@ export class TroikaActorSheet extends ActorSheet {
         classes: ["troika", "sheet", "actor"],
         template: "systems/troika/templates/actor/pc-sheet.html",
         width: 700,
-        height: 800,
+        height: 750,
         tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
         });
     }
 
     /** @override */
     get template() {
-        return "systems/troika/templates/actor/pc-sheet.html";
+        if(this.actor.type === 'npc'){
+            return "systems/troika/templates/actor/npc-sheet.html";
+        }
+        else{
+            // note the 'npc-complex' type uses regular PC sheet
+            return "systems/troika/templates/actor/pc-sheet.html";
+        }
+        
     }
 
 

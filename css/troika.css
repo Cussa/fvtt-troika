@@ -112,6 +112,16 @@ textarea {
     text-align: center;
 }
 
+.attributes-container-npc{
+    grid-column: span 2;
+    width: 90%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 18% 25% 22% 22%;
+    gap: 1%;
+    text-align: center;
+}
+
 .attribute-container{
     display: grid;
     align-content: center;
@@ -423,38 +433,44 @@ textarea {
 
 .special-section .editor{
     height:fit-content;
-    max-height: 135px;
+    max-height: 100px;
     min-height: 34px;
 }
 
 .special-section .editor-content{
     height: 100%;
-    min-height: 75px;
-    max-height: 125px;
+    min-height: 55px;
+    max-height: 90px;
     border: 1px solid #000;
     border-radius: 5px 5px 5px 5px;
     background: rgba(0, 0 , 0, 0.05);
-    margin: 5px;
-    padding: 5px;
-    font-size: large;
+    margin: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: medium;
 }
 
 .notes-section .editor{
     height:fit-content;
-    max-height: 300px;
+    max-height: 200px;
     min-height: 34px;
 }
 
 .notes-section .editor-content{
     height: 100%;
     min-height: 75px;
-    max-height: 290px;
+    max-height: 190px;
     border: 1px solid #000;
     border-radius: 5px 5px 5px 5px;
     background: rgba(0, 0 , 0, 0.05);
-    margin: 5px;
-    padding: 5px;
-    font-size: large;
+    margin: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: medium;
 }
 
 .center-align-div{
@@ -471,6 +487,22 @@ textarea {
     margin-bottom: 5%;
     gap: 2%;
     align-items: center;
+    justify-content: left;
+}
+
+.mien-flex-box{
+    display: flex;
+    gap: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.mien-flex-box input[type=numeric]{
+    max-width: 50px;
+    text-align: center !important; 
+}
+
+.mien-flex-box input[type=text]{
+    max-width: 350px;
     justify-content: left;
 }
 
