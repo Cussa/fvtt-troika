@@ -10,11 +10,17 @@
       "discord": "TheLastScrub#7146"
     }    
   ],
-  "version": "0.2.7",
+  "version": "10.0.1",
   "compatibility": {
     "minimum": "10.284",
     "verified": "10"
   },
+  "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
+  "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v10.0.1.zip",
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "stamina",
+  "secondaryTokenAttribute": "luck",
   "esmodules": [
     "module/troika.js"
   ],
@@ -69,11 +75,5 @@
       "type": "Item",
       "flags": {}
     }
-  ],
-  "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
-  "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v0.2.7.zip",
-  "gridDistance": 1,
-  "gridUnits": "m",
-  "primaryTokenAttribute": "stamina",
-  "secondaryTokenAttribute": "luck"
+  ]
 }
