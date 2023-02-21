@@ -12,5 +12,5 @@ AFFILIATED WITH THE MELSONIAN ARTS COUNCIL.
 
 ### Character Sheet
 
-![Character Sheet Skills Spells and Attacks](.\assets\doc-img\char_sheet01.png)
+![Character Sheet Skills Spells and Attacks](./assets/doc-img/char_sheet01.png)
 
