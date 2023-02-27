@@ -9,6 +9,9 @@ AFFILIATED WITH THE MELSONIAN ARTS COUNCIL.
   * Roll Skill and Luck
   * Roll Advanced Skills and Spells
   * Drag inventory around to re-order
+* NPC Sheet
+  * Roll Skill
+  * Set current mien, log 6 possible miens
 * Compendiums
   * All SRD Spells and Skills
   * All SRD Items
@@ -61,3 +64,13 @@ If the *Requires Two Hands* checkbox is checked, an asterisk is placed next to t
 Items in the inventory section can be dragged to re-order. Items in compendiums can be dragged and dropped directly on the sheet to add them. If an item is marked as needing multiple inventory slots (heavy armour for instance), it will note the slots it takes up as a range.
 
 ![Character Sheet Skills Spells and Attacks](./assets/doc-img/inventory-slots.png)
+
+## NPC Sheet
+
+Most characters can be represented by the default PC sheet. To facilitate this, *Initiative* is a value even on a PC sheet.
+
+However besides the *PC*, there are two other Actor types included in the system. These are the *NPC* and the *NPC-Complex*. The complex NPC is simply the PC sheet, but the *Background* field has been replaced by *Mien*. This is largely for more complicated NPCs that might have spells or otherwise be like a PC.
+
+The standard NPC sheet is meant to represent a character statblock similar to the bestiary in the core rulebook. It is far more simple than the PC sheet:
+
+![Character Sheet Skills Spells and Attacks](./assets/doc-img/npc-sheet.png)
