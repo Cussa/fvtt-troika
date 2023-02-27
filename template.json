@@ -2,7 +2,8 @@
     "Actor": {
         "types": [
             "pc",
-            "npc"
+            "npc",
+            "npc-complex"
         ],
         "templates": {
             "base": {
