@@ -61,6 +61,7 @@ textarea {
     margin-bottom: 10px;
 }
 
+.rollable-mien:focus, .rollable-mien:hover,
 .item-quantity-up:focus, .item-quantity-down:focus,
 .item-quantity-up:hover, .item-quantity-down:hover,
 .rollable-skill-test:hover, .rollable-skill-test:focus,
@@ -502,7 +503,7 @@ textarea {
 }
 
 .mien-flex-box input[type=text]{
-    max-width: 350px;
+    max-width: auto;
     justify-content: left;
 }
 

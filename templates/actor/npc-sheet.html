@@ -18,7 +18,7 @@
         </h3>
         
         {{else}}
-        <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Mien:</span></h3>
+        <h3 class="grid-item-stretch-height-to-fit"><span title="Click to randomize mien." class="bold-header rollable-mien"><i class="fas fa-dice"></i> Mien:</span></h3>
         <h3 class="grid-item-stretch-height-to-fit">
           <input name="system.mien" class="grid-item-stretch-height-to-fit" type="text"
             value="{{actor.system.mien}}" placeholder="" />
@@ -63,11 +63,13 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
       <a class="item" data-tab="skills"><h3 class="no-underline">Attacks & Notes</h3></a>
-      <a class="item" data-tab="inventory"><h3 class="no-underline">Other</h3></a>    
+      <a class="item" data-tab="mien"><h3 class="no-underline">Mien</h3></a>
+      <a class="item" data-tab="inventory"><h3 class="no-underline">Inventory/Config</h3></a>  
   </nav>
 
   <section class="sheet-body">
 
+    {{!-- ATTACKS/SPECIAL TAB --}}
     <div class="tab" data-tab="skills" data-group="primary">
 
       <div class="attacks-section">
@@ -122,7 +124,8 @@
       </div>
     </div>
 
-    <div class="tab" data-tab="inventory" data-group="primary" >
+    {{!-- MIEN TAB --}}
+    <div class="tab" data-tab="mien" data-group="primary" >
 
       <div>
         <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Mien</h3>
@@ -130,7 +133,6 @@
       
       <div>
         {{#each actor.system.mienOptions as |mien|}}
-        {{log @index}}
         <div class="mien-flex-box">
           <input name="system.mienOptions.{{@index}}.number" type="numeric" inputmode="numeric" value="{{mien.number}}" placeholder="" />
           <input name="system.mienOptions.{{@index}}.description" type="text" value="{{mien.description}}" placeholder="" />
@@ -138,6 +140,10 @@
         {{/each}}
       </div>
 
+    </div>
+
+    {{!-- INVENTORY TAB --}}
+    <div class="tab" data-tab="inventory" data-group="primary" >
       <div>
         <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Inventory/Attacks/Etc.</h3>
       </div>
@@ -161,7 +167,7 @@
 
             <h4>{{item.name}}</span>
             
-            <h4><i class="item-quantity-up fas fa-plus"></i> {{item.system.quantity}} <i class="item-quantity-down fas fa-minus"></i></h4>                         
+            <h4><i class="item-quantity-down fas fa-minus"></i> {{item.system.quantity}} <i class="item-quantity-up fas fa-plus"></i></h4>                         
 
             <div class="">
               <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
@@ -181,8 +187,7 @@
           <a class="item-control item-create" data-type="gear"><i class="fas fa-plus"></i>Add Item  <i class="fas fa-sack"></i></a>                  
         </div>
       </div>
-
-    </div>
+    </div> 
 
   </section>
   

@@ -243,6 +243,39 @@ export class TroikaActorSheet extends ActorSheet {
         let change = parseInt(item.system.quantity) - 1;
         this._editItemQuantity(item, change);
     });
+    
+    html.find('.rollable-mien').click(ev => {
+        this._randomlyDetermineMien();
+    });
+  }
+
+  async _randomlyDetermineMien(){
+
+    let size = Object.keys(this.actor.system.mienOptions).length;
+
+    let mienOptions = [];
+
+    if(size > 0){
+
+        for (let i = 0; i < size; i++) {
+
+            let mien = this.actor.system.mienOptions[i];
+
+            if(mien.description !== null && mien.description.trim() !== ''){
+                mienOptions.push(mien.description);
+            }                
+        }
+        
+        let formula = '1d' + size.toString();
+        const roll = await new Roll(formula, {}).roll({async: true});
+        let dieResult = roll.terms[0].results[0].result;
+        let newMien = mienOptions[dieResult];
+
+        let updatedData = duplicate(this.actor.system);
+        updatedData.mien = newMien;
+        this.actor.update({'data': updatedData});
+    }
+
   }
 
   async _editItemQuantity(item, newQuantity){
