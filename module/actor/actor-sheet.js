@@ -47,6 +47,8 @@ export class TroikaActorSheet extends ActorSheet {
         const skills = [];
         const spells = [];
         const inventory = [];
+        const weightlessInventory = [];
+        const nonweightlessInventory = [];
         const attacks = [];        
 
         for (let i of sheetData.items) {            
@@ -70,13 +72,24 @@ export class TroikaActorSheet extends ActorSheet {
                 i.system.total = parseInt(actorData.system.skill.value) + parseInt(i.system.rank) + parseInt(i.system.modifier);
             }
             else if(i.type === 'gear'){
+
+                // all inventory
                 inventory.push(i);
                 
+                // try to divide up things that have weight and matter, and those that don't
+                if(i.system.inventorySlots < 1){
+                    weightlessInventory.push(i);
+                }
+                else{
+                    nonweightlessInventory.push(i);
+                }
+
                 if(i.system.canAttack === true && i.system.equipped == true){
                     attacks.push(i);
                 }
             }
         }
+        console.log(inventory);
 
         skills.sort(function(a, b){
             let x = a.name.toLowerCase();
@@ -133,6 +146,8 @@ export class TroikaActorSheet extends ActorSheet {
 
         actorData.attacks = attacks;
         actorData.inventory = inventory;
+        actorData.weightlessInventory = weightlessInventory;
+        actorData.nonweightlessInventory = nonweightlessInventory;
         actorData.advancedSkills = skills;
         actorData.spells = spells;
         actorData.advancedSkillsAndSpells = skillsAndSpells;
