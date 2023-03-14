@@ -90,8 +90,11 @@
     <div class="tab" data-tab="skills" data-group="primary">
 
       <div class="attacks-section">
+
         <h3 class="bolded-label no-underline">Attacks</h3>
+        
         <ol>
+
           <li class="attacks-grid">
             <h4 class="grid-header-label">Name</h4>
             <h4 class="grid-header-label">1</h4>
@@ -115,12 +118,14 @@
             <span>{{item.system.attack.dr7}}</span>
           </li>
           {{/each}}
+
         </ol>
+
     </div>
 
     <div class="skills-and-spells-section">
 
-        <h3 class="bolded-label no-underline">Skills & Spells</h3>
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Skills & Spells</h3>
 
         <ol>
 
@@ -195,12 +200,11 @@
     </div>
   
     <div class="tab" data-tab="inventory" data-group="primary" >
-      
-      <div>
         
         <div class="monies-provisions-grid">
           
           <h3 class="bolded-label grid-item-stretch-height-to-fit">Monies/Other Items</h3>
+
           <h3 class=" bolded-label grid-item-stretch-height-to-fit">Provisions</h3>
 
           <div class="grid-item-stretch-height-to-fit">
@@ -222,9 +226,8 @@
             <input type="checkbox" class="" name="system.provisions.p10" {{checked actor.system.provisions.p10}} data-dtype="Boolean" />
             <input type="checkbox" class="" name="system.provisions.p11" {{checked actor.system.provisions.p11}} data-dtype="Boolean" />
             <input type="checkbox" class="" name="system.provisions.p12" {{checked actor.system.provisions.p12}} data-dtype="Boolean" />
+            
           </div>
-
-        </div>
                 
       </div>
 
@@ -331,8 +334,8 @@
 
       <div class="special-section">
 
-        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h3>
-      
+        <h2 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h2>
+        
         <div class="special-editor">
           {{editor enrichedSpecial target="system.special" button=true owner=owner editable=editable}}
         </div>
@@ -341,7 +344,7 @@
 
       <div class="notes-section">
 
-        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Other Notes</h3>
+        <h2 class="bolded-label grid-item-stretch-height-to-fit no-underline">Other Notes</h2>
 
         <div class="notes-editor">
 

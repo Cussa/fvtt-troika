@@ -89,7 +89,6 @@ export class TroikaActorSheet extends ActorSheet {
                 }
             }
         }
-        console.log(inventory);
 
         skills.sort(function(a, b){
             let x = a.name.toLowerCase();
@@ -126,8 +125,7 @@ export class TroikaActorSheet extends ActorSheet {
                 actualPos = actualPos + parseInt(inventory[i].system.inventorySlots);                
                 
             }
-
-            console.log(inventory);  
+             
         }
 
         const skillsAndSpells = skills.concat(spells);

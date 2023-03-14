@@ -329,8 +329,6 @@ export async function dx6Roll(actor, numberOfD6){
     let val2 = 0;
 
     const roll = await new Roll(formula, {}).roll({async: true});
-    
-    console.log(roll);
 
     val1 = roll.terms[0].results[0].result;
     val2 = roll.terms[2].results[0].result;
