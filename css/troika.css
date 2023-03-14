@@ -241,6 +241,10 @@ textarea {
     padding-right: 5px;
 }
 
+.attacks-section-label{
+    margin-top: 12px;
+}
+
 .sheet-body,
 .sheet-body .tab .editor {
   height: 100%;
