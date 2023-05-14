@@ -1,7 +1,9 @@
 # Troika! System (Rules Implementation) for Foundry Virtual Table Top
 
-THIS SOFTWARE IS AN INDEPENDENT PRODUCTION BY AUTHOR AND IS NOT 
-AFFILIATED WITH THE MELSONIAN ARTS COUNCIL.
+| | |
+| - | - |
+| ![Compatibility Logo](./assets/fortle.webp) | THIS SOFTWARE IS AN INDEPENDENT PRODUCTION BY AUTHOR AND IS NOT AFFILIATED WITH THE MELSONIAN ARTS COUNCIL. |
+| | |
 
 ## System Features
 
