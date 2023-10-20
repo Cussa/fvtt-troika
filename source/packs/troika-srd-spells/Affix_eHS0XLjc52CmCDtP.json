@@ -1,0 +1,41 @@
+{
+  "name": "Affix",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-95655f34-7fff-c9ce-bad4-f83454db0015\" dir=\"ltr\">Cause a subject to be fixed in place. While they are so held they do not</p>\n<p dir=\"ltr\">move, breathe, fall, perspire, acquire, or otherwise change. They are totally</p>\n<p dir=\"ltr\">immune to harm, in fact. Lasts for 3 minutes.</p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "3",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1673720934918,
+    "modifiedTime": 1676771738835,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "eHS0XLjc52CmCDtP",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!eHS0XLjc52CmCDtP"
+}

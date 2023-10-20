@@ -1,0 +1,603 @@
+{
+  "name": "SRD Random Spell Roll Table",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "Assassin's Daggers",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "2Kemn4CmbwSiL9z2",
+      "_id": "pasleZXGzy55uLlU",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.pasleZXGzy55uLlU"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "text": "Animate",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "y4nVI2C74EDbl38v",
+      "_id": "GmjvxQbMb205lCnZ",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.GmjvxQbMb205lCnZ"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "text": "Affix",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "eHS0XLjc52CmCDtP",
+      "_id": "Gr7x0YWW92lz13Or",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.Gr7x0YWW92lz13Or"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "text": "Assume Shape",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "IZiZZG0gDqoAfNIK",
+      "_id": "mR1Pkowpv6MqNP6u",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.mR1Pkowpv6MqNP6u"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "text": "Befuddle",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "XF67a4z8gvPytXbm",
+      "_id": "cKy8GdUN3LCEZCy3",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.cKy8GdUN3LCEZCy3"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "text": "Breach",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "lb6m4mcIZilyGuVU",
+      "_id": "mz40qRwCWlDksRP8",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.mz40qRwCWlDksRP8"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "text": "Cone of Air",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "sV4exD9aE0MxZVHV",
+      "_id": "OmTdzA8kC52mvZpf",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.OmTdzA8kC52mvZpf"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "text": "Banish Spirit",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "ulJ1egDlktYvFnth",
+      "_id": "JBcraZ9XgR0rEL9o",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.JBcraZ9XgR0rEL9o"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "text": "Ember",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "Bo1e8pEIAlK0UM73",
+      "_id": "hRAoVxI5l0YRrXlJ",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.hRAoVxI5l0YRrXlJ"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "text": "Cockroach",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "ZBL6RLEnq1FddVyj",
+      "_id": "NoV2RXVmA4EiYOAR",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.NoV2RXVmA4EiYOAR"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "text": "Darksee",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "rJ7taHjen8Om43VE",
+      "_id": "jkVeUKjlfmou1XHh",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.jkVeUKjlfmou1XHh"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "text": "Diminish",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "E5Dw3s9FA4CQtOZK",
+      "_id": "ZbeAid2MA9HsmhNR",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.ZbeAid2MA9HsmhNR"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "text": "Earthquake",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "jSH4BnYYR8F5EPZX",
+      "_id": "eCqENhVKM0AreYW2",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.eCqENhVKM0AreYW2"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "text": "Fear",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "MsZc7NJHTVNcCaz3",
+      "_id": "dsd0NsgWlLXuUxlx",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.dsd0NsgWlLXuUxlx"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "text": "Firebolt",
+      "img": "icons/svg/fire.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "y1C38yriur2YKrCE",
+      "_id": "JwBlVk1KlleOryWZ",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.JwBlVk1KlleOryWZ"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "text": "Flash",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "YQb7smbXkvU0BLEz",
+      "_id": "A2AKWPEHDmkNSylg",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.A2AKWPEHDmkNSylg"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "text": "Farseeing",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "9LYqQbexAlP8MOnD",
+      "_id": "318tAFi7KKjztJBY",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.318tAFi7KKjztJBY"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "text": "Find",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "XyBnj5jJPNMKdkFT",
+      "_id": "c5cIWngziIJaMKBz",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.c5cIWngziIJaMKBz"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "text": "Grow",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "OgmujYeUbgFSt43F",
+      "_id": "WVQelO8GVpW7ziKO",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.WVQelO8GVpW7ziKO"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "text": "Hurricane",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "gtnpiGTx18sDdzVO",
+      "_id": "Q2iQMxd51mXbs0JJ",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.Q2iQMxd51mXbs0JJ"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "text": "Helping Hands",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "PzxzbVcyDyiVvrvS",
+      "_id": "MqGKGCQvAlcvSAo3",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.MqGKGCQvAlcvSAo3"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "drawn": false,
+      "text": "Illusion",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "h9yn92zF2STrhxpr",
+      "_id": "odaz30VxNVHBy5hC",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.odaz30VxNVHBy5hC"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "drawn": false,
+      "text": "Invisibility",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "fRpHCqzb6HkBqnrq",
+      "_id": "7jTmiIHEHnzwWaJ9",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.7jTmiIHEHnzwWaJ9"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "drawn": false,
+      "text": "Jolt",
+      "img": "icons/svg/lightning.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "69TNK0OtTGHsNYo9",
+      "_id": "JC8TeoNXSXW9sq39",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.JC8TeoNXSXW9sq39"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        25,
+        25
+      ],
+      "drawn": false,
+      "text": "Light",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "nVXNsfNq1C9obk3i",
+      "_id": "AXAGWUhuLUd9eGRO",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.AXAGWUhuLUd9eGRO"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        26,
+        26
+      ],
+      "drawn": false,
+      "text": "Lock",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "qs2QiDlAN5yPwvdL",
+      "_id": "ue9lOYDwcPzvTqB9",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.ue9lOYDwcPzvTqB9"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        27,
+        27
+      ],
+      "drawn": false,
+      "text": "Languages",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "IeCfGP9ZaF4Q6s9Q",
+      "_id": "e6j76SMkBbLAd8FD",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.e6j76SMkBbLAd8FD"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        28,
+        28
+      ],
+      "drawn": false,
+      "text": "Levitate",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "YDnmfSAd6mKalyFa",
+      "_id": "czROxmKAQmwcLu8U",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.czROxmKAQmwcLu8U"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        29,
+        29
+      ],
+      "drawn": false,
+      "text": "Sentry",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "0fb5qchyl4dSXEem",
+      "_id": "uyiTZKuXJYDEzkJU",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.uyiTZKuXJYDEzkJU"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        30,
+        30
+      ],
+      "drawn": false,
+      "text": "Shatter",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "tI7wpvvromKfCO1H",
+      "_id": "ogzGsH87oLxaSe4p",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.ogzGsH87oLxaSe4p"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        31,
+        31
+      ],
+      "drawn": false,
+      "text": "Sleep",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "78xfMV6852Kupe7z",
+      "_id": "I0CJcE8vpddmmhYn",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.I0CJcE8vpddmmhYn"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "drawn": false,
+      "text": "Thunder",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "oaaBJZf0i4bVVLJC",
+      "_id": "7TujDkfHUSY9yvaz",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.7TujDkfHUSY9yvaz"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        33,
+        33
+      ],
+      "drawn": false,
+      "text": "Tongue Twister",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "zinJFbqDLdcL4Wcm",
+      "_id": "jS2uBRWI7aQwsKV2",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.jS2uBRWI7aQwsKV2"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        34,
+        34
+      ],
+      "drawn": false,
+      "text": "Undo",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "CGAE3aIGsU0K2FaX",
+      "_id": "GITQg3Si0J1SGvM4",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.GITQg3Si0J1SGvM4"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        35,
+        35
+      ],
+      "drawn": false,
+      "text": "Ward",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "fx4Gj1ndHjKdfUrO",
+      "_id": "ssOIG6E8vzLyfAHg",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.ssOIG6E8vzLyfAHg"
+    },
+    {
+      "type": 2,
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "drawn": false,
+      "text": "Wall of Power",
+      "img": "icons/svg/daze.svg",
+      "documentCollection": "troika.srd-spells",
+      "documentId": "ZrubTKPhVWXhxPnH",
+      "_id": "pDObEgeTbUc3QcnK",
+      "flags": {},
+      "_key": "!tables.results!F5Hxv1QRaOCAVbpg.pDObEgeTbUc3QcnK"
+    }
+  ],
+  "formula": "d6*10+d6",
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676772053337,
+    "modifiedTime": 1676825443853,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "F5Hxv1QRaOCAVbpg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!tables!F5Hxv1QRaOCAVbpg"
+}

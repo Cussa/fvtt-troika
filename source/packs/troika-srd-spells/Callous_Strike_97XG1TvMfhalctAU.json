@@ -1,0 +1,41 @@
+{
+  "name": "Callous Strike",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">The Wizard-Knights are most famous for their remote combat whereby they </span><span dir=\"ltr\" role=\"presentation\">swing their Silver Swords seemingly at nothing only for their opponents, </span><span dir=\"ltr\" role=\"presentation\">many metres away, to be torn to tatters. This Spell can be used in place of a </span><span dir=\"ltr\" role=\"presentation\">melee attack by Rolling Versus as normal and inflicting Damage according </span><span dir=\"ltr\" role=\"presentation\">to the Weapon used. May only be used against targets within clear sight.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676768989193,
+    "modifiedTime": 1676771738837,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "97XG1TvMfhalctAU",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!97XG1TvMfhalctAU"
+}

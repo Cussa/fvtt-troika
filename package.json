@@ -1,0 +1,17 @@
+{
+  "name": "troika",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "gulpfile.mjs",
+  "description": "Foundry VTT Troika! System",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "TheLastScrub",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "fs-extra": "^10.1.0",
+    "del": "^7.1.0"
+  }
+}

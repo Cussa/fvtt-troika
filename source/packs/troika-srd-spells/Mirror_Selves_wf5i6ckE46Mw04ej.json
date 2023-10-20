@@ -1,0 +1,41 @@
+{
+  "name": "Mirror Selves",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">In the minds of others the wizard appears to be, in fact, three wizards. All </span><span dir=\"ltr\" role=\"presentation\">three perform the same actions in unison, offering attackers only a 1-in-3 </span><span dir=\"ltr\" role=\"presentation\">chance of targeting the right wizard. Lasts for 12 minutes.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "3",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676770110829,
+    "modifiedTime": 1676771738842,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "wf5i6ckE46Mw04ej",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!wf5i6ckE46Mw04ej"
+}

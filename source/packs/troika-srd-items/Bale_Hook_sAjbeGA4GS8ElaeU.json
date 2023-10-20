@@ -1,0 +1,44 @@
+{
+  "name": "Bale Hook",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-fd4fc21d-7fff-b9f0-986b-4cb2acd970f0\" dir=\"ltr\">A bale hook counts as a Knife for Damage and grants +1 on rolls to lift heavy objects.</p>",
+    "attack": {
+      "dr1": "2",
+      "dr2": "2",
+      "dr3": "2",
+      "dr4": "2",
+      "dr5": "4",
+      "dr6": "8",
+      "dr7": "10"
+    },
+    "inventorySlots": "1",
+    "sortOrder": -1,
+    "canAttack": true,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": "0",
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676826103488,
+    "modifiedTime": 1676826657623,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "sAjbeGA4GS8ElaeU",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!sAjbeGA4GS8ElaeU"
+}

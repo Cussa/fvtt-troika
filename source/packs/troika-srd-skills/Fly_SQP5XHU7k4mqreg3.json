@@ -1,0 +1,44 @@
+{
+  "name": "Fly",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-7b8b5251-7fff-773e-7b93-cafadd604e25\">Use Fly much as you would Run. In normal situations this doesn&rsquo;t need testing, only in chases or high winds, maybe. Anyone attempting to Fly without this Skill must Test every Round to make sure they don&rsquo;t crash or lose control.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.cF40jXjQ3ql3R4u4"
+    }
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676781942840,
+    "modifiedTime": 1676782632706,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "SQP5XHU7k4mqreg3",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!SQP5XHU7k4mqreg3"
+}

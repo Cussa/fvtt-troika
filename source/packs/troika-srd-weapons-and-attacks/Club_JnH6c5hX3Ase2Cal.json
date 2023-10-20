@@ -1,0 +1,44 @@
+{
+  "name": "Club",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "",
+    "attack": {
+      "dr1": "1",
+      "dr2": "1",
+      "dr3": "2",
+      "dr4": "3",
+      "dr5": "6",
+      "dr6": "8",
+      "dr7": "10"
+    },
+    "inventorySlots": "1",
+    "sortOrder": -1,
+    "canAttack": true,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": "0",
+    "quantity": 1
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676774220443,
+    "modifiedTime": 1676827737962,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "JnH6c5hX3Ase2Cal",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!JnH6c5hX3Ase2Cal"
+}

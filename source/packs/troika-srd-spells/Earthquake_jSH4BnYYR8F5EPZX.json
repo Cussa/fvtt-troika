@@ -1,0 +1,41 @@
+{
+  "name": "Earthquake",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">The wizard hikes up their wizard robe and stomps their wizard feet. An </span><span dir=\"ltr\" role=\"presentation\">area 30 metres around them suffers a massive earthquake. Everyone must </span><span dir=\"ltr\" role=\"presentation\">Test their Luck (or Skill for Enemies) or fall through a crack in the earth, </span><span dir=\"ltr\" aria-owns=\"pdfjs_internal_id_746R\">taking falling Damage and being stuck in a bloody great big hole (7.8.1). </span><span dir=\"ltr\" role=\"presentation\">Buildings may be wrecked unless especially sturdy.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "5",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676769263323,
+    "modifiedTime": 1676771738839,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "jSH4BnYYR8F5EPZX",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!jSH4BnYYR8F5EPZX"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Yoke",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span id=\"docs-internal-guid-20ea334e-7fff-84db-6004-d8393fe51727\">A yoke gives you +4 carry capacity while worn but you can&rsquo;t use your hands while wearing it.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "inventorySlots": "1",
+    "sortOrder": -1,
+    "canAttack": false,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": 0,
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676826602761,
+    "modifiedTime": 1676826657625,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "JGOykF1f4S6uJNu1",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!JGOykF1f4S6uJNu1"
+}

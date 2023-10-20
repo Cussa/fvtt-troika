@@ -1,0 +1,41 @@
+{
+  "name": "Skeletal Counsel",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">Necromancers often talk to skulls. Sometimes they talk back. Use of this </span><span dir=\"ltr\" role=\"presentation\">Spell enables speaking with the dead, who answer one question per casting. </span><span dir=\"ltr\" role=\"presentation\">Requires a skull.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "3",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676770617384,
+    "modifiedTime": 1676771738844,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "GQcWTU5uHGWr9rxu",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!GQcWTU5uHGWr9rxu"
+}

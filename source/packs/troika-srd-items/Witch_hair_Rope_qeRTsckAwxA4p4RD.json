@@ -1,0 +1,44 @@
+{
+  "name": "Witch-hair Rope",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span id=\"docs-internal-guid-ce7a194c-7fff-4703-ff0d-875b25be6b91\">Witch-hair ropes are immune to manipulation via magical means. </span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "inventorySlots": "1",
+    "sortOrder": -1,
+    "canAttack": false,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": 0,
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676826588299,
+    "modifiedTime": 1676826657625,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "qeRTsckAwxA4p4RD",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!qeRTsckAwxA4p4RD"
+}

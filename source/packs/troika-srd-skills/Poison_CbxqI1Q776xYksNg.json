@@ -1,0 +1,44 @@
+{
+  "name": "Poison",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-937be9ec-7fff-4d9d-8833-0b842c0c9b48\">You may Test this Skill during down time to create a single dose of poison. Pick which kind it is when you make it. This list is not exhaustive &mdash; more exotic ones may be available if you possess the knowledge and ingredients. 1d3 Common Poisons of Troika: 1 Causes anyone ingesting it to Test their Luck (or Skill for Enemies) or lose 4d6 Stamina. 2 Add 1 to all Damage Rolls while this is applied to piercing or edged Weapons. If you Roll a 1 for Damage the poison has worn off. 3 Causes anyone ingesting it to fall unconscious for 1d6 hours. </span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.cF40jXjQ3ql3R4u4"
+    }
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676781942840,
+    "modifiedTime": 1676782632707,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "CbxqI1Q776xYksNg",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!CbxqI1Q776xYksNg"
+}

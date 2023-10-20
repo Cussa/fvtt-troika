@@ -1,0 +1,44 @@
+{
+  "name": "Longsword",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "",
+    "attack": {
+      "dr1": "4",
+      "dr2": "6",
+      "dr3": "8",
+      "dr4": "8",
+      "dr5": "10",
+      "dr6": "12",
+      "dr7": "14"
+    },
+    "inventorySlots": "1",
+    "sortOrder": -1,
+    "canAttack": true,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": "0",
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676774038555,
+    "modifiedTime": 1676827737963,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "XrTZhSY9ak4BLpmp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!XrTZhSY9ak4BLpmp"
+}

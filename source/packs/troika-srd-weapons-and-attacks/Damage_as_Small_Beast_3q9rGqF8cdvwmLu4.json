@@ -1,0 +1,44 @@
+{
+  "name": "Damage as Small Beast",
+  "type": "gear",
+  "img": "icons/svg/pawprint.svg",
+  "system": {
+    "name": "",
+    "description": "",
+    "attack": {
+      "dr1": "2",
+      "dr2": "2",
+      "dr3": "3",
+      "dr4": "3",
+      "dr5": "4",
+      "dr6": "5",
+      "dr7": "6"
+    },
+    "inventorySlots": "0",
+    "sortOrder": -1,
+    "canAttack": true,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": "0",
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676774542203,
+    "modifiedTime": 1676827731619,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "3q9rGqF8cdvwmLu4",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!3q9rGqF8cdvwmLu4"
+}

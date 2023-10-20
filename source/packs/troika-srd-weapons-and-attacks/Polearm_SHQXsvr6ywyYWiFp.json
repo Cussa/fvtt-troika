@@ -1,0 +1,44 @@
+{
+  "name": "Polearm",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "",
+    "attack": {
+      "dr1": "2",
+      "dr2": "4",
+      "dr3": "4",
+      "dr4": "8",
+      "dr5": "12",
+      "dr6": "14",
+      "dr7": "18"
+    },
+    "inventorySlots": "2",
+    "sortOrder": -1,
+    "canAttack": true,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": true,
+    "armourIgnored": "1",
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676774098611,
+    "modifiedTime": 1676827737964,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "SHQXsvr6ywyYWiFp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!SHQXsvr6ywyYWiFp"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Banish Spirit",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">The wizard explains, clearly, sternly, why it is impossible that the spirit </span><span dir=\"ltr\" role=\"presentation\">could be here at this time. The spirit must Test its Luck (or Skill for </span><span dir=\"ltr\" role=\"presentation\">Enemies) or be sent to somewhere less improbable.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "6",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676768814723,
+    "modifiedTime": 1676771738837,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "ulJ1egDlktYvFnth",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!ulJ1egDlktYvFnth"
+}

@@ -4,6 +4,7 @@
   "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by author(s), and is not affiliated with the Melsonian Arts Council.",
   "url": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial",
   "license": "LICENSE.txt",
+  "background": "systems/troika/assets/troika-compatibility-logo-splash-page.webp",
   "authors": [
     {
       "name": "N. Eimers",
@@ -12,8 +13,8 @@
   ],
   "version": "1.0.1",
   "compatibility": {
-    "minimum": "10.284",
-    "verified": "10"
+    "minimum": "11",
+    "verified": "11"
   },
   "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
   "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v1.0.1.zip",
