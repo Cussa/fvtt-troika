@@ -35,7 +35,7 @@
       "name": "troika-srd-spells",
       "label": "Troika SRD Spells",
       "system": "troika",
-      "path": "packs/troika-srd-spells.db",
+      "path": "packs/troika-srd-spells",
       "private": false,
       "type": "Item",
       "flags": {}
@@ -44,7 +44,7 @@
       "name": "troika-srd-roll-tables",
       "label": "Troika SRD Roll Tables",
       "system": "troika",
-      "path": "packs/troika-srd-roll-tables.db",
+      "path": "packs/troika-srd-roll-tables",
       "private": false,
       "type": "RollTable",
       "flags": {}
@@ -53,7 +53,7 @@
       "name": "troika-srd-weapons",
       "label": "Troika SRD Weapons and Attacks",
       "system": "troika",
-      "path": "packs/troika-srd-weapons-and-attacks.db",
+      "path": "packs/troika-srd-weapons-and-attacks",
       "private": false,
       "type": "Item",
       "flags": {}
@@ -62,7 +62,7 @@
       "name": "troika-srd-skills",
       "label": "Troika SRD Skills",
       "system": "troika",
-      "path": "packs/troika-srd-skills.db",
+      "path": "packs/troika-srd-skills",
       "private": false,
       "type": "Item",
       "flags": {}
@@ -71,9 +71,18 @@
       "name": "troika-srd-items",
       "label": "Troika SRD Items",
       "system": "troika",
-      "path": "packs/troika-srd-items.db",
+      "path": "packs/troika-srd-items",
       "private": false,
       "type": "Item",
+      "flags": {}
+    },
+    {
+      "name": "troika-srd-backgrounds",
+      "label": "Troika SRD Backgrounds",
+      "system": "troika",
+      "path": "packs/troika-srd-backgrounds",
+      "private": false,
+      "type": "Actor",
       "flags": {}
     }
   ]

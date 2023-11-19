@@ -59,6 +59,15 @@ function buildPacks(){
       console.log(err);
     } 
   });
+
+  exec('fvtt package pack "troika-srd-backgrounds" --inputDirectory "./source/packs/troika-srd-backgrounds" --outputDirectory "./packs"', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    //cb(err);
+    if(err != null){
+      console.log(err);
+    } 
+  });
 }
 
 const build = () =>
@@ -69,20 +78,6 @@ const build = () =>
     buildPacks();
     console.log('Build process complete.');
     done();    
-});
-
-gulp.task('clean', function(){
-  return new Promise(done => {
-    clean();
-    //console.log('deleting compendium packs...');
-    //deleteSync(['./packs/troika-srd-items/*']);
-    //deleteSync(['./packs/troika-srd-roll-tables/*']);
-    //deleteSync(['./packs/troika-srd-skills/*']);
-    //deleteSync(['./packs/troika-srd-spells/*']);
-    //deleteSync(['./packs/troika-srd-weapons-and-attacks/*']);
-    //console.log('existing packs deleted.');
-    done();
-  });
 });
 
 gulp.task('build-packs', function (cb) {

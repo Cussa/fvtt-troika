@@ -1,0 +1,1050 @@
+{
+  "folder": null,
+  "name": "53 Sorcerer of the College of Friends",
+  "type": "pc",
+  "prototypeToken": {
+    "actorLink": true,
+    "name": "Sorcerer of the College of Friends",
+    "displayName": 20,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": null
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "stamina"
+    },
+    "bar2": {
+      "attribute": "luck"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "initiativeTokens": "2",
+    "stamina": {
+      "value": "18",
+      "min": -100,
+      "max": "18"
+    },
+    "skill": {
+      "value": "6"
+    },
+    "luck": {
+      "value": "9",
+      "min": -100,
+      "max": "9"
+    },
+    "monies": "2d6 Silver Pence",
+    "armour": "0",
+    "background": "Sorcerer of the College of Friends",
+    "special": "",
+    "provisions": {
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "p4": true,
+      "p5": true,
+      "p6": true,
+      "p7": false,
+      "p8": false,
+      "p9": false,
+      "p10": false,
+      "p11": false,
+      "p12": false
+    },
+    "notes": "<p>As an integral part of your tutelage&nbsp;in the sub-dimensional academy of&nbsp;the Cordial Wizard God you spent&nbsp;your childhood learning about the&nbsp;fate of pixies, the colour of magic,&nbsp;ritual grammar, and endless other&nbsp;theoretical topics. Now you&rsquo;re out&nbsp;in the world, discovering that your&nbsp;education hardly accounted for any of&nbsp;the things that you&rsquo;ve seen.</p>"
+  },
+  "items": [
+    {
+      "name": "Knife",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": "0",
+        "quantity": "1"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.Bt3M1u6hLCDit8qU"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676773918462,
+        "modifiedTime": 1700330748754,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "tl5amQYAJluUfsKQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.tl5amQYAJluUfsKQ"
+    },
+    {
+      "name": "Lantern and Flask of Oil",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-items.Item.Qr6TwtnTj2Jtt2RE"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676825020075,
+        "modifiedTime": 1700330760942,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "zkBekvpU2NS2aznc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.zkBekvpU2NS2aznc"
+    },
+    {
+      "name": "Rucksack",
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "0",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "_id": "jIJyJpgOXJy4TZVz",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.lohlXsS3zqtlWEea.Item.k63RHtocvJkHIZXk"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700330816807,
+        "modifiedTime": 1700330835354,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.jIJyJpgOXJy4TZVz"
+    },
+    {
+      "name": "Pocket Full of Wizard Biscuits (2D6, each counts as Provision)",
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "_id": "HtWqvbDO1BTJ1kCw",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.fmcBqUcZ90PKFtA4.Item.SMzWNhKXRsJ010lk"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700430246082,
+        "modifiedTime": 1700430411351,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.HtWqvbDO1BTJ1kCw"
+    },
+    {
+      "name": "Wand used to help focus new apprentices, now kept for sentimental reasons.",
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "_id": "jEV2ioLXgTgpYzwh",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.fmcBqUcZ90PKFtA4.Item.1BZE63b1gUnT0fg1"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700430275916,
+        "modifiedTime": 1700430418772,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.jEV2ioLXgTgpYzwh"
+    },
+    {
+      "name": "Pointed Wizard Hat you received at graduation",
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "_id": "gfkh9iHPhvzbroro",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700430425742,
+        "modifiedTime": 1700430448820,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.gfkh9iHPhvzbroro"
+    },
+    {
+      "name": "Secret Signs - Witching Words",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-5ebd5f62-7fff-8a0d-912b-e28603b60d5f\">Used to identify marks, handshakes, code words, etc. of one specific society. You would, for example, be able to read the secret marks left on people&rsquo;s door posts by fellow hobos.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "4",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700430799450,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "KIfEdX8338zOJvBJ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.KIfEdX8338zOJvBJ"
+    },
+    {
+      "name": "Run",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-46c92387-7fff-f1fc-bc56-3abf49c2445f\">When it matters how fast you are, or if you can reach somewhere in time, use this. A basic chase is an Roll Versus.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "2",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700430807479,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "1j617p1R6JI25VYz",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.1j617p1R6JI25VYz"
+    },
+    {
+      "name": "Climb",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-e9608839-7fff-f7d9-ad08-dece9a7eb3af\">The usefulness of the ability to clamber up things cannot be overstated. Most climbs should be single rolls though longer or more difficult climbs may require multiple rolls. On these climbs consider requiring a number or total or repeated failures to fall off unless it is a particularly&nbsp; merciless ascent. The GM should use their discretion.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700430815346,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "DlESh0Z9Cq6TJU00",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.DlESh0Z9Cq6TJU00"
+    },
+    {
+      "name": "Sleight of Hand",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-6dd02e1d-7fff-d760-1d8c-9ccb00d9ab10\">Steal or hide small things. This is Tested only if someone is actively looking for them. A character may simply declare they are hiding something, only rolling this when the hiddenness is questioned.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700430819309,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "1pQrUzoPcSDGXnJm",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.1pQrUzoPcSDGXnJm"
+    },
+    {
+      "name": "Swim",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-9feb9b97-7fff-f829-e813-0a9f97d7c03c\">Use this while swimming in dangerous waters, diving, holding your breath for long periods, and so on. If you have this Skill you don&rsquo;t need to roll it for normal conditions. Characters without it are assumed to not be able to swim and need to test Swimming every round they remain in the water or start Drowning (7.9). Receive a penalty to this Skill equal to half the number of item slots filled. </span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700430824370,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "Xsp0tknpvztJ5g0t",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.Xsp0tknpvztJ5g0t"
+    },
+    {
+      "name": "Sneak",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a501a3bf-7fff-237a-5dbd-96ef338fab05\">The art of remaining unseen. This is Tested only when someone or something is actively trying to detect you. The sneaker would Roll Versus the Awareness of those searching for them; anyone beating the sneaker&rsquo;s score detects them.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700430827586,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "V5DoNMbLd53w44B1",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.V5DoNMbLd53w44B1"
+    },
+    {
+      "name": "Second Sight",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-e59d9e9d-7fff-4305-973a-a145ba36f0ec\">Use of this allows the detection of magic. On a successful Test you focus your inner eye and all sorcerous activity glows faintly for a moment. </span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700430831489,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "i4xie1bqea2tdCl6",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.i4xie1bqea2tdCl6"
+    },
+    {
+      "name": "Jolt",
+      "type": "spell",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "name": "",
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">The mischievous apprentice&rsquo;s favourite Spell, Jolt sends an arc of electricity </span><span dir=\"ltr\" role=\"presentation\">from the wizard&rsquo;s outstretched hand towards a target. Ignores Armour.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "3",
+          "dr4": "3",
+          "dr5": "5",
+          "dr6": "7",
+          "dr7": "9"
+        },
+        "rank": "1",
+        "castingCost": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": true
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.69TNK0OtTGHsNYo9"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676769878211,
+        "modifiedTime": 1700430840449,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "qGCvVBgpuCo7uZTB",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.qGCvVBgpuCo7uZTB"
+    },
+    {
+      "name": "Amity",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "name": "",
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">The College of Friends always sends out its Factotums on nights after Amity </span><span dir=\"ltr\" role=\"presentation\">classes. Clearing out the bars and brothels of their drunken apprentices is </span><span dir=\"ltr\" role=\"presentation\">tiring work. Use of this Spell causes the target to Test their Luck (or Skill </span><span dir=\"ltr\" role=\"presentation\">for Enemies) or become very friendly towards the wizard, as though they </span><span dir=\"ltr\" role=\"presentation\">were an old friend. They won&rsquo;t act irrationally, though, and if they were </span><span dir=\"ltr\" role=\"presentation\">already a bit of a boor this might not change much.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "castingCost": "4",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.Frp4vR4nkhBPb0Yj"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676768463333,
+        "modifiedTime": 1700430846199,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "vQUO8j22PVY1finp",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.vQUO8j22PVY1finp"
+    },
+    {
+      "name": "Mirror Selves",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "name": "",
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">In the minds of others the wizard appears to be, in fact, three wizards. All </span><span dir=\"ltr\" role=\"presentation\">three perform the same actions in unison, offering attackers only a 1-in-3 </span><span dir=\"ltr\" role=\"presentation\">chance of targeting the right wizard. Lasts for 12 minutes.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "castingCost": "3",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.wf5i6ckE46Mw04ej"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676770110829,
+        "modifiedTime": 1700430858784,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "AZomG0skpNldtkaZ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.AZomG0skpNldtkaZ"
+    },
+    {
+      "name": "Protection from Rain",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "name": "",
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">This Spell prevents the wizard from getting rained upon for one shower.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "castingCost": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.4XLZPjNI74ODWU5n"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676770404754,
+        "modifiedTime": 1700430864834,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "OP4ABbTSPI1TPma0",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.OP4ABbTSPI1TPma0"
+    },
+    {
+      "name": "Helping Hands",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "name": "",
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">Animate hands spring forth from an inanimate surface and perform any </span><span dir=\"ltr\" role=\"presentation\">task the wizard requires but are limited to being rooted to the spot from </span><span dir=\"ltr\" role=\"presentation\">which they sprang. They last until the wizard wills it or leaves the location.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "castingCost": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.PzxzbVcyDyiVvrvS"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676769709810,
+        "modifiedTime": 1700430871443,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "o1WmwZNHhcqE5jWD",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.o1WmwZNHhcqE5jWD"
+    },
+    {
+      "name": "Purple Lens",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "name": "",
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">The recipient&rsquo;s eyes glow purple as they experience an alternative reality </span><span dir=\"ltr\" role=\"presentation\">where people are kind, their surroundings are beautiful, their food is </span><span dir=\"ltr\" role=\"presentation\">indulgent, and so on. This doesn&rsquo;t change the reality of things but it does </span><span dir=\"ltr\" role=\"presentation\">make them more palatable. Lasts until they want it to end.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "castingCost": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.tFfNYcy37g7tzsG5"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676770424094,
+        "modifiedTime": 1700430878296,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "YjWpt4bRmP27nbDP",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.YjWpt4bRmP27nbDP"
+    },
+    {
+      "name": "Random Spell",
+      "type": "spell",
+      "_id": "QQCBhAB8OLRaNuzp",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "name": "",
+        "description": "<p>Roll spell from @UUID[Compendium.troika.troika-srd-roll-tables.RollTable.F5Hxv1QRaOCAVbpg]{SRD Random Spell Roll Table}</p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "castingCost": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.xGs6XrcUhhDr84Wy"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700426956469,
+        "modifiedTime": 1700430884010,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!jXewg9vKSdvIZLlz.QQCBhAB8OLRaNuzp"
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "1.0.1",
+    "coreVersion": "11.311",
+    "createdTime": 1700330617684,
+    "modifiedTime": 1700435922056,
+    "lastModifiedBy": "V3MUPdobYszl4e09"
+  },
+  "_id": "jXewg9vKSdvIZLlz",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "V3MUPdobYszl4e09": 3
+  },
+  "_key": "!actors!jXewg9vKSdvIZLlz"
+}

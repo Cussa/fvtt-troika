@@ -1,0 +1,728 @@
+{
+  "folder": null,
+  "name": "26 Fellow of the Peerage of Porters & Basin Fillers",
+  "type": "pc",
+  "prototypeToken": {
+    "actorLink": true,
+    "name": "Fellow of the Peerage of Porters & Basin Fillers",
+    "displayName": 20,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": null
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "stamina"
+    },
+    "bar2": {
+      "attribute": "luck"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "initiativeTokens": "2",
+    "stamina": {
+      "value": "18",
+      "min": -100,
+      "max": "18"
+    },
+    "skill": {
+      "value": "6"
+    },
+    "luck": {
+      "value": "9",
+      "min": -100,
+      "max": "9"
+    },
+    "monies": "2d6 Silver Pence",
+    "armour": "0",
+    "background": "Fellow of the Peerage of Porters & Basin Fillers",
+    "special": "",
+    "provisions": {
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "p4": true,
+      "p5": true,
+      "p6": true,
+      "p7": false,
+      "p8": false,
+      "p9": false,
+      "p10": false,
+      "p11": false,
+      "p12": false
+    },
+    "notes": "<p>Luggers are a servile group by nature,&nbsp;most often found in the service of&nbsp;others, weighed down by loads that&nbsp;would buckle a donkey. You take pride&nbsp;in this, so much so that the everyday&nbsp;assignments of the guild cannot sate&nbsp;your desire to serve, causing you&nbsp;to venture out in search of a real&nbsp;challenge for such a talented varlet.</p>"
+  },
+  "items": [
+    {
+      "name": "Knife",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": "0",
+        "quantity": "1"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.Bt3M1u6hLCDit8qU"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676773918462,
+        "modifiedTime": 1700330748754,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "tl5amQYAJluUfsKQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.tl5amQYAJluUfsKQ"
+    },
+    {
+      "name": "Lantern and Flask of Oil",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-items.Item.Qr6TwtnTj2Jtt2RE"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676825020075,
+        "modifiedTime": 1700330760942,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "zkBekvpU2NS2aznc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.zkBekvpU2NS2aznc"
+    },
+    {
+      "name": "Rucksack",
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "0",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "_id": "jIJyJpgOXJy4TZVz",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.lohlXsS3zqtlWEea.Item.k63RHtocvJkHIZXk"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700330816807,
+        "modifiedTime": 1700330835354,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.jIJyJpgOXJy4TZVz"
+    },
+    {
+      "name": "Wooden Yoke",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "name": "",
+        "description": "<p><span id=\"docs-internal-guid-20ea334e-7fff-84db-6004-d8393fe51727\">A yoke gives you +4 carry capacity while worn but you can&rsquo;t use your hands while wearing it.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-items.Item.JGOykF1f4S6uJNu1"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676826602761,
+        "modifiedTime": 1700363317216,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "v9WhD8sdygoNKkKs",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.v9WhD8sdygoNKkKs"
+    },
+    {
+      "name": "Brown Overcoat and Soft Doffing Cap of the Guild",
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "0",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "_id": "KcPr5EBTmMn6xjql",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700363462183,
+        "modifiedTime": 1700363528138,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.KcPr5EBTmMn6xjql"
+    },
+    {
+      "name": "Bale Hook",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "name": "",
+        "description": "<p>Damage as Knife and&nbsp;+1 on rolls to lift heavy objects.</p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": "0",
+        "quantity": "1"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.Bt3M1u6hLCDit8qU"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676773918462,
+        "modifiedTime": 1700363636155,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "V6bKc1h2tVM85142",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.V6bKc1h2tVM85142"
+    },
+    {
+      "name": "Length of Rope",
+      "type": "gear",
+      "system": {
+        "name": "",
+        "description": "",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "inventorySlots": "1",
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": "0",
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": "1"
+      },
+      "_id": "iPcKyDxU5KmdO0Wg",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700363640230,
+        "modifiedTime": 1700363647231,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.iPcKyDxU5KmdO0Wg"
+    },
+    {
+      "name": "Strength",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-89bb5dcd-7fff-6d16-6276-b06fb5b9499d\">Used for lifting and breaking things. May also be used to grapple people if no grappling-appropriate Weapon Skill is possessed, though it counts for half rounded up.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "4",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700363819777,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "2XPkJgqLqpJNFSxQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.2XPkJgqLqpJNFSxQ"
+    },
+    {
+      "name": "Fist Fighting",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a3d856d3-7fff-b84e-ddcf-127d94350091\">Choose what general category of Weapons this covers when you take this Skill. Roll Versus during combat when using the appropriate method of assault. The GM is encouraged to allow Weapon categories to be broadly applicable, such as Glaive Fighting being equivalent to Polearm Fighting.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "2",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700363832862,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "QnbdEDkYgNnT0Scf",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.QnbdEDkYgNnT0Scf"
+    },
+    {
+      "name": "Run",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-46c92387-7fff-f1fc-bc56-3abf49c2445f\">When it matters how fast you are, or if you can reach somewhere in time, use this. A basic chase is an Roll Versus.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "2",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700363839083,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "QR19H4s8b8GVJMkT",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.QR19H4s8b8GVJMkT"
+    },
+    {
+      "name": "Hook Fighting",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a3d856d3-7fff-b84e-ddcf-127d94350091\">Choose what general category of Weapons this covers when you take this Skill. Roll Versus during combat when using the appropriate method of assault. The GM is encouraged to allow Weapon categories to be broadly applicable, such as Glaive Fighting being equivalent to Polearm Fighting.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700363849424,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "JYKQsZvDauUk50Xb",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.JYKQsZvDauUk50Xb"
+    },
+    {
+      "name": "Sneak",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a501a3bf-7fff-237a-5dbd-96ef338fab05\">The art of remaining unseen. This is Tested only when someone or something is actively trying to detect you. The sneaker would Roll Versus the Awareness of those searching for them; anyone beating the sneaker&rsquo;s score detects them.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700363869845,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "ehOloIsNEqiDeFQi",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.ehOloIsNEqiDeFQi"
+    },
+    {
+      "name": "Awareness",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "name": "",
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-d9f49cc2-7fff-b0f1-f430-8547d8c3155a\">Anything worth having is well hidden so one must look very carefully. Use this to spot traps, things normally hidden, or things out of the ordinary.</span></p>",
+        "attack": {
+          "dr1": 2,
+          "dr2": 2,
+          "dr3": 2,
+          "dr4": 2,
+          "dr5": 4,
+          "dr6": 8,
+          "dr7": 10
+        },
+        "rank": "1",
+        "modifier": "0",
+        "improvement": false,
+        "canAttack": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700363874926,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "nWrrZtDwjFfvlNNh",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!aKP4lEvAHqQ0n61c.nWrrZtDwjFfvlNNh"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "1.0.1",
+    "coreVersion": "11.311",
+    "createdTime": 1700330617684,
+    "modifiedTime": 1700435922056,
+    "lastModifiedBy": "V3MUPdobYszl4e09"
+  },
+  "_id": "aKP4lEvAHqQ0n61c",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "V3MUPdobYszl4e09": 3
+  },
+  "_key": "!actors!aKP4lEvAHqQ0n61c"
+}
