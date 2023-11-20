@@ -11,13 +11,13 @@
       "discord": "TheLastScrub#7146"
     }    
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
   },
   "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
-  "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v1.0.1.zip",
+  "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v1.1.0.zip",
   "gridDistance": 1,
   "gridUnits": "m",
   "primaryTokenAttribute": "stamina",
