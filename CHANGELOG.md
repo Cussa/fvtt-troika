@@ -1,5 +1,13 @@
 # Troika System Change Log
 
+## 2023-11-20 v1.1.0
+
+* Update to compatibility with Foundry v11, breaks backwards compatibility.
+* Built in all d66 basic backgrounds from the SRD (i.e. the Core Rulebook).
+* Built in some code to build compendiums from json with gulp.
+* Special modifiers for advanced skills now show up in character sheet as a (+/-) to make it more obvious why the total isn't the sum of skill and rank.
+* CSS fixes and improvements.
+
 ## 2023-03-12 v1.0.1
 
 * Fix - Lost 'Advanced NPC' type actor by accident

@@ -16,6 +16,10 @@
                 "skill": {
                     "value": 6
                 }
+            },
+            "attribution": {
+                "source": "",
+                "link": ""
             }
         },
         "pc":{
@@ -49,7 +53,8 @@
         },
         "npc":{
             "templates":[
-                "base"
+                "base",
+                "attribution"
             ],
             "armour": 0,
             "mien": "",
@@ -82,7 +87,8 @@
         },
         "npc-complex":{
             "templates":[
-                "base"
+                "base",
+                "attribution"
             ],
             "monies": "",
             "armour": 0,

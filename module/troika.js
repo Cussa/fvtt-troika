@@ -50,6 +50,33 @@ Hooks.once('init', async function() {
     Handlebars.registerHelper('sum_three_ints', function(a, b, c, opts) {
         return parseInt(a) + parseInt(b) + parseInt(c);
     });
+
+    Handlebars.registerHelper('remove_html_tags', function(str, opts) {
+        if(str === null){
+            return null;
+        }
+        else{
+            str = str.toString();
+            return str.replace(/(<([^>]+)>)/ig, '');
+        }
+    });
+
+    Handlebars.registerHelper('show_rank_modifier', function(modifier, opts) {
+        if (modifier === null || modifier === 'null') {
+            return '';
+        }
+        else if(modifier == 0){
+            return '';
+        }
+        else{
+            let formattedStr = modifier.toString("0");
+            if(modifier > 0){
+                formattedStr = "+" + formattedStr;
+            }
+
+            return "(" + formattedStr + ")";
+        }
+    });
 });
 
 Hooks.on("ready", ()=> {});

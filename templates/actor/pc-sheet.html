@@ -82,7 +82,7 @@
   <nav class="sheet-tabs tabs" data-group="primary">
       <a class="item" data-tab="skills"><h3 class="no-underline">Skills, Spells & Attacks</h3></a>
       <a class="item" data-tab="inventory"><h3 class="no-underline">Inventory & Provisions</h3></a>    
-      <a class="item" data-tab="notes"><h3 class="no-underline">Notes & Abilities</h3></a>
+      <a class="item" data-tab="char-notes"><h3 class="no-underline">Notes & Abilities</h3></a>
   </nav>
 
   <section class="sheet-body">
@@ -144,11 +144,13 @@
               <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
             </div>          
             
-            <h4 class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}</h4>
+            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}</span>
 
             {{!-- <span>-</span> --}}
             
-            <span class="center-aligned-input-text">{{item.system.rank}}</span>
+            <span class="center-aligned-input-text">{{item.system.rank}}
+              {{show_rank_modifier item.system.modifier}}
+            </span>
             
             {{!-- <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly /> --}}
             <span class="center-aligned-input-text">{{item.system.total}}</span>
@@ -170,9 +172,9 @@
             <div>
               <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
             </div>         
-            <h4 class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}} ({{item.system.castingCost}})</h4>
+            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}} ({{item.system.castingCost}})</span>
 
-            <span class="center-aligned-input-text">{{item.system.rank}}</span>
+            <span class="center-aligned-input-text">{{item.system.rank}}{{show_rank_modifier item.system.modifier}}</span>
             <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}</span>
 
             <div class="">
@@ -330,11 +332,11 @@
 
     </div>
   
-    <div class="tab notes" data-tab="notes" data-group="primary" >
+    <div class="tab " data-tab="char-notes" data-group="primary" >
 
       <div class="special-section">
 
-        <h2 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h2>
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h3>
         
         <div class="special-editor">
           {{editor enrichedSpecial target="system.special" button=true owner=owner editable=editable}}
@@ -344,7 +346,7 @@
 
       <div class="notes-section">
 
-        <h2 class="bolded-label grid-item-stretch-height-to-fit no-underline">Other Notes</h2>
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Other Notes</h3>
 
         <div class="notes-editor">
 

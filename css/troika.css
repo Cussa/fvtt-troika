@@ -156,7 +156,7 @@ textarea {
     align-content: center;
     align-items: center;
     grid-template-columns: 8% 53% 8% 8% 7% 7%;
-    gap: 1%;
+    column-gap: 1%;
     text-align: center;
 }
 
@@ -167,7 +167,7 @@ textarea {
     text-align: center;
     justify-items: center;
     grid-template-columns: 15% 15% 15% 25% 25%;
-    gap: 1%;
+    column-gap: 1%;
     text-align: center;
 }
 
@@ -247,7 +247,7 @@ textarea {
 
 .sheet-body,
 .sheet-body .tab .editor {
-  height: 100%;
+  height: auto;
   flex: auto;
 }
 
@@ -438,14 +438,14 @@ textarea {
 
 .special-section .editor{
     height:fit-content;
-    max-height: 100px;
+    max-height: 125px;
     min-height: 34px;
 }
 
 .special-section .editor-content{
     height: 100%;
     min-height: 55px;
-    max-height: 90px;
+    max-height: 115px;
     border: 1px solid #000;
     border-radius: 5px 5px 5px 5px;
     background: rgba(0, 0 , 0, 0.05);
