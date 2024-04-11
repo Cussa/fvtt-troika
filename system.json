@@ -1,7 +1,7 @@
 {
   "id": "troika",
-  "title": "Troika! (Unofficial)",
-  "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by author(s), and is not affiliated with the Melsonian Arts Council.",
+  "title": "Troika!",
+  "description": "The official Foundry system for Troika! RPG",
   "url": "https://github.com/cussa/fvtt-troika",
   "license": "LICENSE.txt",
   "background": "systems/troika/assets/troika-compatibility-logo-splash-page.webp",
