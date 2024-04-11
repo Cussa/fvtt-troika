@@ -1,5 +1,5 @@
-<div>
-<h1 style="text-align: center;">Hod Studio Publishing,<br />in collaboration with <a href="http://www.melsonia.com/" target="_blank" rel="nofollow noopener">Melsonian Arts Council</a>,<br />proudly presents:</h1>
+<div style="text-align: center;">
+<h1>Hod Studio Publishing,<br />in collaboration with <a href="http://www.melsonia.com/" target="_blank" rel="nofollow noopener">Melsonian Arts Council</a>,<br />proudly presents:</h1>
 </div>
 <div style="text-align: center;"><img src="https://static.wixstatic.com/media/ab0272_a037b2b537914fc989238ec7a04323b9~mv2.png/v1/fill/w_980,h_275,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TroikaTitle.png" /></div>
 <div style="text-align: center;">
