@@ -1,0 +1,20 @@
+{
+  "i18n-ally.localesPaths": [
+    "lang"
+  ],
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.keystyle": "nested",
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  // This one forces the tab to be **space**
+  "editor.insertSpaces": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "extensionName": ".css",
+      "format": "expanded",
+      "savePath": "/css"
+    }
+  ]
+}
