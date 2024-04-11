@@ -2,22 +2,27 @@
   "id": "troika",
   "title": "Troika! (Unofficial)",
   "description": "Fan-made Foundry VTT system for 'Troika!' The system is an independent production by author(s), and is not affiliated with the Melsonian Arts Council.",
-  "url": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial",
+  "url": "https://github.com/cussa/fvtt-troika",
   "license": "LICENSE.txt",
   "background": "systems/troika/assets/troika-compatibility-logo-splash-page.webp",
   "authors": [
+    {
+      "name": "Cussa Mitre",
+      "url": "https://github.com/Cussa",
+      "discord": "CussaMitre"
+    },
     {
       "name": "N. Eimers",
       "discord": "TheLastScrub#7146"
     }    
   ],
-  "version": "1.1.0",
+  "version": "latest",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
   },
-  "manifest": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/raw/main/system.json",
-  "download": "https://github.com/TheLastScrub/troika-foundry-vtt-system-unofficial/archive/refs/tags/v1.1.0.zip",
+  "manifest": "https://github.com/cussa/fvtt-troika/releases/download/latest/system.json",
+  "download": "https://github.com/cussa/fvtt-troika/releases/download/latest/system.zip",
   "gridDistance": 1,
   "gridUnits": "m",
   "primaryTokenAttribute": "stamina",

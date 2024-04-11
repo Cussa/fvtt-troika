@@ -1,5 +1,11 @@
 # Troika System Change Log
 
+## 2024-04-11 v1.2.0
+
+* 👷 Add release github action (for auto publish) [Fix #11].
+* ✨ Roll the dices when creating the character [fix #5].
+* 🐛 Show NPC source [fix #10].
+
 ## 2023-11-20 v1.1.0
 
 * Update to compatibility with Foundry v11, breaks backwards compatibility.
