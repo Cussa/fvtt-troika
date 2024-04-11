@@ -49,7 +49,7 @@ export class TroikaActor extends Actor {
       let content = ``;
       content += `<p><strong>Skill:</strong> ${skill_roll.total} (${skill_roll.terms[0].results[0].result} + 3)</p>`;
       content += `<p><strong>Stamina:</strong> ${stamina_roll.total} (${stamina_roll.terms[0].results[0].result} + ${stamina_roll.terms[0].results[1].result} + 12)</p>`;
-      content += `<p><strong>Luck:</strong> ${luck_roll.total} (${stamina_roll.terms[0].results[0].result} + 6)</p>`;
+      content += `<p><strong>Luck:</strong> ${luck_roll.total} (${luck_roll.terms[0].results[0].result} + 6)</p>`;
 
       ChatMessage.create({
         user: game.user._id,
