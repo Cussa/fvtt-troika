@@ -1,9 +1,14 @@
-# Troika! System (Rules Implementation) for Foundry Virtual Table Top
-
-| | |
-| - | - |
-| ![Compatibility Logo](./assets/fortle.webp) | THIS SOFTWARE IS AN INDEPENDENT PRODUCTION BY AUTHOR AND IS NOT AFFILIATED WITH THE MELSONIAN ARTS COUNCIL. |
-| | |
+<div>
+<h1 style="text-align: center;">Hod Studio Publishing,<br />in collaboration with <a href="http://www.melsonia.com/" target="_blank" rel="nofollow noopener">Melsonian Arts Council</a>,<br />proudly presents:</h1>
+</div>
+<div style="text-align: center;"><img src="https://static.wixstatic.com/media/ab0272_a037b2b537914fc989238ec7a04323b9~mv2.png/v1/fill/w_980,h_275,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/TroikaTitle.png" /></div>
+<div style="text-align: center;">
+<em>The official Troika! system for Foundry Virtual Tabletop</em>
+</div>
+<p>&nbsp;</p>
+<div>This system started as a fan-made (amazing work @TheLastScrub, you will never be forgotten!), but is now on the Hod Studio Publishing/Cussa Mitre hands!</div>
+<div>&nbsp;</div>
+<div>There are several improvements we are planning to do on the system. To know more, check the open issues and discussions happening around the game.</div>
 
 ## System Features
 
@@ -76,3 +81,9 @@ However besides the *PC*, there are two other Actor types included in the system
 The standard NPC sheet is meant to represent a character statblock similar to the bestiary in the core rulebook. It is far more simple than the PC sheet:
 
 ![Character Sheet Skills Spells and Attacks](./assets/doc-img/npc-sheet.png)
+
+## Credits
+
+Original system and all versions prior to 1.2 created by TheLastScrub
+
+Version 1.2 and ahead created by Cussa Mitre/Hod Studio Publishing
