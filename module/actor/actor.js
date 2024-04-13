@@ -19,16 +19,16 @@ export class TroikaActor extends Actor {
 
     data.prototypeToken = data.prototypeToken || {};
 
-    let [skill_roll, skill_animation] = await create_roll("1d3[white]+3");
-    let [stamina_roll, stamina_animation] = await create_roll("2d6[blue]+12");
-    let [luck_roll, luck_animation] = await create_roll("1d6[green]+6");
-
-    await Promise.all([skill_animation, stamina_animation, luck_animation]);
-
     if (data.type === "pc") {
       mergeObject(data.prototypeToken, {
         actorLink: true  // this will make the 'Link Actor Data' option for a token is checked by default. So changes to the token sheet will reflect to the actor sheet.
       }, { overwrite: false });
+
+      let [skill_roll, skill_animation] = await create_roll("1d3[white]+3");
+      let [stamina_roll, stamina_animation] = await create_roll("2d6[blue]+12");
+      let [luck_roll, luck_animation] = await create_roll("1d6[green]+6");
+
+      await Promise.all([skill_animation, stamina_animation, luck_animation]);
 
       mergeObject(data, {
         system: {
