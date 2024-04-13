@@ -1,4 +1,4 @@
-import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog, rollSkillTestUnder, rollSkillTestOver, showDamageRollDialog, rollDamageForItem} from "../other/roll.js"
+import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog, rollSkillTestUnder, rollSkillTestOver, showDamageRollDialog, rollDamageForItem } from "../other/roll.js"
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -8,24 +8,24 @@ export class TroikaActorSheet extends ActorSheet {
     /** @override */
     static get defaultOptions() {
         return mergeObject(super.defaultOptions, {
-        classes: ["troika", "sheet", "actor"],
-        template: "systems/troika/templates/actor/pc-sheet.html",
-        width: 700,
-        height: 750,
-        tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
+            classes: ["troika", "sheet", "actor"],
+            template: "systems/troika/templates/actor/pc-sheet.html",
+            width: 700,
+            height: 750,
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "skills" }]
         });
     }
 
     /** @override */
     get template() {
-        if(this.actor.type === 'npc'){
+        if (this.actor.type === 'npc') {
             return "systems/troika/templates/actor/npc-sheet.html";
         }
-        else{
+        else {
             // note the 'npc-complex' type uses regular PC sheet
             return "systems/troika/templates/actor/pc-sheet.html";
         }
-        
+
     }
 
 
@@ -33,15 +33,15 @@ export class TroikaActorSheet extends ActorSheet {
     async getData() {
         const data = super.getData();
 
-        data.enrichedSpecial = await TextEditor.enrichHTML(this.object.system.special, {async: true});
-        data.enrichedNotes = await TextEditor.enrichHTML(this.object.system.notes, {async: true});
+        data.enrichedSpecial = await TextEditor.enrichHTML(this.object.system.special, { async: true });
+        data.enrichedNotes = await TextEditor.enrichHTML(this.object.system.notes, { async: true });
 
         this._prepareCharacterItems(data);
-        
+
         return data;
     }
 
-    async _prepareCharacterItems(sheetData){
+    async _prepareCharacterItems(sheetData) {
 
         const actorData = sheetData.actor;
         const skills = [];
@@ -49,83 +49,83 @@ export class TroikaActorSheet extends ActorSheet {
         const inventory = [];
         const weightlessInventory = [];
         const nonweightlessInventory = [];
-        const attacks = [];        
+        const attacks = [];
 
-        for (let i of sheetData.items) {            
-            
-            if (i.type === 'skill') {                
+        for (let i of sheetData.items) {
+
+            if (i.type === 'skill') {
                 skills.push(i);
 
-                if(i.system.canAttack === true){
+                if (i.system.canAttack === true) {
                     attacks.push(i);
                 }
 
                 i.system.total = parseInt(actorData.system.skill.value) + parseInt(i.system.rank) + parseInt(i.system.modifier);
             }
-            else if(i.type === 'spell'){
+            else if (i.type === 'spell') {
                 spells.push(i);
 
-                if(i.system.canAttack === true){
+                if (i.system.canAttack === true) {
                     attacks.push(i);
                 }
 
                 i.system.total = parseInt(actorData.system.skill.value) + parseInt(i.system.rank) + parseInt(i.system.modifier);
             }
-            else if(i.type === 'gear'){
+            else if (i.type === 'gear') {
 
                 // all inventory
                 inventory.push(i);
-                
+
                 // try to divide up things that have weight and matter, and those that don't
-                if(i.system.inventorySlots < 1){
+                if (i.system.inventorySlots < 1) {
                     weightlessInventory.push(i);
                 }
-                else{
+                else {
                     nonweightlessInventory.push(i);
                 }
 
-                if(i.system.canAttack === true && i.system.equipped == true){
+                if (i.system.canAttack === true && i.system.equipped == true) {
                     attacks.push(i);
                 }
             }
         }
 
-        skills.sort(function(a, b){
+        skills.sort(function (a, b) {
             let x = a.name.toLowerCase();
             let y = b.name.toLowerCase();
-            if( x < y ) { return -1; }
-            if( x > y ) { return 1; }
+            if (x < y) { return -1; }
+            if (x > y) { return 1; }
             return 0;
         });
 
-        spells.sort(function(a, b){
+        spells.sort(function (a, b) {
             let x = a.name.toLowerCase();
             let y = b.name.toLowerCase();
-            if( x < y ) { return -1; }
-            if( x > y ) { return 1; }
+            if (x < y) { return -1; }
+            if (x > y) { return 1; }
             return 0;
         });
 
-        if(inventory.length > 0){
+        if (inventory.length > 0) {
 
-            inventory.sort(function(a, b){ return a.sort - b.sort;});
+            inventory.sort(function (a, b) { return a.sort - b.sort; });
 
             let actualPos = 1;
-            for(var i = 0; i < inventory.length; i++){
+            for (var i = 0; i < inventory.length; i++) {
                 inventory[i].system.inventoryPosition = actualPos;
 
                 inventory[i].system.inventoryPositionDisplay = actualPos.toString();
 
                 let endingVal = actualPos + parseInt(inventory[i].system.inventorySlots) - 1;
 
-                if(parseInt(inventory[i].system.inventorySlots) > 1){
+                if (parseInt(inventory[i].system.inventorySlots) > 1) {
                     inventory[i].system.inventoryPositionDisplay += "-" + endingVal.toString();
                 }
 
-                actualPos = actualPos + parseInt(inventory[i].system.inventorySlots);                
-                
+                actualPos = actualPos + parseInt(inventory[i].system.inventorySlots);
+
             }
-             
+
         }
 
         const skillsAndSpells = skills.concat(spells);
@@ -134,11 +134,11 @@ export class TroikaActorSheet extends ActorSheet {
         // Add sort of a transitory unarmed strike here, maybe come up with a better way to handle it later.
         //attacks.push({name: "Unarmed", system:{type:"attack", displayName:"Unarmed", attack:{dr1: 1, dr2: 1, dr3: 1, dr4: 2, dr5: 2, dr6: 3, dr7: 4}}});
 
-        attacks.sort(function(a, b){
+        attacks.sort(function (a, b) {
             let x = a.name.toLowerCase();
             let y = b.name.toLowerCase();
-            if( x < y ) { return -1; }
-            if( x > y ) { return 1; }
+            if (x < y) { return -1; }
+            if (x > y) { return 1; }
             return 0;
         });
 
@@ -152,20 +152,20 @@ export class TroikaActorSheet extends ActorSheet {
 
         let maxInventory = 0;
 
-        if(inventory.length > 0){
+        if (inventory.length > 0) {
             maxInventory = inventory[inventory.length - 1].system.inventoryPosition + (parseInt(inventory[inventory.length - 1].system.inventorySlots) - 1);
-        }        
+        }
 
         actorData.maxInventory = maxInventory;
 
         actorData.inconvenientWeight = false;
         actorData.overburdened = false;
 
-        if(maxInventory >= 18){
+        if (maxInventory >= 18) {
             actorData.inconvenientWeight = true;
             actorData.overburdened = true;
         }
-        else if(maxInventory > 12){
+        else if (maxInventory > 12) {
             actorData.inconvenientWeight = true;
             actorData.overburdened = false;
         }
@@ -186,176 +186,176 @@ export class TroikaActorSheet extends ActorSheet {
             const el = $(ev.currentTarget).parents(".item");
             const item = this.actor.items.get(el.data('item-id'));
             item.sheet.render(true);
-    });
+        });
 
-    // Delete Inventory Item
-    html.find('.item-delete').click(ev => {
-        //const el = ev.currentTarget;
-        const el = $(ev.currentTarget).parents(".item");
-        let options = {};
-        this.actor.deleteEmbeddedDocuments("Item", [el.data('item-id')], options);
-    });
+        // Delete Inventory Item
+        html.find('.item-delete').click(ev => {
+            //const el = ev.currentTarget;
+            const el = $(ev.currentTarget).parents(".item");
+            let options = {};
+            this.actor.deleteEmbeddedDocuments("Item", [el.data('item-id')], options);
+        });
 
-    // let user check off an 'improve' checkbox right from the sheet
-    html.find('.item-improve-checkbox').click(ev => {
-        
-        const el = $(ev.currentTarget).parents(".item");
-        const item = this.actor.items.get(el.data('item-id'));
-        let value = ev.target.checked;
+        // let user check off an 'improve' checkbox right from the sheet
+        html.find('.item-improve-checkbox').click(ev => {
 
-        item.update({["system.improvement"]: value});
+            const el = $(ev.currentTarget).parents(".item");
+            const item = this.actor.items.get(el.data('item-id'));
+            let value = ev.target.checked;
 
-    });
+            item.update({ ["system.improvement"]: value });
 
-    html.find('.rollable-skill-test').click(ev => {
-        
-        const el = $(ev.currentTarget);
-        
-        let rankTotal = el.data('roll-total');
-        
-        let rollLabel = el.data('roll-label');
+        });
 
-        if(ev && ev.shiftKey){
-            rollSkillTestUnder(this.actor, rankTotal, rollLabel);
-        }
-        else if(ev && ev.ctrlKey){
-            rollSkillTestOver(this.actor, rankTotal, rollLabel);
-        }
-        else{
-            showSkillTestDialog(this.actor, rankTotal, rollLabel);
-        }        
+        html.find('.rollable-skill-test').click(ev => {
 
-    });
+            const el = $(ev.currentTarget);
 
-    html.find('.rollable-attack-damage').click(ev => {
+            let rankTotal = el.data('roll-total');
 
-        const el = $(ev.currentTarget).parents(".item");
-        const item = this.actor.items.get(el.data('item-id'));
-        
-        if(ev && (ev.shiftKey || ev.ctrlKey)){
-            // just go right to damage roll without dialog
-            rollDamageForItem(this.actor, item, 0, false);
-        }
-        else{                     
-            showDamageRollDialog(this.actor, item);
-        }                
-        
-    });
-    
-    html.find('.item-quantity-up').click(ev => {
-        
-        const el = $(ev.currentTarget).parents(".item");
-        const item = this.actor.items.get(el.data('item-id'));
-        let change = parseInt(item.system.quantity) + 1;
-        this._editItemQuantity(item, change);
-    });
+            let rollLabel = el.data('roll-label');
 
-    html.find('.item-quantity-down').click(ev => {
-        const el = $(ev.currentTarget).parents(".item");
-        const item = this.actor.items.get(el.data('item-id'));
-        let change = parseInt(item.system.quantity) - 1;
-        this._editItemQuantity(item, change);
-    });
-    
-    html.find('.rollable-mien').click(ev => {
-        this._randomlyDetermineMien();
-    });
-  }
+            if (ev && ev.shiftKey) {
+                rollSkillTestUnder(this.actor, rankTotal, rollLabel);
+            }
+            else if (ev && ev.ctrlKey) {
+                rollSkillTestOver(this.actor, rankTotal, rollLabel);
+            }
+            else {
+                showSkillTestDialog(this.actor, rankTotal, rollLabel);
+            }
 
-  async _randomlyDetermineMien(){
+        });
 
-    let size = Object.keys(this.actor.system.mienOptions).length;
+        html.find('.rollable-attack-damage').click(ev => {
 
-    let mienOptions = [];
+            const el = $(ev.currentTarget).parents(".item");
+            const item = this.actor.items.get(el.data('item-id'));
 
-    if(size > 0){
+            if (ev && (ev.shiftKey || ev.ctrlKey)) {
+                // just go right to damage roll without dialog
+                rollDamageForItem(this.actor, item, 0, false);
+            }
+            else {
+                showDamageRollDialog(this.actor, item);
+            }
 
-        for (let i = 0; i < size; i++) {
+        });
 
-            let mien = this.actor.system.mienOptions[i];
+        html.find('.item-quantity-up').click(ev => {
 
-            if(mien.description !== null && mien.description.trim() !== ''){
-                mienOptions.push(mien.description);
-            }                
-        }
-        
-        let formula = '1d' + size.toString();
-        const roll = await new Roll(formula, {}).roll({async: true});
-        let dieResult = roll.terms[0].results[0].result;
-        let newMien = mienOptions[dieResult];
+            const el = $(ev.currentTarget).parents(".item");
+            const item = this.actor.items.get(el.data('item-id'));
+            let change = parseInt(item.system.quantity) + 1;
+            this._editItemQuantity(item, change);
+        });
 
-        let updatedData = duplicate(this.actor.system);
-        updatedData.mien = newMien;
-        this.actor.update({'data': updatedData});
+        html.find('.item-quantity-down').click(ev => {
+            const el = $(ev.currentTarget).parents(".item");
+            const item = this.actor.items.get(el.data('item-id'));
+            let change = parseInt(item.system.quantity) - 1;
+            this._editItemQuantity(item, change);
+        });
+
+        html.find('.rollable-mien').click(ev => {
+            this._randomlyDetermineMien();
+        });
     }
 
-  }
+    async _randomlyDetermineMien() {
 
-  async _editItemQuantity(item, newQuantity){
-    await item.update({["system.quantity"]: newQuantity});
-  }
+        let size = Object.keys(this.actor.system.mienOptions).length;
 
-  _onItemCreate(event) {
+        let mienOptions = [];
 
-    event.preventDefault();
+        if (size > 0) {
 
-    const header = event.currentTarget;
+            for (let i = 0; i < size; i++) {
 
-    // Get the type of item to create.
-    const type = header.dataset.type;
+                let mien = this.actor.system.mienOptions[i];
 
-    // Initialize a default name.
-    const name = `New ${type.capitalize()}`;
+                if (mien.description !== null && mien.description.trim() !== '') {
+                    mienOptions.push(mien.description);
+                }
+            }
 
-    // Prepare the item object.
-    const itemData = {
-        name: name,
-        type: type,
-        system: {}
-    };
+            let formula = '1d' + size.toString();
+            const roll = await new Roll(formula, {}).roll({ async: true });
+            let dieResult = roll.terms[0].results[0].result;
+            let newMien = mienOptions[dieResult];
 
-    return this.actor.createEmbeddedDocuments("Item", [itemData]);
-  }
+            let updatedData = duplicate(this.actor.system);
+            updatedData.mien = newMien;
+            this.actor.update({ 'data': updatedData });
+        }
 
-  _getHeaderButtons(){
-    let buttons = super._getHeaderButtons();
+    }
 
-    buttons = [{
-        label: 'd3',
-        class: "d3-roll",
-        icon: "fas fa-dice",
-        onclick: (ev) => simpleDiceRoll(this.actor, 'd3', 'd3')
-      }].concat(buttons);
-    
-      buttons = [{
-        label: 'd6',
-        class: "d6-roll",
-        icon: "fas fa-dice",
-        onclick: (ev) => simpleDiceRoll(this.actor, 'd6', 'd6')
-      }].concat(buttons);
+    async _editItemQuantity(item, newQuantity) {
+        await item.update({ ["system.quantity"]: newQuantity });
+    }
 
-      buttons = [{
-        label: '2d6',
-        class: "2d6-roll",
-        icon: "fas fa-dice",
-        onclick: (ev) => simpleDiceRoll(this.actor, '2d6', '2d6')
-      }].concat(buttons);
+    _onItemCreate(event) {
 
-      buttons = [{
-        label: 'd36',
-        class: "d36-roll",
-        icon: "fas fa-dice",
-        onclick: (ev) => d36Roll(this.actor)
-      }].concat(buttons);
+        event.preventDefault();
 
-      buttons = [{
-        label: 'd66',
-        class: "d66-roll",
-        icon: "fas fa-dice",
-        onclick: (ev) => dx6Roll(this.actor, 2)
-      }].concat(buttons);
+        const header = event.currentTarget;
 
-    return buttons;
-  }
+        // Get the type of item to create.
+        const type = header.dataset.type;
+
+        // Initialize a default name.
+        const name = `New ${type.capitalize()}`;
+
+        // Prepare the item object.
+        const itemData = {
+            name: name,
+            type: type,
+            system: {}
+        };
+
+        return this.actor.createEmbeddedDocuments("Item", [itemData]);
+    }
+
+    _getHeaderButtons() {
+        let buttons = super._getHeaderButtons();
+
+        buttons = [{
+            label: 'd3',
+            class: "d3-roll",
+            icon: "fas fa-dice",
+            onclick: (ev) => simpleDiceRoll(this.actor, 'd3', 'd3')
+        }].concat(buttons);
+
+        buttons = [{
+            label: 'd6',
+            class: "d6-roll",
+            icon: "fas fa-dice",
+            onclick: (ev) => simpleDiceRoll(this.actor, 'd6', 'd6')
+        }].concat(buttons);
+
+        buttons = [{
+            label: '2d6',
+            class: "2d6-roll",
+            icon: "fas fa-dice",
+            onclick: (ev) => simpleDiceRoll(this.actor, '2d6', '2d6')
+        }].concat(buttons);
+
+        buttons = [{
+            label: 'd36',
+            class: "d36-roll",
+            icon: "fas fa-dice",
+            onclick: (ev) => d36Roll(this.actor)
+        }].concat(buttons);
+
+        buttons = [{
+            label: 'd66',
+            class: "d66-roll",
+            icon: "fas fa-dice",
+            onclick: (ev) => dx6Roll(this.actor, 2)
+        }].concat(buttons);
+
+        return buttons;
+    }
 
 }
