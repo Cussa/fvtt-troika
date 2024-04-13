@@ -20,23 +20,28 @@
         {{else}}
         <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Mien:</span></h3>
         <h3 class="grid-item-stretch-height-to-fit">
-          <input name="system.mien" class="grid-item-stretch-height-to-fit" type="text"
-            value="{{actor.system.mien}}" placeholder="" />
+          <input name="system.mien" class="grid-item-stretch-height-to-fit" type="text" value="{{actor.system.mien}}"
+            placeholder="" />
         </h3>
         {{/if_eq}}
 
         <div class="attributes-container">
-          <h3><i class="fas fa-sword rollable-skill-test" data-roll-total={{actor.system.skill.value}} data-roll-label="Skill"><span> Skill</span></i></h3>
+          <h3><i class="fas fa-sword rollable-skill-test" data-roll-total={{actor.system.skill.value}}
+              data-roll-label="Skill"><span> Skill</span></i></h3>
           <h3><i class="fas fa-heart"><span> Stamina</span></i></h3>
-          <h3><i class="fas fa-shield"><span> Armour</span></i></h3>
           {{#if_eq actor.type 'pc'}}
-          <h3><i class="fas fa-star rollable-skill-test" data-roll-total={{actor.system.luck.value}} data-roll-label="Test Luck"><span> Luck</span></i></h3>
+          <h3><i class="fas fa-star rollable-skill-test" data-roll-total={{actor.system.luck.value}}
+              data-roll-label="Test Luck"><span> Luck</span></i></h3>
+          {{else}}
+          <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
+          {{/if_eq}}
+          <h3><i class="fas fa-shield"><span> Armour</span></i></h3>
+
+          {{#if_eq actor.type 'pc'}}
+          <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
           {{else}}
           <span></span>
           {{/if_eq}}
-          
-          <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
-          
           <div class="">
             <input class="center-aligned-input-text" inputmode="numeric" name="system.skill.value"
               value="{{actor.system.skill.value}}" />
@@ -48,11 +53,7 @@
             <input class="center-aligned-input-text" inputmode="numeric" name="system.stamina.max"
               value="{{actor.system.stamina.max}}" />
           </div>
-          <div>
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.armour"
-              value="{{actor.system.armour}}" />
-          </div>
-          
+
           {{#if_eq actor.type 'pc'}}
           <div class="attribute-container">
             <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.value"
@@ -62,14 +63,24 @@
               value="{{actor.system.luck.max}}" />
           </div>
           {{else}}
-          <div></div>
-          {{/if_eq}}
-          
           <div>
-              <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
               value="{{actor.system.initiativeTokens}}" />
           </div>
-                    
+          {{/if_eq}}
+
+          <div>
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.armour"
+              value="{{actor.system.armour}}" />
+          </div>
+
+          {{#if_eq actor.type 'pc'}}
+          <div>
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
+              value="{{actor.system.initiativeTokens}}" />
+          </div>
+          {{/if_eq}}
+
         </div>
 
       </div>
@@ -80,9 +91,15 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-      <a class="item" data-tab="skills"><h3 class="no-underline">Skills, Spells & Attacks</h3></a>
-      <a class="item" data-tab="inventory"><h3 class="no-underline">Inventory & Provisions</h3></a>    
-      <a class="item" data-tab="char-notes"><h3 class="no-underline">Notes & Abilities</h3></a>
+    <a class="item" data-tab="skills">
+      <h3 class="no-underline">Skills, Spells & Attacks</h3>
+    </a>
+    <a class="item" data-tab="inventory">
+      <h3 class="no-underline">Inventory & Provisions</h3>
+    </a>
+    <a class="item" data-tab="char-notes">
+      <h3 class="no-underline">Notes & Abilities</h3>
+    </a>
   </nav>
 
   <section class="sheet-body">
@@ -92,7 +109,7 @@
       <div class="attacks-section">
 
         <h3 class="bolded-label no-underline attacks-section-label">Attacks</h3>
-        
+
         <ol>
 
           <li class="attacks-grid">
@@ -107,8 +124,9 @@
           </li>
 
           {{#each actor.attacks as |item id|}}
-          <li class="attacks-grid item light-underline" data-item-id="{{item._id}}"> 
-            <span class="rollable-attack-damage" title="{{item.system.attackTooltip}}">{{item.system.displayName}}</span>
+          <li class="attacks-grid item light-underline" data-item-id="{{item._id}}">
+            <span class="rollable-attack-damage"
+              title="{{item.system.attackTooltip}}">{{item.system.displayName}}</span>
             <span>{{item.system.attack.dr1}}</span>
             <span>{{item.system.attack.dr2}}</span>
             <span>{{item.system.attack.dr3}}</span>
@@ -121,9 +139,9 @@
 
         </ol>
 
-    </div>
+      </div>
 
-    <div class="skills-and-spells-section">
+      <div class="skills-and-spells-section">
 
         <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Skills & Spells</h3>
 
@@ -131,7 +149,7 @@
 
           <li class="skills-and-spells-grid item">
             <h4 class="grid-header-label">Improve</h4>
-            <h4 class="grid-header-label">Name (Spell Casting Cost)</h4>            
+            <h4 class="grid-header-label">Name (Spell Casting Cost)</h4>
             <h4 class="grid-header-label">Rank</h4>
             <h4 class="grid-header-label">Total</h4>
             <h4 class="grid-header-label">Edit</h4>
@@ -141,46 +159,54 @@
           {{#each actor.advancedSkills as |item id|}}
           <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">
             <div>
-              <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
-            </div>          
-            
-            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}</span>
+              <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked
+                item.system.improvement}} data-dtype="Boolean" readonly />
+            </div>
+
+            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test"
+              data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}</span>
 
             {{!-- <span>-</span> --}}
-            
+
             <span class="center-aligned-input-text">{{item.system.rank}}
               {{show_rank_modifier item.system.modifier}}
             </span>
-            
-            {{!-- <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric" name="system.modifier" value="{{item.system.modifier}}" readonly /> --}}
+
+            {{!-- <input class="center-aligned-input-text bottom-margin-input-text" inputmode="numeric"
+              name="system.modifier" value="{{item.system.modifier}}" readonly /> --}}
             <span class="center-aligned-input-text">{{item.system.total}}</span>
-            
+
             <div class="">
-              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
             </div>
-            <div class="" >
+            <div class="">
               <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
             </div>
           </li>
           {{/each}}
-          
+
           {{!-- put a divider inbetween skills and spells to make it easier to differentiate --}}
           <hr class="solid-divider">
 
           {{#each actor.spells as |item id|}}
           <li class="skills-and-spells-grid item" data-item-id="{{item._id}}">
             <div>
-              <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked item.system.improvement}} data-dtype="Boolean" readonly />
-            </div>         
-            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test" data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}} ({{item.system.castingCost}})</span>
+              <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked
+                item.system.improvement}} data-dtype="Boolean" readonly />
+            </div>
+            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test"
+              data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}
+              ({{item.system.castingCost}})</span>
 
-            <span class="center-aligned-input-text">{{item.system.rank}}{{show_rank_modifier item.system.modifier}}</span>
-            <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier ../actor.system.skill.value}}</span>
+            <span class="center-aligned-input-text">{{item.system.rank}}{{show_rank_modifier
+              item.system.modifier}}</span>
+            <span class="center-aligned-input-text">{{sum_three_ints item.system.rank item.system.modifier
+              ../actor.system.skill.value}}</span>
 
             <div class="">
-              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
             </div>
-            <div class="" >
+            <div class="">
               <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
             </div>
           </li>
@@ -190,67 +216,82 @@
 
         <div class="skills-add-buttons-grid">
           <div class="item-controls skills-add-button">
-            <a class="item-control item-create" data-type="spell"><i class="fas fa-plus"></i>Add Spell <i class="fas fa-sparkles"></i></a>                  
+            <a class="item-control item-create" data-type="spell"><i class="fas fa-plus"></i>Add Spell <i
+                class="fas fa-sparkles"></i></a>
           </div>
           <div class="item-controls skills-add-button">
-            <a class="item-control item-create" data-type="skill"><i class="fas fa-plus"></i>Add Advanced Skill <i class="fas fa-sword"></i></a>                  
+            <a class="item-control item-create" data-type="skill"><i class="fas fa-plus"></i>Add Advanced Skill <i
+                class="fas fa-sword"></i></a>
           </div>
         </div>
 
       </div>
-      
+
     </div>
-  
-    <div class="tab" data-tab="inventory" data-group="primary" >
-        
-        <div class="monies-provisions-grid">
-          
-          <h3 class="bolded-label grid-item-stretch-height-to-fit">Monies/Other Items</h3>
 
-          <h3 class=" bolded-label grid-item-stretch-height-to-fit">Provisions</h3>
+    <div class="tab" data-tab="inventory" data-group="primary">
 
-          <div class="grid-item-stretch-height-to-fit">
-            <textarea class="grid-item-stretch-height-to-fit" rows="3" cols="1"
-              name="system.monies">{{actor.system.monies}}</textarea>
-          </div>
+      <div class="monies-provisions-grid">
 
-          <div class="provisions-grid">
+        <h3 class="bolded-label grid-item-stretch-height-to-fit">Monies/Other Items</h3>
 
-            <input type="checkbox" class="" name="system.provisions.p1" {{checked actor.system.provisions.p1}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p2" {{checked actor.system.provisions.p2}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p3" {{checked actor.system.provisions.p3}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p4" {{checked actor.system.provisions.p4}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p5" {{checked actor.system.provisions.p5}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p6" {{checked actor.system.provisions.p6}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p7" {{checked actor.system.provisions.p7}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p8" {{checked actor.system.provisions.p8}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p9" {{checked actor.system.provisions.p9}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p10" {{checked actor.system.provisions.p10}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p11" {{checked actor.system.provisions.p11}} data-dtype="Boolean" />
-            <input type="checkbox" class="" name="system.provisions.p12" {{checked actor.system.provisions.p12}} data-dtype="Boolean" />
-            
-          </div>
-                
+        <h3 class=" bolded-label grid-item-stretch-height-to-fit">Provisions</h3>
+
+        <div class="grid-item-stretch-height-to-fit">
+          <textarea class="grid-item-stretch-height-to-fit" rows="3" cols="1"
+            name="system.monies">{{actor.system.monies}}</textarea>
+        </div>
+
+        <div class="provisions-grid">
+
+          <input type="checkbox" class="" name="system.provisions.p1" {{checked actor.system.provisions.p1}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p2" {{checked actor.system.provisions.p2}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p3" {{checked actor.system.provisions.p3}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p4" {{checked actor.system.provisions.p4}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p5" {{checked actor.system.provisions.p5}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p6" {{checked actor.system.provisions.p6}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p7" {{checked actor.system.provisions.p7}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p8" {{checked actor.system.provisions.p8}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p9" {{checked actor.system.provisions.p9}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p10" {{checked actor.system.provisions.p10}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p11" {{checked actor.system.provisions.p11}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p12" {{checked actor.system.provisions.p12}}
+            data-dtype="Boolean" />
+
+        </div>
+
       </div>
 
       <div>
         <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Inventory</h3>
       </div>
-      
+
       <div class="center-align-div">
-      {{#if actor.overburdened}}
-        <span class="over-burdened-message">Overburdened! -4 to all rolls, you can hardly move, and you count as Unawares (7.3)</span>
-      {{else if actor.inconvenientWeight}}        
+        {{#if actor.overburdened}}
+        <span class="over-burdened-message">Overburdened! -4 to all rolls, you can hardly move, and you count as
+          Unawares (7.3)</span>
+        {{else if actor.inconvenientWeight}}
         <span class="over-burdened-message">Inconvenient Weight! -4 to all rolls</span>
-      {{/if}}
+        {{/if}}
       </div>
 
       <div class="item-list fvtt-item-table">
-        
+
         <ol>
-          
-          <li class="all-inventory-grid">            
-            
+
+          <li class="all-inventory-grid">
+
             <h4 class="grid-header-label">#</h4>
             <h4 class="grid-header-label">Name</h4>
             <h4 class="grid-header-label">Quantity</h4>
@@ -259,18 +300,19 @@
           </li>
 
           {{#each actor.nonweightlessInventory as |item id|}}
-          <li class="all-inventory-grid item" data-item-id="{{item._id}}">                                               
+          <li class="all-inventory-grid item" data-item-id="{{item._id}}">
 
-            <h4>{{item.system.inventoryPositionDisplay}}</h4> 
+            <h4>{{item.system.inventoryPositionDisplay}}</h4>
 
             <h4>{{item.name}}</h4>
-            
-            <h4><i class="item-quantity-down fas fa-minus"></i> {{item.system.quantity}} <i class="item-quantity-up fas fa-plus"></i></h4>                         
+
+            <h4><i class="item-quantity-down fas fa-minus"></i> {{item.system.quantity}} <i
+                class="item-quantity-up fas fa-plus"></i></h4>
 
             <div class="">
-              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
             </div>
-            <div class="" >
+            <div class="">
               <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
             </div>
 
@@ -288,11 +330,11 @@
       </div>
 
       <div class="item-list fvtt-item-table">
-        
+
         <ol>
-          
-          <li class="all-inventory-grid">            
-            
+
+          <li class="all-inventory-grid">
+
             <span></span>
             <h4 class="grid-header-label">Name</h4>
             <h4 class="grid-header-label">Quantity</h4>
@@ -301,18 +343,19 @@
           </li>
 
           {{#each actor.weightlessInventory as |item id|}}
-          <li class="all-inventory-grid item" data-item-id="{{item._id}}">                                               
+          <li class="all-inventory-grid item" data-item-id="{{item._id}}">
 
             <span></span>
 
             <h4>{{item.name}}</h4>
-            
-            <h4><i class="item-quantity-down fas fa-minus"></i> {{item.system.quantity}} <i class="item-quantity-up fas fa-plus"></i></h4>                         
+
+            <h4><i class="item-quantity-down fas fa-minus"></i> {{item.system.quantity}} <i
+                class="item-quantity-up fas fa-plus"></i></h4>
 
             <div class="">
-              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>              
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
             </div>
-            <div class="" >
+            <div class="">
               <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
             </div>
 
@@ -326,22 +369,23 @@
 
       <div class="skills-add-buttons-grid">
         <div class="item-controls skills-add-button no-bottom-padding">
-          <a class="item-control item-create" data-type="gear"><i class="fas fa-plus"></i>Add Item  <i class="fas fa-sack"></i></a>                  
+          <a class="item-control item-create" data-type="gear"><i class="fas fa-plus"></i>Add Item <i
+              class="fas fa-sack"></i></a>
         </div>
       </div>
 
     </div>
-  
-    <div class="tab " data-tab="char-notes" data-group="primary" >
+
+    <div class="tab " data-tab="char-notes" data-group="primary">
 
       <div class="special-section">
 
         <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h3>
-        
+
         <div class="special-editor">
           {{editor enrichedSpecial target="system.special" button=true owner=owner editable=editable}}
         </div>
-               
+
       </div>
 
       <div class="notes-section">
@@ -355,9 +399,9 @@
         </div>
 
       </div>
-      
+
     </div>
 
   </section>
-  
+
 </form>
