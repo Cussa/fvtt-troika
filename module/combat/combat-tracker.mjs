@@ -15,10 +15,10 @@ export class TroikaCombatTracker extends CombatTracker {
   /** @inheritdoc */
   async getData(options) {
     const context = await super.getData(options);
-    if (context.combat?.started)
-      context.turns = context.turns.slice(0, context.turn + 1);
-    else if (await context.combat?.getFlag("troika", "preparing"))
+    if (await context.combat?.getFlag("troika", "preparing"))
       context.turns = [];
+    else if (context.combat?.started)
+      context.turns = context.turns.slice(0, context.turn + 1);
     console.log(context);
     return context;
   }
