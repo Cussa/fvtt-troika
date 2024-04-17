@@ -1,5 +1,13 @@
 # Troika System Change Log
 
+## 2024-04-11 v1.3.0
+
+* ✨ Combat initiative [fix #4].
+  - There is a "know issue" on Foundry v11 when you create a new combat, it basically will throw an exception. That does not interferer with the behaviour (https://github.com/foundryvtt/foundryvtt/issues/9718).
+* ✨ Allow to roll damage directly from items [fix #13] - QoL for Slate & Chalcedony module.
+* ✨ Change NPC and PC field order [fix #9].
+* 🐛 Only roll dices for PCs
+
 ## 2024-04-11 v1.2.0
 
 * 👷 Add release github action (for auto publish) [Fix #11].
