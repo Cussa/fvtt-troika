@@ -33,7 +33,7 @@
 
 The initiative system handles everything as defined by Troika rules. Choose the tokens that will be added to the initiative and begin the combat. All NPCs will be "converted" to the "-- Enemy --" actor in the initiative. The "-- End of Turn --" defines the end. Clicking on "next turn" will start the next round on Foundry.
 
-![Troika Initiative](./imgs/troika-initiative.m4v)
+![Troika Initiative](./imgs/troika-initiative.mp4)
 
 If you want to use the rules that limits the number of enemies tokens to twice the number of players' tokens select it on the `Configuration Settings`.
 
