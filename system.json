@@ -21,8 +21,8 @@
     "minimum": "11",
     "verified": "11"
   },
-  "manifest": "https://github.com/cussa/fvtt-troika/releases/download/latest/system.json",
-  "download": "https://github.com/cussa/fvtt-troika/releases/download/latest/system.zip",
+  "manifest": "https://github.com/cussa/fvtt-troika/releases/latest/download/system.json",
+  "download": "https://github.com/cussa/fvtt-troika/releases/latest/download/system.zip",
   "gridDistance": 1,
   "gridUnits": "m",
   "primaryTokenAttribute": "stamina",
