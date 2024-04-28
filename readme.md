@@ -16,7 +16,7 @@
   * Roll Skill and Luck
   * Roll Advanced Skills and Spells
   * Drag inventory around to re-order
-* NPC Sheet
+* NPC Sheet and Henchmen sheet
   * Roll Skill
   * Set current mien, log 6 possible miens
 * Compendiums
@@ -31,17 +31,13 @@
 
 ## Initiative
 
-The initiative system handles everything as defined by Troika rules. Choose the tokens that will be added to the initiative and begin the combat. All NPCs will be "converted" to the "-- Enemy --" actor in the initiative. The "-- End of Turn --" defines the end. Clicking on "next turn" will start the next round on Foundry.
+The initiative system handles everything as defined by Troika rules. Choose the tokens that will be added to the initiative and begin the combat. All NPCs will be "converted" to the "-- Enemy --" actor in the initiative. All henchmen will be "converted" to the "-- Henchmen --" actor. The "-- End of Turn --" defines the end. Clicking on "next turn" will start the next round on Foundry.
 
 [Troika! Initiative in combat!](https://github.com/Cussa/fvtt-troika/assets/912710/2704ad08-c752-4e5a-b2ee-2790f1475082)
 
 If you want to use the rules that limits the number of enemies tokens to twice the number of players' tokens select it on the `Configuration Settings`.
 
 ![Troika Initiative Configuration](./imgs/cap-enemies-tokens.png)
-
-> [!WARNING]
-> ### 🚧 Known problem: henchmen
-> The way the initiative is currently implemented means that Henchmen, if created as NPCs like the rules mention, would not appears in the initiative token as the henchmen themselves, but as an enemy. We have an issue (#14) opened in Github to create a new actor type for Henchmen and solve this. In the meantime, please, create your henchmen using the PC sheet.
 
 ## Rolling Dice
 
