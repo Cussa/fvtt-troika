@@ -1,5 +1,9 @@
 # Troika System Change Log
 
+## 2024-04-28 v1.4.0
+
+* ✨ Add Henchmen actor [closes #14] - In preparation for **Fronds of Benevolence** module.
+
 ## 2024-04-11 v1.3.0
 
 * ✨ Combat initiative [fix #4].
