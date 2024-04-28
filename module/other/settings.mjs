@@ -18,6 +18,15 @@ export const registerSystemSettings = function () {
     type: String
   });
 
+  game.settings.register("troika", "henchmenActor", {
+    name: "henchmenActor",
+    scope: "world",
+    config: false,
+    restricted: true,
+    default: null,
+    type: String
+  });
+
   game.settings.register("troika", "capEnemyTokens", {
     name: "Cap enemies tokens to Twice player's tokens?",
     scope: "world",

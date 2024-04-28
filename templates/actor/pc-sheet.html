@@ -6,7 +6,11 @@
 
       <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
       <div class="name-grid-2col">
+        {{#if_eq actor.type 'henchmen'}}
+        <h2 class="grid-item-stretch-height-to-fit"><span class="bold-header">Henchmen:</span></h2>
+        {{else}}
         <h2 class="grid-item-stretch-height-to-fit"><span class="bold-header">Name:</span></h2>
+        {{/if_eq}}
         <h2 class="grid-item-stretch-height-to-fit">
           <input name="name" class="grid-item-stretch-height-to-fit" type="text" value="{{actor.name}}" title="" />
         </h2>
@@ -16,7 +20,7 @@
           <input name="system.background" class="grid-item-stretch-height-to-fit" type="text"
             value="{{actor.system.background}}" placeholder="" />
         </h3>
-        
+
         {{else}}
         <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Mien:</span></h3>
         <h3 class="grid-item-stretch-height-to-fit">

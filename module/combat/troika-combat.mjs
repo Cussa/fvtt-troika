@@ -1,17 +1,39 @@
+const ActorType = Object.freeze({
+  END_OF_TURN: Symbol("end_of_turn"),
+  ENEMY: Symbol("enemy"),
+  HENCHMEN: Symbol("henchmen")
+});
+
 export default class TroikaCombat extends Combat {
   getRandomInt(max = 100) {
     return Math.floor(Math.random() * max);
   }
 
-  async getActor(endOfTurn) {
-    let settingId = "endOfTurnActor";
-    let actorName = "-- End of Turn --";
-    let actorImg = "systems/troika/assets/icons/troika-initiative-tokens-flag-end-round.webp";
+  async getActor(actorType) {
 
-    if (!endOfTurn) {
-      settingId = "enemyActor";
-      actorName = "-- Enemy --";
-      actorImg = "systems/troika/assets/icons/troika-initiative-tokens-monsters2.webp";
+    let settingId = "", actorName = "", actorImg = "";
+    switch (actorType) {
+      case ActorType.END_OF_TURN:
+        settingId = "endOfTurnActor";
+        actorName = "-- End of Turn --";
+        actorImg = "systems/troika/assets/icons/troika-initiative-tokens-flag-end-round.webp";
+        break;
+
+      case ActorType.ENEMY:
+        settingId = "enemyActor";
+        actorName = "-- Enemy --";
+        actorImg = "systems/troika/assets/icons/troika-initiative-tokens-monsters2.webp";
+        break;
+
+      case ActorType.HENCHMEN:
+        settingId = "henchmenActor";
+        actorName = "-- Henchmen --";
+        actorImg = "systems/troika/assets/icons/troika-initiative-tokens-raygun.webp";
+        break;
+
+      default:
+        console.error(actorType);
+        throw Error("actorType not defined", actorType);
     }
 
     const actorId = await game.settings.get("troika", settingId);
@@ -28,9 +50,11 @@ export default class TroikaCombat extends Combat {
     await this.setFlag("troika", "preparing", true);
     let enemiesTokens = 0;
     let playersTokens = 0;
+    let henchmenTokens = 0;
 
     const enemyActorId = await this.getFlag("troika", "enemyActorId");
     const endOfTurnActorId = await this.getFlag("troika", "endOfTurnActorId");
+    const henchmenActorId = await this.getFlag("troika", "henchmenActorId");
     const capEnemyTokens = await this.getFlag("troika", "capEnemyTokens");
 
     let originalCombatants = await this.getFlag("troika", "originalCombatants");
@@ -41,6 +65,8 @@ export default class TroikaCombat extends Combat {
 
       if (token.actor.type == "pc")
         playersTokens += Number(token.actor.system.initiativeTokens);
+      else if (token.actor.type == "henchmen")
+        henchmenTokens += Number(token.actor.system.initiativeTokens);
       else
         enemiesTokens += Number(token.actor.system.initiativeTokens);
     }
@@ -50,6 +76,7 @@ export default class TroikaCombat extends Combat {
 
     let updates = [];
     let currentEnemiesTokens = 0;
+    let currentHenchmenTokens = 0;
     let endOfTurnCombantantId;
     let maxInitiative = -100;
 
@@ -64,6 +91,12 @@ export default class TroikaCombat extends Combat {
       if (combatant.actorId == enemyActorId) {
         currentEnemiesTokens++;
         if (currentEnemiesTokens > enemiesTokens) {
+          initiative = -1;
+        }
+      }
+      else if (combatant.actorId == henchmenActorId) {
+        currentHenchmenTokens++;
+        if (currentHenchmenTokens > henchmenTokens) {
           initiative = -1;
         }
       }
@@ -97,13 +130,14 @@ export default class TroikaCombat extends Combat {
     let combatants = Array.from(this.combatants);
     let originalCombatants = [];
     let originalCombatantsIds = [];
-    let maxInitiative = -100;
 
-    let endOfTurn = await this.getActor(true);
-    let enemy = await this.getActor(false);
+    let endOfTurn = await this.getActor(ActorType.END_OF_TURN);
+    let enemy = await this.getActor(ActorType.ENEMY);
+    let henchmen = await this.getActor(ActorType.HENCHMEN);
 
     await this.setFlag("troika", "endOfTurnActorId", endOfTurn);
     await this.setFlag("troika", "enemyActorId", enemy);
+    await this.setFlag("troika", "henchmenActorId", henchmen);
     await this.setFlag("troika", "capEnemyTokens", await game.settings.get("troika", "capEnemyTokens"));
 
     for (const combatant of combatants) {
@@ -113,6 +147,9 @@ export default class TroikaCombat extends Combat {
       let objectToAdd;
       if (combatant.actor.type == "pc") {
         objectToAdd = combatant.toObject();
+      }
+      else if (combatant.actor.type == "henchmen") {
+        objectToAdd = { "actorId": henchmen };
       }
       else {
         objectToAdd = { "actorId": enemy };
