@@ -3,7 +3,9 @@ import re
 from subprocess import call
 import sys
 
-folder = sys.argv[1]
+folder = None
+if len(sys.argv) > 1:
+    folder = sys.argv[1]
 
 if not folder:
     folder = "./assets"
