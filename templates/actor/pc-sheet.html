@@ -167,7 +167,7 @@
                 item.system.improvement}} data-dtype="Boolean" readonly />
             </div>
 
-            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test"
+            <span data-tooltip="{{item.system.description}}" class="rollable-skill-test"
               data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}</span>
 
             {{!-- <span>-</span> --}}
@@ -198,7 +198,7 @@
               <input type="checkbox" class="item-improve-checkbox" name="system.improvement" {{checked
                 item.system.improvement}} data-dtype="Boolean" readonly />
             </div>
-            <span title="{{remove_html_tags item.system.description}}" class="rollable-skill-test"
+            <span data-tooltip="{{item.system.description}}" class="rollable-skill-test"
               data-roll-total={{item.system.total}} data-roll-label="{{item.name}}">{{item.name}}
               ({{item.system.castingCost}})</span>
 
