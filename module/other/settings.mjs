@@ -35,4 +35,11 @@ export const registerSystemSettings = function () {
     default: true,
     type: Boolean
   });
+
+  game.settings.register("troika", "systemMigrationVersion", {
+    config: false,
+    scope: "world",
+    type: String,
+    default: ""
+  });
 }
