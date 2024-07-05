@@ -47,40 +47,40 @@
           <span></span>
           {{/if_eq}}
           <div class="">
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.skill.value"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.skill.value" type="number"
               value="{{actor.system.skill.value}}" />
           </div>
           <div class="attribute-container">
-            <input class="center-aligned-input-text" name="system.stamina.value"
+            <input class="center-aligned-input-text" name="system.stamina.value" type="number"
               value="{{actor.system.stamina.value}}" />
             <span class="">/</span>
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.stamina.max"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.stamina.max" type="number"
               value="{{actor.system.stamina.max}}" />
           </div>
 
           {{#if_eq actor.type 'pc'}}
           <div class="attribute-container">
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.value"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.value" type="number"
               value="{{actor.system.luck.value}}" />
             <span class="">/</span>
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.max"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.luck.max" type="number"
               value="{{actor.system.luck.max}}" />
           </div>
           {{else}}
           <div>
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens" type="number"
               value="{{actor.system.initiativeTokens}}" />
           </div>
           {{/if_eq}}
 
           <div>
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.armour"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.armour" type="number"
               value="{{actor.system.armour}}" />
           </div>
 
           {{#if_eq actor.type 'pc'}}
           <div>
-            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens"
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens" type="number"
               value="{{actor.system.initiativeTokens}}" />
           </div>
           {{/if_eq}}
