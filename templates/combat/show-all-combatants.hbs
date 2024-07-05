@@ -1,0 +1,8 @@
+<div>
+  {{#each tokens as |token|}}
+  <div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <img src="{{token.texture.src}}" height="50" style="margin-right: 10px" />
+    <span style="font-size: 250%">{{token.name}}</span>
+  </div>
+  {{/each}}
+</div>

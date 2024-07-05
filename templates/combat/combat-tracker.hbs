@@ -26,6 +26,12 @@
         {{/if}}
 
         <div class="encounter-controls flexrow {{#if hasCombat}}combat{{/if}}">
+            {{#if (and user.isGM combat.round)}}
+            <a class="combat-button combat-show-all" aria-label="See Combatants" role="button" data-tooltip="See Combatants" data-control="seeAll" {{#unless turns}}disabled{{/unless}}>
+                <i class="fas fa-users"></i>
+            </a>
+            {{/if}}
+
             {{#if combatCount}}
             {{#if combat.round}}
             <h3 class="encounter-title noborder">{{localize 'COMBAT.Round'}} {{combat.round}}</h3>
