@@ -7,6 +7,7 @@ import TroikaCombat from "./combat/troika-combat.mjs";
 import { TroikaCombatTracker } from "./combat/combat-tracker.mjs";
 import { registerSystemSettings } from "./other/settings.mjs";
 import { migrate } from "./migrations/migrations.mjs";
+import { addAimingStatus } from "./combat/aiming.mjs";
 
 Hooks.once('init', async function () {
 
@@ -92,4 +93,5 @@ Hooks.once('init', async function () {
 
 Hooks.once("ready", async function () {
   await migrate();
+  addAimingStatus();
 });
