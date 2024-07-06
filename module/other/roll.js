@@ -192,6 +192,11 @@ export async function rollDamageForItem(actor, item, damageModifier, isMightyBlo
   html = `<div class="dice-roll">`
   html += `     <div class="dice-result">`
   html += `     <div class="dice-formula">Damage for <i>${item.name} </i>${damageModifier != 0 ? " [" + damageModifierLabel + "]" : ""} ${isMightyBlow ? "<b>[Mighty Blow]</b>" : ""}</div>`
+
+  if (item.system.description) {
+    html += `     <div class="dice-formula" style="padding: 0 10px; word-break: break-word; text-align: justify; font-size: 90%;">${item.system.description}</div>`
+  }
+
   html += `     <div class="dice-formula">`
   html += `          <div class="attacks-grid-chat">`
   html += `               <span class="dark-underline ${result === 1 ? "bolded" : ""}">1</span>`
