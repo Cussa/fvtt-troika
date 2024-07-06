@@ -180,6 +180,7 @@ export class TroikaActorSheet extends ActorSheet {
     if (!this.options.editable) return;
 
     html.find('.item-create').click(this._onItemCreate.bind(this));
+    html.find('.source-edit').click(this._updateSource.bind(this));
 
     // Update Inventory Item
     html.find('.item-edit').click(ev => {
@@ -359,4 +360,32 @@ export class TroikaActorSheet extends ActorSheet {
     return buttons;
   }
 
+  _updateSource(event) {
+    event.preventDefault();
+
+    let source = this.actor.system.attribution?.source || "";
+    let link = this.actor.system.attribution?.link || "";
+    let content = `
+    <div>
+      <span class="bolded-label right-margin-5pct grid-item-stretch-height-to-fit no-underline">Source:</span>
+      <input name="source" type="text" value="${source}" />
+      <span class="bolded-label right-margin-5pct grid-item-stretch-height-to-fit no-underline">Link:</span>
+      <input name="link" type="text" value="${link}" />
+    </div>`;
+
+    Dialog.prompt({
+      title: "Update Source",
+      content,
+      label: "Save",
+      callback: async (html) => {
+        let newSource = html.find(`[name="source"]`).val();
+        let newLink = html.find(`[name="link"]`).val();
+        await this.actor.update({
+          "system.attribution.source": newSource,
+          "system.attribution.link": newLink,
+        });
+      },
+      rejectClose: false
+    });
+  }
 }
