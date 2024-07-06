@@ -161,31 +161,8 @@ export async function rollDamageForItem(actor, item, damageModifier, isMightyBlo
   let actualResult = roll.total;
   let result = roll.total;
 
-  if (result < 1) {
-    result = 1;
-  }
-
-  if (result === 1) {
-    damage = item.system.attack.dr1;
-  }
-  else if (result === 2) {
-    damage = item.system.attack.dr2;
-  }
-  else if (result === 3) {
-    damage = item.system.attack.dr3;
-  }
-  else if (result === 4) {
-    damage = item.system.attack.dr4;
-  }
-  else if (result === 5) {
-    damage = item.system.attack.dr5;
-  }
-  else if (result === 6) {
-    damage = item.system.attack.dr6;
-  }
-  else {
-    damage = item.system.attack.dr7;
-  }
+  result = Math.max(Math.min(result, 7), 1);
+  damage = item.system.attack[`dr${result}`];
 
   let html = '';
 
@@ -193,8 +170,9 @@ export async function rollDamageForItem(actor, item, damageModifier, isMightyBlo
   html += `     <div class="dice-result">`
   html += `     <div class="dice-formula">Damage for <i>${item.name} </i>${damageModifier != 0 ? " [" + damageModifierLabel + "]" : ""} ${isMightyBlow ? "<b>[Mighty Blow]</b>" : ""}</div>`
 
-  if (item.system.description) {
-    html += `     <div class="dice-formula" style="padding: 0 10px; word-break: break-word; text-align: justify; font-size: 90%;">${item.system.description}</div>`
+  let additionalInfo = item.system.getChatInfo();
+  if (additionalInfo) {
+    html += `     <div class="dice-formula" style="padding: 0 10px; word-break: break-word; text-align: justify; font-size: 90%;">${additionalInfo}</div>`
   }
 
   html += `     <div class="dice-formula">`

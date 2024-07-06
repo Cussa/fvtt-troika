@@ -16,4 +16,15 @@ export class TroikaGear extends TroikaItemBase {
 
     return schema;
   }
+
+  getChatInfo(){
+    let info = [];
+    if (this.description)
+      info.push(this.description);
+
+    if (this.armourIgnored)
+      info.push(`<p>Bypasses ${this.armourIgnored} point(s) of armour</p>`);
+
+    return info.join("");
+  }
 }

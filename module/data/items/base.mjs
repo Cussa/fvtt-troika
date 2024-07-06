@@ -19,7 +19,11 @@ export class TroikaItemBase extends foundry.abstract.TypeDataModel {
       dr6: new fields.StringField({ required: true, blank: false, initial: "8" }),
       dr7: new fields.StringField({ required: true, blank: false, initial: "10" }),
     });
- 
+
     return schema;
+  }
+
+  getChatInfo() {
+    return this.description;
   }
 }
