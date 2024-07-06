@@ -130,7 +130,7 @@
           {{#each actor.attacks as |item id|}}
           <li class="attacks-grid item light-underline" data-item-id="{{item._id}}">
             <span class="rollable-attack-damage"
-              title="{{item.system.attackTooltip}}">{{item.system.displayName}}</span>
+              data-tooltip="{{item.system.attackTooltip}}">{{item.system.displayName}}</span>
             <span>{{item.system.attack.dr1}}</span>
             <span>{{item.system.attack.dr2}}</span>
             <span>{{item.system.attack.dr3}}</span>
