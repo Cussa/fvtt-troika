@@ -9,6 +9,8 @@ import { registerSystemSettings } from "./other/settings.mjs";
 import { migrate } from "./migrations/migrations.mjs";
 import { addAimingStatus } from "./combat/aiming.mjs";
 
+import * as models from './data/_module.mjs';
+
 Hooks.once('init', async function () {
 
   game.troika = {
@@ -33,6 +35,19 @@ Hooks.once('init', async function () {
 
   CONFIG.Combat.documentClass = TroikaCombat;
   CONFIG.ui.combat = TroikaCombatTracker;
+
+  CONFIG.Actor.dataModels = {
+    pc: models.TroikaPc,
+    npc: models.TroikaNpc,
+    "npc-complex": models.TroikaNpcComplex,
+    henchmen: models.TroikaHenchmen
+  };
+
+  CONFIG.Item.dataModels = {
+    gear: models.TroikaGear,
+    skill: models.TroikaSkill,
+    spell: models.TroikaSpell
+  };
 
   // Add Handlebars helpers
   Handlebars.registerHelper('concat', function () {
@@ -74,7 +89,7 @@ Hooks.once('init', async function () {
   });
 
   Handlebars.registerHelper('show_rank_modifier', function (modifier, opts) {
-    if (modifier === null || modifier === 'null') {
+    if (!modifier) {
       return '';
     }
     else if (modifier == 0) {
