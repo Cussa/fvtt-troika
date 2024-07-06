@@ -1,0 +1,317 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+  <header class="">
+
+    <div class="grid header-grid-2col">
+
+      <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+      <div class="name-grid-2col" style="grid-template-columns: 25% 75%; ">
+        <h2 class="grid-item-stretch-height-to-fit"><span class="bold-header">Background:</span></h2>
+        <h2 class="grid-item-stretch-height-to-fit">
+          <input name="name" class="grid-item-stretch-height-to-fit" type="text" value="{{actor.name}}" title="" />
+        </h2>
+
+        <div class="attributes-container" style="grid-template-columns: 20% 20% 20% 20% 20%;width: 95%;">
+          <h3><i class="fas fa-sword"><span> Skill</span></i></h3>
+          <h3><i class="fas fa-heart"><span> Stamina</span></i></h3>
+          <h3><i class="fas fa-star"><span> Luck</span></i></h3>
+          <h3><i class="fas fa-shield"><span> Armour</span></i></h3>
+          <h3><i class="fas fa-bolt"><span> Initiative</span></i></h3>
+          <div>
+            <input class="center-aligned-input-text" name="system.skill" type="text"
+              value="{{actor.system.skill}}" />
+          </div>
+          <div>
+            <input class="center-aligned-input-text" name="system.stamina" type="text"
+              value="{{actor.system.stamina}}" />
+          </div>
+          <div>
+            <input class="center-aligned-input-text" name="system.luck" type="text"
+              value="{{actor.system.luck}}" />
+          </div>
+          <div>
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.armour" type="number"
+              value="{{actor.system.armour}}" />
+          </div>
+          <div>
+            <input class="center-aligned-input-text" inputmode="numeric" name="system.initiativeTokens" type="number"
+              value="{{actor.system.initiativeTokens}}" />
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="skills">
+      <h3 class="no-underline">Skills &amp; Spells</h3>
+    </a>
+    <a class="item" data-tab="inventory">
+      <h3 class="no-underline">Inventory &amp; Provisions</h3>
+    </a>
+    <a class="item" data-tab="char-notes">
+      <h3 class="no-underline">Notes &amp; Abilities</h3>
+    </a>
+  </nav>
+
+  <section class="sheet-body">
+
+    <div class="tab" data-tab="skills" data-group="primary">
+
+      <div class="skills-and-spells-section">
+
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Skills & Spells</h3>
+
+        <ol class="items-list">
+
+          <li class="skills-and-spells-grid-background item">
+            <h4 class="grid-header-label">Name (Spell Casting Cost)</h4>
+            <h4 class="grid-header-label">Rank</h4>
+            <h4 class="grid-header-label">Edit</h4>
+            <h4 class="grid-header-label">Delete</h4>
+          </li>
+
+          {{#each actor.advancedSkills as |item id|}}
+          <li class="skills-and-spells-grid-background item" data-item-id="{{item._id}}">
+
+            <span data-tooltip="{{item.system.description}}">{{item.name}}</span>
+
+            <span class="center-aligned-input-text">{{item.system.rank}}{{show_rank_modifier item.system.modifier}}
+            </span>
+
+            <div class="">
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+            </div>
+            <div class="">
+              <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+
+          {{!-- put a divider inbetween skills and spells to make it easier to differentiate --}}
+          <hr class="solid-divider">
+
+          {{#each actor.spells as |item id|}}
+          <li class="skills-and-spells-grid-background item" data-item-id="{{item._id}}">
+            <span data-tooltip="{{item.system.description}}">{{item.name}}
+              ({{item.system.castingCost}})</span>
+
+            <span class="center-aligned-input-text">{{item.system.rank}}{{show_rank_modifier
+              item.system.modifier}}</span>
+
+            <div class="">
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+            </div>
+            <div class="">
+              <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+          </li>
+          {{/each}}
+
+        </ol>
+
+        <div class="skills-add-buttons-grid">
+          <div class="item-controls skills-add-button">
+            <a class="item-control item-create" data-type="spell"><i class="fas fa-plus"></i>Add Spell <i
+                class="fas fa-sparkles"></i></a>
+          </div>
+          <div class="item-controls skills-add-button">
+            <a class="item-control item-create" data-type="skill"><i class="fas fa-plus"></i>Add Advanced Skill <i
+                class="fas fa-sword"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="tab" data-tab="inventory" data-group="primary">
+
+      <div class="monies-provisions-grid">
+
+        <h3 class="bolded-label grid-item-stretch-height-to-fit">Monies/Other Items</h3>
+
+        <h3 class=" bolded-label grid-item-stretch-height-to-fit">Provisions</h3>
+
+        <div class="grid-item-stretch-height-to-fit">
+          <textarea class="grid-item-stretch-height-to-fit" rows="3" cols="1"
+            name="system.monies">{{actor.system.monies}}</textarea>
+        </div>
+
+        <div class="provisions-grid">
+
+          <input type="checkbox" class="" name="system.provisions.p1" {{checked actor.system.provisions.p1}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p2" {{checked actor.system.provisions.p2}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p3" {{checked actor.system.provisions.p3}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p4" {{checked actor.system.provisions.p4}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p5" {{checked actor.system.provisions.p5}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p6" {{checked actor.system.provisions.p6}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p7" {{checked actor.system.provisions.p7}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p8" {{checked actor.system.provisions.p8}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p9" {{checked actor.system.provisions.p9}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p10" {{checked actor.system.provisions.p10}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p11" {{checked actor.system.provisions.p11}}
+            data-dtype="Boolean" />
+          <input type="checkbox" class="" name="system.provisions.p12" {{checked actor.system.provisions.p12}}
+            data-dtype="Boolean" />
+
+        </div>
+
+      </div>
+
+      <div>
+        <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Inventory</h3>
+      </div>
+
+      <div class="center-align-div">
+        {{#if actor.overburdened}}
+        <span class="over-burdened-message">Overburdened! -4 to all rolls, you can hardly move, and you count as
+          Unawares (7.3)</span>
+        {{else if actor.inconvenientWeight}}
+        <span class="over-burdened-message">Inconvenient Weight! -4 to all rolls</span>
+        {{/if}}
+      </div>
+
+      <div class="item-list fvtt-item-table">
+
+        <ol>
+
+          <li class="all-inventory-grid">
+
+            <h4 class="grid-header-label">#</h4>
+            <h4 class="grid-header-label">Name</h4>
+            <h4 class="grid-header-label">Quantity</h4>
+            <h4 class="grid-header-label">Edit</h4>
+            <h4 class="grid-header-label">Delete</h4>
+          </li>
+
+          {{#each actor.nonweightlessInventory as |item id|}}
+          <li class="all-inventory-grid item" data-item-id="{{item._id}}">
+
+            <h4>{{item.system.inventoryPositionDisplay}}</h4>
+
+            <h4>{{item.name}}</h4>
+
+            <h4><i class="item-quantity-down fas fa-minus"></i> {{item.system.quantity}} <i
+                class="item-quantity-up fas fa-plus"></i></h4>
+
+            <div class="">
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+            </div>
+            <div class="">
+              <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+
+          </li>
+
+          {{/each}}
+
+        </ol>
+
+      </div>
+
+      <div class="weightless-flex">
+        <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Worn/Weightless/Other</h3>
+        <span> (Set item's required inventory slots to 0 for them to appear here.)</span>
+      </div>
+
+      <div class="item-list fvtt-item-table">
+
+        <ol>
+
+          <li class="all-inventory-grid">
+
+            <span></span>
+            <h4 class="grid-header-label">Name</h4>
+            <h4 class="grid-header-label">Quantity</h4>
+            <h4 class="grid-header-label">Edit</h4>
+            <h4 class="grid-header-label">Delete</h4>
+          </li>
+
+          {{#each actor.weightlessInventory as |item id|}}
+          <li class="all-inventory-grid item" data-item-id="{{item._id}}">
+
+            <span></span>
+
+            <h4>{{item.name}}</h4>
+
+            <h4><i class="item-quantity-down fas fa-minus"></i> {{item.system.quantity}} <i
+                class="item-quantity-up fas fa-plus"></i></h4>
+
+            <div class="">
+              <a class="item-edit" title="Edit Item"><i class="fas fa-edit"></i></a>
+            </div>
+            <div class="">
+              <a class="item-delete" title="Delete Item"><i class="fas fa-trash"></i></a>
+            </div>
+
+          </li>
+
+          {{/each}}
+
+        </ol>
+
+      </div>
+
+      <div class="skills-add-buttons-grid">
+        <div class="item-controls skills-add-button no-bottom-padding">
+          <a class="item-control item-create" data-type="gear"><i class="fas fa-plus"></i>Add Item <i
+              class="fas fa-sack"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="tab " data-tab="char-notes" data-group="primary">
+
+      <div class="special-section">
+
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Special/Abilities</h3>
+
+        <div class="special-editor">
+          {{editor enrichedSpecial target="system.special" button=true owner=owner editable=editable}}
+        </div>
+
+      </div>
+
+      <div class="notes-section">
+
+        <h3 class="bolded-label grid-item-stretch-height-to-fit no-underline">Other Notes</h3>
+
+        <div class="notes-editor">
+
+          {{editor enrichedNotes target="system.notes" button=true owner=owner editable=editable}}
+
+        </div>
+
+      </div>
+
+      {{#if (ne actor.type "pc")}}
+      <div>
+        <span>Source: <a href="{{actor.system.attribution.link}}">{{actor.system.attribution.source}}</a> <a class="source-edit" data-action="edit">
+            <i class="fas fa-edit"></i>
+          </a>
+        </span>
+      </div>
+      {{/if}}
+
+    </div>
+
+  </section>
+
+</form>

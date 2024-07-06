@@ -4,7 +4,8 @@
       "pc",
       "npc",
       "npc-complex",
-      "henchmen"
+      "henchmen",
+      "background"
     ]
   },
   "Item": {

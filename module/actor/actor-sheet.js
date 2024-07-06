@@ -19,14 +19,14 @@ export class TroikaActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    if (this.actor.type === 'npc') {
+    if (this.actor.type === 'npc')
       return "systems/troika/templates/actor/npc-sheet.html";
-    }
-    else {
-      // note the 'npc-complex' type uses regular PC sheet
-      return "systems/troika/templates/actor/pc-sheet.html";
-    }
 
+    if (this.actor.type == "background")
+      return "systems/troika/templates/actor/background-sheet.hbs";
+
+    // note the 'npc-complex' type uses regular PC sheet
+    return "systems/troika/templates/actor/pc-sheet.html";
   }
 
 

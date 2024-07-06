@@ -40,7 +40,8 @@ Hooks.once('init', async function () {
     pc: models.TroikaPc,
     npc: models.TroikaNpc,
     "npc-complex": models.TroikaNpcComplex,
-    henchmen: models.TroikaHenchmen
+    henchmen: models.TroikaHenchmen,
+    background: models.TroikaBackground
   };
 
   CONFIG.Item.dataModels = {
@@ -96,12 +97,14 @@ Hooks.once('init', async function () {
       return '';
     }
     else {
-      let formattedStr = modifier.toString("0");
+      let formattedStr = modifier.toString();
       if (modifier > 0) {
         formattedStr = "+" + formattedStr;
       }
+      else if (modifier < 0)
+        formattedStr = "-" + formattedStr;
 
-      return "(" + formattedStr + ")";
+      return " (" + formattedStr + ")";
     }
   });
 });
