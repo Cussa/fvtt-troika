@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'AveriaLibre';
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Regular.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/AveriaLibre-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -12,13 +12,13 @@
 @font-face {
     font-family: 'AveriaLibre';
     font-weight: bold;
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Bold.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/AveriaLibre-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'AveriaLibre';
     font-style: italic;
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Italic.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/AveriaLibre-Italic.ttf') format('truetype');
 }
 
 /*
@@ -34,7 +34,7 @@
     font-family: 'AveriaLibre';
     font-weight: bold;
     font-style: italic;
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-BoldItalic.ttf') format('truetype'); 
+    src: url('../css/fonts/Averia_Libre/AveriaLibre-BoldItalic.ttf') format('truetype');
 }
 
 /* Set font to Averia Libre, but have to exclude 'fas' class or we break all FAS icons! */
@@ -42,7 +42,7 @@
     font-family: "AveriaLibre", "Signika", sans-serif;
 }
 
-.journal-sheet.journal-entry{
+.journal-sheet.journal-entry {
     font-family: "AveriaLibre", "Signika", sans-serif;
 }
 
@@ -56,23 +56,28 @@ textarea {
     resize: none;
 }
 
-.troika header{
-    height:auto;
+.troika header {
+    height: auto;
     margin-bottom: 10px;
 }
 
-.rollable-mien:focus, .rollable-mien:hover,
-.item-quantity-up:focus, .item-quantity-down:focus,
-.item-quantity-up:hover, .item-quantity-down:hover,
-.rollable-skill-test:hover, .rollable-skill-test:focus,
-.rollable-attack-damage:hover, .rollable-attack-damage:focus{
+.rollable-mien:focus,
+.rollable-mien:hover,
+.item-quantity-up:focus,
+.item-quantity-down:focus,
+.item-quantity-up:hover,
+.item-quantity-down:hover,
+.rollable-skill-test:hover,
+.rollable-skill-test:focus,
+.rollable-attack-damage:hover,
+.rollable-attack-damage:focus {
     color: #000;
     text-shadow: 0 0 10px red;
     cursor: pointer;
 }
 
-.profile-img{
-    max-height:150px;
+.profile-img {
+    max-height: 150px;
     max-width: 100%;
     border: transparent !important;
     padding: 3%;
@@ -96,14 +101,14 @@ textarea {
     grid-template-rows: max-content max-content max-content max-content;
 }
 
-.grid-item-stretch-height-to-fit{
+.grid-item-stretch-height-to-fit {
     height: 100% !important;
     display: grid !important;
     align-items: center !important;
     padding: 1%;
 }
 
-.attributes-container{
+.attributes-container {
     grid-column: span 2;
     width: 90%;
     display: grid;
@@ -113,7 +118,7 @@ textarea {
     text-align: center;
 }
 
-.attributes-container-npc{
+.attributes-container-npc {
     grid-column: span 2;
     width: 90%;
     display: grid;
@@ -123,35 +128,35 @@ textarea {
     text-align: center;
 }
 
-.attribute-container{
+.attribute-container {
     display: grid;
     align-content: center;
     grid-template-columns: 40% 20% 40%;
     gap: 1%;
 }
 
-.center-aligned-input-text{
+.center-aligned-input-text {
     text-align: center;
     width: 100%;
     max-width: 65px;
 }
 
-.center-aligned-input-text-small{
+.center-aligned-input-text-small {
     text-align: center !important;
     width: 100%;
     max-width: 40px;
 }
 
-.bottom-margin-input-text{
+.bottom-margin-input-text {
     margin-bottom: 5%;
 }
 
-.standard-width-center-aligned-numeric-input-text{
+.standard-width-center-aligned-numeric-input-text {
     text-align: center;
     width: 50px;
 }
 
-.skills-and-spells-grid{
+.skills-and-spells-grid {
     display: grid;
     align-content: center;
     align-items: center;
@@ -160,7 +165,7 @@ textarea {
     text-align: center;
 }
 
-.item-sheet-skills-and-spells-grid{
+.item-sheet-skills-and-spells-grid {
     display: grid;
     align-content: center;
     align-items: center;
@@ -171,33 +176,33 @@ textarea {
     text-align: center;
 }
 
-.item-sheet-skills-and-spells-grid h4{
+.item-sheet-skills-and-spells-grid h4 {
     width: 100%;
 }
 
-.skills-add-buttons-grid{
+.skills-add-buttons-grid {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin: 5px;
     column-gap: 15px;
 }
 
-.skills-add-button{
+.skills-add-button {
     margin: 5px;
     padding-bottom: 5px;
     font-style: italic;
 }
 
-.grid-header-label{
+.grid-header-label {
     font-weight: bold;
     border-bottom: 1px solid #782e22;
 }
 
-.bolded-label{
+.bolded-label {
     font-weight: bold;
 }
 
-.all-inventory-grid{
+.all-inventory-grid {
     display: grid;
     align-content: center;
     grid-template-columns: 5% 64% 9% 7% 7%;
@@ -213,11 +218,11 @@ textarea {
     border: 0px solid black;
 }
 
-.item-sheet-tall-img{
+.item-sheet-tall-img {
     grid-row: 1 / 4;
 }
 
-.item-sheet-horizontal-grid-2col{
+.item-sheet-horizontal-grid-2col {
     display: grid;
     grid-template-columns: auto 400px;
     align-items: center;
@@ -229,7 +234,7 @@ textarea {
     padding-right: 5px;
 }
 
-.item-sheet-horizontal-grid-4col{
+.item-sheet-horizontal-grid-4col {
     display: grid;
     grid-template-columns: auto 50px auto 50px;
     justify-content: left;
@@ -241,22 +246,22 @@ textarea {
     padding-right: 5px;
 }
 
-.attacks-section-label{
+.attacks-section-label {
     margin-top: 12px;
 }
 
 .sheet-body,
 .sheet-body .tab .editor {
-  height: auto;
-  flex: auto;
+    height: auto;
+    flex: auto;
 }
 
-.sheet-body{
+.sheet-body {
     margin-top: 5px;
 }
 
-.troika nav.sheet-tabs{
-    border-color: #782e22;   
+.troika nav.sheet-tabs {
+    border-color: #782e22;
 }
 
 .troika .tabs .item {
@@ -271,7 +276,7 @@ textarea {
 
     border: #999999;
     border-width: 2px 2px 0px 2px;
-    border-style: solid; 
+    border-style: solid;
 }
 
 .troika .tabs .item.active {
@@ -280,36 +285,38 @@ textarea {
     border: #000000;
     border-width: 2px 2px 0px 2px;
     border-style: solid;
-    background-color: rgba(0, 0 , 0, 0.05);;
+    background-color: rgba(0, 0, 0, 0.05);
+    ;
 }
 
-.editor{
+.editor {
     height: 400px !important;
 }
 
-.monies-provisions-grid{
+.monies-provisions-grid {
     display: grid;
     grid-template-columns: 55% 35%;
     column-gap: 3%;
     row-gap: 5%;
 }
 
-.provisions-grid{
+.provisions-grid {
     display: grid;
     margin-top: 6px;
     grid-template-columns: 10% 10% 10% 10% 10% 10%;
     column-gap: 3%;
 }
 
-.attacks-section{
+.attacks-section {
     margin-bottom: 5px;
     padding-bottom: 5px;
 }
-.attacks-section h3{
+
+.attacks-section h3 {
     margin-bottom: 5px;
 }
 
-.attacks-grid{
+.attacks-grid {
     display: grid;
     align-items: center;
     text-align: center;
@@ -317,7 +324,7 @@ textarea {
     column-gap: 1%;
 }
 
-.attacks-grid-chat{
+.attacks-grid-chat {
     display: grid;
     align-items: center;
     text-align: center;
@@ -328,33 +335,33 @@ textarea {
     margin-right: 4%;
 }
 
-.italicized{
+.italicized {
     font-style: italic;
 }
 
-.bolded{
+.bolded {
     font-weight: bold;
 }
 
-.attacks-grid h4{
+.attacks-grid h4 {
     margin-bottom: 0px !important;
 }
 
-.attacks-grid span{
+.attacks-grid span {
     margin-top: 4px;
     margin-bottom: 4px;
 }
 
-.skills-and-spells-section{
-    margin-top: 15px;    
+.skills-and-spells-section {
+    margin-top: 15px;
     padding-bottom: 10px;
 }
 
-.skills-and-spells-section h3{
+.skills-and-spells-section h3 {
     margin-bottom: 15px;
 }
 
-.item-sheet-attack-grid{
+.item-sheet-attack-grid {
     display: grid;
     align-items: center;
     text-align: center;
@@ -362,71 +369,85 @@ textarea {
     column-gap: 1%;
 }
 
-.item-sheet-attack-grid input{
+.item-sheet-attack-grid input {
     text-align: center;
 }
 
-.skill-attack-section{
+.skill-attack-section {
     margin-top: 5px;
 }
 
 /* override default pause icon to something fun */
-#pause img {
-    content: url(../assets/fortle_circular.webp);
+#logo {
+    content: url("../assets/troika-name.webp");
+    height: 30px;
 }
 
-.solid-divider{
+#pause {
+    background: none;
+}
+
+#pause img {
+    content: url(../assets/troika-pause.webp);
+    opacity: 1;
+}
+
+#pause figcaption {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.solid-divider {
     border-top: 1px solid #bbb;
     margin-left: 0px;
     margin-right: 25px;
 }
 
-.labeled-input-container{
+.labeled-input-container {
     display: flex;
     align-items: center;
 }
 
-.right-margin-5pct{
+.right-margin-5pct {
     margin-right: 5%;
 }
 
-.bold-header{
+.bold-header {
     font-weight: bold;
 }
 
-.no-underline{
+.no-underline {
     border: #000 0px !important;
 }
 
-.small-bottom-margin{
+.small-bottom-margin {
     margin-bottom: 1px;
 }
 
-.medium-bottom-margin{
+.medium-bottom-margin {
     margin-bottom: 5px !important;
 }
 
-.medium-bottom-padding{
+.medium-bottom-padding {
     padding-bottom: 5px !important;
 }
 
-.no-bottom-padding{
+.no-bottom-padding {
     padding-bottom: 0% !important;
 }
 
-.top-margin-10px{
+.top-margin-10px {
     margin-top: 10px !important;
 }
 
-.bottom-margin-15px{
+.bottom-margin-15px {
     margin-bottom: 15px !important;
 }
 
-.light-underline{
+.light-underline {
     border-bottom: 1px solid rgba(117, 114, 114, 0.486) !important;
 }
 
-.dark-underline{
+.dark-underline {
     border-bottom: 1px solid rgba(67, 66, 66, 0.486) !important;
 }
 
@@ -436,19 +457,19 @@ textarea {
     min-height: 85px;
 }
 
-.special-section .editor{
-    height:fit-content;
+.special-section .editor {
+    height: fit-content;
     max-height: 125px;
     min-height: 34px;
 }
 
-.special-section .editor-content{
+.special-section .editor-content {
     height: 100%;
     min-height: 55px;
     max-height: 115px;
     border: 1px solid #000;
     border-radius: 5px 5px 5px 5px;
-    background: rgba(0, 0 , 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     margin: 1px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -457,19 +478,19 @@ textarea {
     font-size: medium;
 }
 
-.notes-section .editor{
-    height:fit-content;
+.notes-section .editor {
+    height: fit-content;
     max-height: 200px;
     min-height: 34px;
 }
 
-.notes-section .editor-content{
+.notes-section .editor-content {
     height: 100%;
     min-height: 75px;
     max-height: 190px;
     border: 1px solid #000;
     border-radius: 5px 5px 5px 5px;
-    background: rgba(0, 0 , 0, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     margin: 1px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -478,16 +499,16 @@ textarea {
     font-size: medium;
 }
 
-.center-align-div{
+.center-align-div {
     text-align: center;
 }
 
-.over-burdened-message{
+.over-burdened-message {
     font-style: italic;
     color: #782e22;
 }
 
-.modify-damage-dialog{
+.modify-damage-dialog {
     display: flex;
     margin-bottom: 5%;
     gap: 2%;
@@ -495,33 +516,33 @@ textarea {
     justify-content: left;
 }
 
-.weightless-flex{
+.weightless-flex {
     display: flex;
     gap: 0.5%;
     align-items: baseline;
     justify-content: left;
 }
 
-.mien-flex-box{
+.mien-flex-box {
     display: flex;
     gap: 0.5%;
     margin-bottom: 0.5%;
 }
 
-.mien-flex-box input[type=numeric]{
+.mien-flex-box input[type=numeric] {
     max-width: 50px;
-    text-align: center !important; 
+    text-align: center !important;
 }
 
-.mien-flex-box input[type=text]{
+.mien-flex-box input[type=text] {
     max-width: auto;
     justify-content: left;
 }
 
-.chat-damage-min-damage{
+.chat-damage-min-damage {
     color: #782e22;
 }
 
-.chat-damage-max-damage{
+.chat-damage-max-damage {
     color: darkgreen;
 }
