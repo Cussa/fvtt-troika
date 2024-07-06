@@ -22,7 +22,8 @@
         </h3>
 
         {{else}}
-        <h3 class="grid-item-stretch-height-to-fit"><span class="bold-header">Mien:</span></h3>
+        <h3 class="grid-item-stretch-height-to-fit"><span title="Click to randomize mien."
+          class="bold-header rollable-mien"><i class="fas fa-dice"></i> Mien:</span></h3>
         <h3 class="grid-item-stretch-height-to-fit">
           <input name="system.mien" class="grid-item-stretch-height-to-fit" type="text" value="{{actor.system.mien}}"
             placeholder="" />
@@ -101,6 +102,11 @@
     <a class="item" data-tab="inventory">
       <h3 class="no-underline">Inventory & Provisions</h3>
     </a>
+    {{#if (ne actor.type "pc")}}
+    <a class="item" data-tab="mien">
+      <h3 class="no-underline">Mien</h3>
+    </a>
+    {{/if}}
     <a class="item" data-tab="char-notes">
       <h3 class="no-underline">Notes & Abilities</h3>
     </a>
@@ -232,6 +238,27 @@
       </div>
 
     </div>
+    {{!-- MIEN TAB --}}
+    {{#if (ne actor.type "pc")}}
+    <div class="tab" data-tab="mien" data-group="primary">
+
+      <div>
+        <h3 class="bolded-label no-underline small-bottom-margin top-margin-10px">Mien</h3>
+      </div>
+
+      <div>
+        {{#each actor.system.mienOptions as |mien|}}
+        <div class="mien-flex-box">
+          <input name="system.mienOptions.{{@index}}.number" type="numeric" inputmode="numeric" value="{{mien.number}}"
+            placeholder="" />
+          <input name="system.mienOptions.{{@index}}.description" type="text" value="{{mien.description}}"
+            placeholder="" />
+        </div>
+        {{/each}}
+      </div>
+
+    </div>
+    {{/if}}
 
     <div class="tab" data-tab="inventory" data-group="primary">
 
