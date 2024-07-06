@@ -16,13 +16,13 @@
       "discord": "TheLastScrub#7146"
     }    
   ],
-  "version": "1.4.0",
+  "version": "1.5.0",
   "compatibility": {
     "minimum": "11",
-    "verified": "11"
+    "verified": "12"
   },
-  "manifest": "https://github.com/cussa/fvtt-troika/releases/latest/download/system.json",
-  "download": "https://github.com/cussa/fvtt-troika/releases/latest/download/system.zip",
+  "manifest": "https://github.com/Cussa/fvtt-troika/releases/download/1.5.0/system.json",
+  "download": "https://github.com/Cussa/fvtt-troika/releases/download/1.5.0/system.zip",
   "gridDistance": 1,
   "gridUnits": "m",
   "primaryTokenAttribute": "stamina",
@@ -33,62 +33,78 @@
   "styles": [
     "css/troika.css"
   ],
-  "languages": [
-  ],
   "packs": [
     {
       "name": "troika-srd-spells",
       "label": "Troika SRD Spells",
       "system": "troika",
       "path": "packs/troika-srd-spells",
-      "private": false,
       "type": "Item",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "troika-srd-roll-tables",
       "label": "Troika SRD Roll Tables",
       "system": "troika",
       "path": "packs/troika-srd-roll-tables",
-      "private": false,
       "type": "RollTable",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "troika-srd-weapons",
       "label": "Troika SRD Weapons and Attacks",
       "system": "troika",
       "path": "packs/troika-srd-weapons-and-attacks",
-      "private": false,
       "type": "Item",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "troika-srd-skills",
       "label": "Troika SRD Skills",
       "system": "troika",
       "path": "packs/troika-srd-skills",
-      "private": false,
       "type": "Item",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "troika-srd-items",
       "label": "Troika SRD Items",
       "system": "troika",
       "path": "packs/troika-srd-items",
-      "private": false,
       "type": "Item",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "troika-srd-backgrounds",
       "label": "Troika SRD Backgrounds",
       "system": "troika",
       "path": "packs/troika-srd-backgrounds",
-      "private": false,
       "type": "Actor",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "flags": {
