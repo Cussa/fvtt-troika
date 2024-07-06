@@ -1,0 +1,658 @@
+{
+  "name": "41 Necromancer",
+  "type": "background",
+  "system": {
+    "skill": "1d3+3",
+    "stamina": "2d6+12",
+    "luck": "1d6+6",
+    "armour": 0,
+    "initiativeTokens": 2,
+    "monies": "2d6",
+    "provisions": {
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "p4": true,
+      "p5": true,
+      "p6": true,
+      "p7": false,
+      "p8": false,
+      "p9": false,
+      "p10": false,
+      "p11": false,
+      "p12": false
+    },
+    "attribution": {
+      "source": "Troika",
+      "link": "https://troikarpg.com"
+    },
+    "special": "",
+    "notes": "<p>The least popular of magical&nbsp;practitioners, Necromancers are&nbsp;shunned by the major centres of&nbsp;learning, left to their own devices&nbsp;on the edges of society, passing on&nbsp;knowledge in the time honoured&nbsp;master&ndash;student dynamic. This&nbsp;loneliness encourages students to&nbsp;make their own friends.</p>"
+  },
+  "items": [
+    {
+      "name": "Knife",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.Bt3M1u6hLCDit8qU"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676773918462,
+        "modifiedTime": 1700330748754,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "tl5amQYAJluUfsKQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.tl5amQYAJluUfsKQ"
+    },
+    {
+      "name": "Lantern and Flask of Oil",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-items.Item.Qr6TwtnTj2Jtt2RE"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676825020075,
+        "modifiedTime": 1700330760942,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "zkBekvpU2NS2aznc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.zkBekvpU2NS2aznc"
+    },
+    {
+      "name": "Rucksack",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 0,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "jIJyJpgOXJy4TZVz",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.lohlXsS3zqtlWEea.Item.k63RHtocvJkHIZXk"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700330816807,
+        "modifiedTime": 1700330835354,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.jIJyJpgOXJy4TZVz"
+    },
+    {
+      "name": "Dusty Robes",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 0,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "S1y2AIFUH0TEI5GZ",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700426051688,
+        "modifiedTime": 1700426061869,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.S1y2AIFUH0TEI5GZ"
+    },
+    {
+      "name": "The Skull of your Master OR Zombie Servant OR Ghost you have a co-dependent relationship with",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 0,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "vA2nG2qFtjMAexLN",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700426077900,
+        "modifiedTime": 1700426128057,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.vA2nG2qFtjMAexLN"
+    },
+    {
+      "name": "Healing",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-2f95264f-7fff-2b0e-8399-2b0d43c28e66\">Used to stitch wounds and apply ointments, stop bleeding, slow poison and the like. Also used for stabilising dying people.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700426231838,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "7zj1tA6hVKCUMNGQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.7zj1tA6hVKCUMNGQ"
+    },
+    {
+      "name": "Mortuary Science",
+      "type": "skill",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "_id": "QA5U1WLZo1lc5L1p",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700426175970,
+        "modifiedTime": 1700426196433,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.QA5U1WLZo1lc5L1p"
+    },
+    {
+      "name": "Relationship Counseling",
+      "type": "skill",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "_id": "geRf3Cvm0LpiQNtx",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700426236848,
+        "modifiedTime": 1700426245768,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.geRf3Cvm0LpiQNtx"
+    },
+    {
+      "name": "Posthumous Vitality",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">Necromancers, known for their social inadequacy, often find themselves</span><br role=\"presentation\"><span dir=\"ltr\" role=\"presentation\">having to make friends.</span><span dir=\"ltr\" role=\"presentation\">This Spell requires a fresh, or at least whole and lubricated, corpse. The </span><span dir=\"ltr\" role=\"presentation\">wizard rolls 2d6 plus their Posthumous Vitality Skill Total and consults</span><br role=\"presentation\"><span dir=\"ltr\" role=\"presentation\">the following chart (13+ counts for an Advancement tick):</span></p>\n<table style=\"width: 100%;\" border=\"1\"><colgroup><col style=\"width: 26.9054%;\"><col style=\"width: 73.0946%;\"></colgroup>\n<tbody>\n<tr>\n<td>4-12</td>\n<td>Nothing happens.</td>\n</tr>\n<tr>\n<td>13-14</td>\n<td>The vitality is clumsily applied, causing the body to explode messily. A new one must be found.</td>\n</tr>\n<tr>\n<td>15-16</td>\n<td>The creature is animated and lasts for 24 hours before literally falling to pieces.</td>\n</tr>\n<tr>\n<td>17+</td>\n<td>Perfect reanimation. the creature lasts until destroyed.</td>\n</tr>\n</tbody>\n</table>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "castingCost": "5",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.TXmbocW3lpO7dvtb"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676770245224,
+        "modifiedTime": 1700426304763,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "qbW9gg72iHV2saSO",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.qbW9gg72iHV2saSO"
+    },
+    {
+      "name": "Skeletal Counsel",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">Necromancers often talk to skulls. Sometimes they talk back. Use of this </span><span dir=\"ltr\" role=\"presentation\">Spell enables speaking with the dead, who answer one question per casting. </span><span dir=\"ltr\" role=\"presentation\">Requires a skull.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "castingCost": "3",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.GQcWTU5uHGWr9rxu"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676770617384,
+        "modifiedTime": 1700426310459,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "Lh230R9mbcEvaK88",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.Lh230R9mbcEvaK88"
+    },
+    {
+      "name": "Torpor",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">Those who study the dead consider it necessary to develop a profound </span><span dir=\"ltr\" role=\"presentation\">sympathy with their subject</span> <span dir=\"ltr\" role=\"presentation\">&mdash;</span> <span dir=\"ltr\" role=\"presentation\">how can you speak with the dead if you </span><span dir=\"ltr\" role=\"presentation\">don&rsquo;t understand the dead? Torpor helps build post-mortem empathy by </span><span dir=\"ltr\" role=\"presentation\">causing the necromancer to temporarily die. Bodily functions are halted, </span><span dir=\"ltr\" role=\"presentation\">no food, water, or air is needed, and they are, by most vulgar definitions</span><span dir=\"ltr\" role=\"presentation\">of the word, dead. The Spell lasts until ended by the wizard, who remains </span><span dir=\"ltr\" role=\"presentation\">vaguely aware of their surroundings to the extent of being conscious of </span><span dir=\"ltr\" role=\"presentation\">sound and movement but not of what is said or who is saying it. They still </span><span dir=\"ltr\" role=\"presentation\">take Damage from bodily abuse while under the effect and can indeed </span><span dir=\"ltr\" role=\"presentation\">become irretrievably dead.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "castingCost": "3",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.PViezIESG5KDfPhr"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676770880168,
+        "modifiedTime": 1700426318578,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "j0yfHnM3Bdx3kVWv",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.j0yfHnM3Bdx3kVWv"
+    },
+    {
+      "name": "Sneak",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a501a3bf-7fff-237a-5dbd-96ef338fab05\">The art of remaining unseen. This is Tested only when someone or something is actively trying to detect you. The sneaker would Roll Versus the Awareness of those searching for them; anyone beating the sneaker&rsquo;s score detects them.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700426322513,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "va5HLjD7oSWMNsbr",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!xPRc7ivIPjbWNSm1.va5HLjD7oSWMNsbr"
+    }
+  ],
+  "folder": null,
+  "_id": "xPRc7ivIPjbWNSm1",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "41 Necromancer",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "stamina"
+    },
+    "bar2": {
+      "attribute": "luck"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Esh40XLe9S2isjmY": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "1.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720298435547,
+    "modifiedTime": 1720298573408,
+    "lastModifiedBy": "Esh40XLe9S2isjmY"
+  },
+  "_key": "!actors!xPRc7ivIPjbWNSm1"
+}

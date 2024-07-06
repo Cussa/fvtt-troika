@@ -1,0 +1,44 @@
+{
+  "name": "Fusil",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span id=\"docs-internal-guid-0ae31bbb-7fff-892f-1438-e8f6b5bfddeb\">A fusil is a long Weapon that looks like a rifle and can be used in melee as a Club. A Fusil holds 6 charges before the plasmic core needs replacing.</span></p>",
+    "attack": {
+      "dr1": "2",
+      "dr2": "4",
+      "dr3": "4",
+      "dr4": "6",
+      "dr5": "12",
+      "dr6": "18",
+      "dr7": "24"
+    },
+    "inventorySlots": "1",
+    "sortOrder": -1,
+    "canAttack": true,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": true,
+    "armourIgnored": "1",
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676774368030,
+    "modifiedTime": 1676827741728,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "Jtc0WW4v5zXQ32cN",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!Jtc0WW4v5zXQ32cN"
+}

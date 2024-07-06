@@ -1,0 +1,44 @@
+{
+  "name": "Evaluate",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a1079852-7fff-3eaf-a6d2-2e51045fe9f2\">Test this to get an idea of how much something is worth.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.cF40jXjQ3ql3R4u4"
+    }
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676781942840,
+    "modifiedTime": 1676782632706,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "1qK9q1JOFPJrIV7G",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!1qK9q1JOFPJrIV7G"
+}

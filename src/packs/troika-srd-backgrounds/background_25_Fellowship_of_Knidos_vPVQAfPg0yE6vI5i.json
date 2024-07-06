@@ -1,0 +1,535 @@
+{
+  "name": "25 Fellowship of Knidos",
+  "type": "background",
+  "system": {
+    "skill": "1d3+3",
+    "stamina": "2d6+12",
+    "luck": "1d6+6",
+    "armour": 0,
+    "initiativeTokens": 2,
+    "monies": "2d6",
+    "provisions": {
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "p4": true,
+      "p5": true,
+      "p6": true,
+      "p7": false,
+      "p8": false,
+      "p9": false,
+      "p10": false,
+      "p11": false,
+      "p12": false
+    },
+    "attribution": {
+      "source": "Troika",
+      "link": "https://troikarpg.com"
+    },
+    "special": "",
+    "notes": "<p>Mathmologists honour the clean and&nbsp;unambiguous truths of mathematics&nbsp;and coordinate them with their&nbsp;observations of the multiverse. All&nbsp;things can be measured and predicted&nbsp;with the application of the correct&nbsp;mathmological ratios, those methods&nbsp;applied to penetrate the ethereal&nbsp;surface and glimpse the fundamental&nbsp;numbers below.</p>"
+  },
+  "items": [
+    {
+      "name": "Knife",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.Bt3M1u6hLCDit8qU"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676773918462,
+        "modifiedTime": 1700330748754,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "tl5amQYAJluUfsKQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.tl5amQYAJluUfsKQ"
+    },
+    {
+      "name": "Lantern and Flask of Oil",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-items.Item.Qr6TwtnTj2Jtt2RE"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676825020075,
+        "modifiedTime": 1700330760942,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "zkBekvpU2NS2aznc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.zkBekvpU2NS2aznc"
+    },
+    {
+      "name": "Rucksack",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 0,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "jIJyJpgOXJy4TZVz",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.lohlXsS3zqtlWEea.Item.k63RHtocvJkHIZXk"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700330816807,
+        "modifiedTime": 1700330835354,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.jIJyJpgOXJy4TZVz"
+    },
+    {
+      "name": "Large Astrolabe (Mace)",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Damage as Mace</p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "4",
+          "dr3": "4",
+          "dr4": "6",
+          "dr5": "6",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 1,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.R0L2YQaGjMOCe6G7"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676774064882,
+        "modifiedTime": 1700362551746,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "FK7jd7hI0g0d9PLE",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.FK7jd7hI0g0d9PLE"
+    },
+    {
+      "name": "Abacus",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "ONecnz5d3QXKCdFI",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700362555718,
+        "modifiedTime": 1700362563803,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.ONecnz5d3QXKCdFI"
+    },
+    {
+      "name": "Lots of Scrolls and Writing Equipment",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "9dyH0BgkXzzoCncj",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700362569263,
+        "modifiedTime": 1700362580257,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.9dyH0BgkXzzoCncj"
+    },
+    {
+      "name": "Mathmology",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-8c1f86c7-7fff-f2b2-c206-da5cdb4f829d\">Use this to gain insight into angles, pressures, numbers, and other such arcane arts. You could, for instance, Test your Mathmology to get a good idea of the surface tension of a ball of inert plasmic goo or to find the fulcrum for tripping a giant.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 3,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700362717051,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "SPHR9U3IIUVGnrD4",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.SPHR9U3IIUVGnrD4"
+    },
+    {
+      "name": "Astrology",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\">An essential Skill for anyone intent on travelling the stars. Can be used to identify stars and constellations, to gather hints on the destination of interdimensional portals, and to make star charts.</p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700362762777,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "Kqliu6fLskRgT0Wk",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.Kqliu6fLskRgT0Wk"
+    },
+    {
+      "name": "Find",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">When wizards lose their glasses they mumble to themselves until they </span><span dir=\"ltr\" role=\"presentation\">turn up. The thing being sought must be a specific object, not a general </span><span dir=\"ltr\" role=\"presentation\">category or type, and the direction is only given in terms of compass points.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "castingCost": "2",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.XyBnj5jJPNMKdkFT"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676769501489,
+        "modifiedTime": 1700362830318,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "vIWs9kd6nwTN1taX",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!vPVQAfPg0yE6vI5i.vIWs9kd6nwTN1taX"
+    }
+  ],
+  "folder": null,
+  "_id": "vPVQAfPg0yE6vI5i",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "25 Fellowship of Knidos",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "stamina"
+    },
+    "bar2": {
+      "attribute": "luck"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Esh40XLe9S2isjmY": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "1.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720298435606,
+    "modifiedTime": 1720298573408,
+    "lastModifiedBy": "Esh40XLe9S2isjmY"
+  },
+  "_key": "!actors!vPVQAfPg0yE6vI5i"
+}

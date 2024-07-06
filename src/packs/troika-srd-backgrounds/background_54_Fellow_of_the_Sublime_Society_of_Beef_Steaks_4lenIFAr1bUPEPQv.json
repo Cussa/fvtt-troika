@@ -1,0 +1,787 @@
+{
+  "name": "54 Fellow of the Sublime Society of Beef Steaks",
+  "type": "background",
+  "system": {
+    "skill": "1d3+3",
+    "stamina": "2d6+12",
+    "luck": "1d6+6",
+    "armour": 0,
+    "initiativeTokens": 2,
+    "monies": "2d6",
+    "provisions": {
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "p4": true,
+      "p5": true,
+      "p6": true,
+      "p7": false,
+      "p8": false,
+      "p9": false,
+      "p10": false,
+      "p11": false,
+      "p12": false
+    },
+    "attribution": {
+      "source": "Troika",
+      "link": "https://troikarpg.com"
+    },
+    "special": "",
+    "notes": "<p>Brawlers believe the application of&nbsp;might and a good beef steak is the&nbsp;universal truth. Words have no power&nbsp;and can no more define the universe&nbsp;than they can build a house, lift a&nbsp;cup, or sear a steak. Might can! Really,&nbsp;they have thought a lot about this.</p>"
+  },
+  "items": [
+    {
+      "name": "Knife",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.Bt3M1u6hLCDit8qU"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676773918462,
+        "modifiedTime": 1700330748754,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "tl5amQYAJluUfsKQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.tl5amQYAJluUfsKQ"
+    },
+    {
+      "name": "Lantern and Flask of Oil",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-items.Item.Qr6TwtnTj2Jtt2RE"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676825020075,
+        "modifiedTime": 1700330760942,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "zkBekvpU2NS2aznc",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.zkBekvpU2NS2aznc"
+    },
+    {
+      "name": "Rucksack",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 0,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "jIJyJpgOXJy4TZVz",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.lohlXsS3zqtlWEea.Item.k63RHtocvJkHIZXk"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700330816807,
+        "modifiedTime": 1700431131923,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.jIJyJpgOXJy4TZVz"
+    },
+    {
+      "name": "Weapon of your choice",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "WMC8P0xiTIpuH1Tf",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700431033825,
+        "modifiedTime": 1700431045477,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.WMC8P0xiTIpuH1Tf"
+    },
+    {
+      "name": "Small Gridiron",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "dzYdvwK6fLUngbb5",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700431048715,
+        "modifiedTime": 1700431055968,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.dzYdvwK6fLUngbb5"
+    },
+    {
+      "name": "2kg of Premium Meat Cuts",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "gJ5eQOzRtTAPQbEM",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700431096122,
+        "modifiedTime": 1700431105897,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.gJ5eQOzRtTAPQbEM"
+    },
+    {
+      "name": "Waistcoat",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 0,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "bYe0tnlGc917d9YF",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700431108500,
+        "modifiedTime": 1700431141098,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.bYe0tnlGc917d9YF"
+    },
+    {
+      "name": "Bottle of Strong but Fancy Wine",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "EWKIgo7k83svMWVO",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700431120886,
+        "modifiedTime": 1700431150418,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.EWKIgo7k83svMWVO"
+    },
+    {
+      "name": "Weapon of your choice Fighting",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a3d856d3-7fff-b84e-ddcf-127d94350091\">Choose what general category of Weapons this covers when you take this Skill. Roll Versus during combat when using the appropriate method of assault. The GM is encouraged to allow Weapon categories to be broadly applicable, such as Glaive Fighting being equivalent to Polearm Fighting.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700431182945,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "HTrCurKTibMHuirU",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.HTrCurKTibMHuirU"
+    },
+    {
+      "name": "Wrestling",
+      "type": "skill",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "_id": "ZQpgECsFV3etDuyu",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700431188394,
+        "modifiedTime": 1700431195027,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.ZQpgECsFV3etDuyu"
+    },
+    {
+      "name": "Swim",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-9feb9b97-7fff-f829-e813-0a9f97d7c03c\">Use this while swimming in dangerous waters, diving, holding your breath for long periods, and so on. If you have this Skill you don&rsquo;t need to roll it for normal conditions. Characters without it are assumed to not be able to swim and need to test Swimming every round they remain in the water or start Drowning (7.9). Receive a penalty to this Skill equal to half the number of item slots filled. </span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700431257749,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "vieLbdfFzT7XtvgH",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.vieLbdfFzT7XtvgH"
+    },
+    {
+      "name": "Climb",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-e9608839-7fff-f7d9-ad08-dece9a7eb3af\">The usefulness of the ability to clamber up things cannot be overstated. Most climbs should be single rolls though longer or more difficult climbs may require multiple rolls. On these climbs consider requiring a number or total or repeated failures to fall off unless it is a particularly&nbsp; merciless ascent. The GM should use their discretion.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700431270566,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "giIeGS3y1mcOpcVU",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.giIeGS3y1mcOpcVU"
+    },
+    {
+      "name": "Run",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-46c92387-7fff-f1fc-bc56-3abf49c2445f\">When it matters how fast you are, or if you can reach somewhere in time, use this. A basic chase is an Roll Versus.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700431279481,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "wxSBOqXTUx74jOYW",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.wxSBOqXTUx74jOYW"
+    },
+    {
+      "name": "Fist Fighting",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a3d856d3-7fff-b84e-ddcf-127d94350091\">Choose what general category of Weapons this covers when you take this Skill. Roll Versus during combat when using the appropriate method of assault. The GM is encouraged to allow Weapon categories to be broadly applicable, such as Glaive Fighting being equivalent to Polearm Fighting.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700431289655,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "xS0GT8a0YTPlMzkG",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.xS0GT8a0YTPlMzkG"
+    },
+    {
+      "name": "Grilling",
+      "type": "skill",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "_id": "ZSaQhieRVnWA6FHy",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700431294748,
+        "modifiedTime": 1700431300551,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!4lenIFAr1bUPEPQv.ZSaQhieRVnWA6FHy"
+    }
+  ],
+  "folder": null,
+  "_id": "4lenIFAr1bUPEPQv",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "54 Fellow of the Sublime Society of Beef Steaks",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "stamina"
+    },
+    "bar2": {
+      "attribute": "luck"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Esh40XLe9S2isjmY": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "1.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720298435403,
+    "modifiedTime": 1720298573408,
+    "lastModifiedBy": "Esh40XLe9S2isjmY"
+  },
+  "_key": "!actors!4lenIFAr1bUPEPQv"
+}

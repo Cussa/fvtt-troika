@@ -1,0 +1,41 @@
+{
+  "name": "Firebolt",
+  "type": "spell",
+  "img": "icons/svg/fire.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-adb37a32-7fff-f5cb-c40b-70276d0bd742\" dir=\"ltr\">Shoot impressive flames from your fingertips, dealing Damage to one target within 20 metres.&nbsp;</p>",
+    "attack": {
+      "dr1": "3",
+      "dr2": "3",
+      "dr3": "5",
+      "dr4": "7",
+      "dr5": "9",
+      "dr6": "12",
+      "dr7": "16"
+    },
+    "rank": "1",
+    "castingCost": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": true
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1673720730764,
+    "modifiedTime": 1676771738840,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "y1C38yriur2YKrCE",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!y1C38yriur2YKrCE"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Find",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">When wizards lose their glasses they mumble to themselves until they </span><span dir=\"ltr\" role=\"presentation\">turn up. The thing being sought must be a specific object, not a general </span><span dir=\"ltr\" role=\"presentation\">category or type, and the direction is only given in terms of compass points.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "2",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676769501489,
+    "modifiedTime": 1676771738840,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "XyBnj5jJPNMKdkFT",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!XyBnj5jJPNMKdkFT"
+}

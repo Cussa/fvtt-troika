@@ -1,0 +1,41 @@
+{
+  "name": "Exorcism",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">The Red Priests posit that all negative behaviour is a symptom of some </span><span dir=\"ltr\" role=\"presentation\">level of possession, or at least direct influence, by the forces of Change, </span><span dir=\"ltr\" role=\"presentation\">unwitting agents of Mass in need of healing. The wizard throws salt at </span><span dir=\"ltr\" role=\"presentation\">their target and Rolls Versus the possessing spirit to cast it out. In the case </span><span class=\"\" dir=\"ltr\" role=\"presentation\">of a Fumble the spirit is drawn into and possesses the wizard.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676769350430,
+    "modifiedTime": 1676771738839,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "FrMHA5H5sf2MKvNO",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!FrMHA5H5sf2MKvNO"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Befuddle",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">A</span> <span dir=\"ltr\" role=\"presentation\">wizard&rsquo;s</span> <span dir=\"ltr\" role=\"presentation\">touch</span> <span dir=\"ltr\" role=\"presentation\">can</span> <span dir=\"ltr\" role=\"presentation\">shake</span> <span dir=\"ltr\" role=\"presentation\">up</span> <span dir=\"ltr\" role=\"presentation\">someone&rsquo;s</span> <span dir=\"ltr\" role=\"presentation\">mind</span> <span dir=\"ltr\" role=\"presentation\">like</span> <span dir=\"ltr\" role=\"presentation\">a</span> <span dir=\"ltr\" role=\"presentation\">snow</span> <span dir=\"ltr\" role=\"presentation\">globe. </span><span dir=\"ltr\" role=\"presentation\">The</span> <span dir=\"ltr\" role=\"presentation\">target</span> <span dir=\"ltr\" role=\"presentation\">makes</span> <span dir=\"ltr\" role=\"presentation\">all</span> <span dir=\"ltr\" role=\"presentation\">rolls</span> <span dir=\"ltr\" role=\"presentation\">at</span> <span dir=\"ltr\" role=\"presentation\">a</span> <span dir=\"ltr\" role=\"presentation\">-1</span> <span dir=\"ltr\" role=\"presentation\">penalty</span> <span dir=\"ltr\" role=\"presentation\">until</span> <span dir=\"ltr\" role=\"presentation\">their</span> <span dir=\"ltr\" role=\"presentation\">head</span> <span dir=\"ltr\" role=\"presentation\">clears. </span><span dir=\"ltr\" role=\"presentation\">Lasts for 3 minutes.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676768863032,
+    "modifiedTime": 1676771738837,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "XF67a4z8gvPytXbm",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!XF67a4z8gvPytXbm"
+}

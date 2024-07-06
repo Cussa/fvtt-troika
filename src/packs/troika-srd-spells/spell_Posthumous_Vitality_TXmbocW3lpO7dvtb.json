@@ -1,0 +1,41 @@
+{
+  "name": "Posthumous Vitality",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">Necromancers, known for their social inadequacy, often find themselves</span><br role=\"presentation\"><span dir=\"ltr\" role=\"presentation\">having to make friends.</span><span dir=\"ltr\" role=\"presentation\">This Spell requires a fresh, or at least whole and lubricated, corpse. The </span><span dir=\"ltr\" role=\"presentation\">wizard rolls 2d6 plus their Posthumous Vitality Skill Total and consults</span><br role=\"presentation\"><span dir=\"ltr\" role=\"presentation\">the following chart (13+ counts for an Advancement tick):</span></p>\n<table style=\"width: 100%;\" border=\"1\"><colgroup><col style=\"width: 26.9054%;\"><col style=\"width: 73.0946%;\"></colgroup>\n<tbody>\n<tr>\n<td>4-12</td>\n<td>Nothing happens.</td>\n</tr>\n<tr>\n<td>13-14</td>\n<td>The vitality is clumsily applied, causing the body to explode messily. A new one must be found.</td>\n</tr>\n<tr>\n<td>15-16</td>\n<td>The creature is animated and lasts for 24 hours before literally falling to pieces.</td>\n</tr>\n<tr>\n<td>17+</td>\n<td>Perfect reanimation. the creature lasts until destroyed.</td>\n</tr>\n</tbody>\n</table>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "5",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676770245224,
+    "modifiedTime": 1676771738843,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "TXmbocW3lpO7dvtb",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!TXmbocW3lpO7dvtb"
+}

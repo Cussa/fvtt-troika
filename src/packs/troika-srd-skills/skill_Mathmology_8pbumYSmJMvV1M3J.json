@@ -1,0 +1,44 @@
+{
+  "name": "Mathmology",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-8c1f86c7-7fff-f2b2-c206-da5cdb4f829d\">Use this to gain insight into angles, pressures, numbers, and other such arcane arts. You could, for instance, Test your Mathmology to get a good idea of the surface tension of a ball of inert plasmic goo or to find the fulcrum for tripping a giant.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.cF40jXjQ3ql3R4u4"
+    }
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676781942840,
+    "modifiedTime": 1676782632707,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "8pbumYSmJMvV1M3J",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!8pbumYSmJMvV1M3J"
+}

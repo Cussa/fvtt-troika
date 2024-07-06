@@ -1,0 +1,44 @@
+{
+  "name": "Sneak",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a501a3bf-7fff-237a-5dbd-96ef338fab05\">The art of remaining unseen. This is Tested only when someone or something is actively trying to detect you. The sneaker would Roll Versus the Awareness of those searching for them; anyone beating the sneaker&rsquo;s score detects them.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.cF40jXjQ3ql3R4u4"
+    }
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676781942840,
+    "modifiedTime": 1676782632708,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "eRErrYMlkC98bt89",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!eRErrYMlkC98bt89"
+}

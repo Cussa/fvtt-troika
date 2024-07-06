@@ -1,0 +1,41 @@
+{
+  "name": "Thought Vapour",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">The wizard can cause their nose to exist in multiple alternative realities, </span><span dir=\"ltr\" role=\"presentation\">travel through various Spheres, and enable the olfactory sensation of </span><span dir=\"ltr\" role=\"presentation\">thought. Emotions, attitudes, and underlying feelings can be smelled. No </span><span dir=\"ltr\" role=\"presentation\">words or images are formed, just impressions. Any strong odour causes </span><span dir=\"ltr\" role=\"presentation\">this Spell to fail.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676770782506,
+    "modifiedTime": 1676771738845,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "5kftYKoWRqCqUQqp",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!5kftYKoWRqCqUQqp"
+}

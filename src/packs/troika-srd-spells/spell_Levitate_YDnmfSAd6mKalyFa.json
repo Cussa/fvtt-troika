@@ -1,0 +1,41 @@
+{
+  "name": "Levitate",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">Elevates the wizard or another on the backs of tiny invisible sprites who</span><br role=\"presentation\"><span dir=\"ltr\" role=\"presentation\">answer only to their summoner. May float about for 3 minutes.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "2",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676770001120,
+    "modifiedTime": 1676771738842,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "YDnmfSAd6mKalyFa",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!YDnmfSAd6mKalyFa"
+}

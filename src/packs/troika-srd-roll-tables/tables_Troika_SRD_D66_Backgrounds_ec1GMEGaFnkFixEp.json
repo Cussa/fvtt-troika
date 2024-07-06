@@ -1,0 +1,605 @@
+{
+  "name": "Troika SRD D66 Backgrounds",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "text": "11 Ardent Giant of Corda",
+      "documentId": "lohlXsS3zqtlWEea",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "lm0klBkTXWHF1sOJ",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.lm0klBkTXWHF1sOJ"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "text": "12 Befouler of Ponds",
+      "documentId": "MdqbvzYixFgw23yd",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "3KCaiYBP1ChE6kRk",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.3KCaiYBP1ChE6kRk"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "text": "13 Burglar",
+      "documentId": "qIwAP9aVh9jp57ms",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "JeH8XMTbo9YAotk3",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.JeH8XMTbo9YAotk3"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "text": "14 Cacogen",
+      "documentId": "nt7MMAqjdk41pPAm",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "yJOqux8GI7J00niu",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.yJOqux8GI7J00niu"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "text": "15 Chaos Champion",
+      "documentId": "9hnmgLgIRUx76TSO",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "V2CorkHctBtBdVKb",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.V2CorkHctBtBdVKb"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "drawn": false,
+      "text": "16 Claviger",
+      "documentId": "eLRsaQh7tNs38YdH",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "JKZydlu8wKw1FMqN",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.JKZydlu8wKw1FMqN"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "text": "21 Demon Stalker",
+      "documentId": "IX3D5DaER10HDVOu",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "8MOV54cwJO8l8pYG",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.8MOV54cwJO8l8pYG"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "drawn": false,
+      "text": "22 Dwarf",
+      "documentId": "xOdHqjdf71QxYwTL",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "X6qQr0euVJT1gWLJ",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.X6qQr0euVJT1gWLJ"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "text": "23 Epopt",
+      "documentId": "lXHV712nLfjf59SS",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "JXaW3LC7dfDNJxAr",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.JXaW3LC7dfDNJxAr"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "text": "24 Exographer",
+      "documentId": "Sy7IJtRCQJJKJCL3",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "D9eEBfDY4nyAMM7m",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.D9eEBfDY4nyAMM7m"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "text": "25 Fellowship of Knidos",
+      "documentId": "WYOXarIUQBMbfXpa",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "5bqMSsZtjVVYIqNV",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.5bqMSsZtjVVYIqNV"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "text": "26 Fellow of the Peerage of Porters &amp; Basin Fillers",
+      "documentId": "aKP4lEvAHqQ0n61c",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "tLwfdOnGQ0Bpcs7y",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.tLwfdOnGQ0Bpcs7y"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "text": "31 Gremlin Catcher",
+      "documentId": "OyfhWYNEcgjK8R7b",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "RvX4lSClpvS3yBzN",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.RvX4lSClpvS3yBzN"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "text": "32 Journeyman of the Guild of Sharp Corners",
+      "documentId": "AyVMliUmgxvoclGb",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "1NPiPMCqwh2HdC9M",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.1NPiPMCqwh2HdC9M"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "text": "33 Lansquenet",
+      "documentId": "lp4mBfWsHeLDlk3L",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "n7cZS2e4lGG7Pejf",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.n7cZS2e4lGG7Pejf"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "text": "34 Lonesome Monarch",
+      "documentId": "nrfzviG7Yr51NDv7",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "k9SMQRTGDg7z8SFe",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.k9SMQRTGDg7z8SFe"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        17,
+        17
+      ],
+      "drawn": false,
+      "text": "35 Member of Miss Kinsey's Dining Club",
+      "documentId": "jIrQZOsMbJxvlbj2",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "N9YyJj7SKY98u5Ri",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.N9YyJj7SKY98u5Ri"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        18,
+        18
+      ],
+      "drawn": false,
+      "text": "36 Monkeymonger",
+      "documentId": "7q4PZ0A1uZkgAqD1",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "b67BKO4y0CIwC85w",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.b67BKO4y0CIwC85w"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        19,
+        19
+      ],
+      "drawn": false,
+      "text": "41 Necromancer",
+      "documentId": "8akH6k44JMbuhp58",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "pzcs58t23pKFmHle",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.pzcs58t23pKFmHle"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        20,
+        20
+      ],
+      "drawn": false,
+      "text": "42 Parchment Witch",
+      "documentId": "NALhsMDlwC80Dzj2",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "VvFogHzW3CJ094EZ",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.VvFogHzW3CJ094EZ"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "text": "43 Derivative Dwarf",
+      "documentId": "gYUOpMA7RLvQOz01",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "4p0s3OA8zogsUVZs",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.4p0s3OA8zogsUVZs"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "drawn": false,
+      "text": "44 Questing Knight",
+      "documentId": "g0I8IdVow4K8TJlw",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "Sm6ZpIk1GqD2YEhD",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.Sm6ZpIk1GqD2YEhD"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "drawn": false,
+      "text": "45 Red Priest",
+      "documentId": "nTI6eDdBtKSDJwfm",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "p1nxSjxPPB2xgcEb",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.p1nxSjxPPB2xgcEb"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "drawn": false,
+      "text": "46 Rhino Man",
+      "documentId": "C8Hp1AjKvjipacJM",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "EQ8e1fAXbpnEVFyT",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.EQ8e1fAXbpnEVFyT"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        25,
+        25
+      ],
+      "drawn": false,
+      "text": "51 Sceptical Lamassu",
+      "documentId": "F58lqwhRJotcfRYA",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "Xj8Y4aYFK2eTDtO5",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.Xj8Y4aYFK2eTDtO5"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        26,
+        26
+      ],
+      "drawn": false,
+      "text": "52 Sorcerer of the Academy of Doors",
+      "documentId": "fmcBqUcZ90PKFtA4",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "VRXSHeGaJe5GkGxv",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.VRXSHeGaJe5GkGxv"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        27,
+        27
+      ],
+      "drawn": false,
+      "text": "53 Sorcerer of the College of Friends",
+      "documentId": "jXewg9vKSdvIZLlz",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "JKVtCNgYNO0Lc0pL",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.JKVtCNgYNO0Lc0pL"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        28,
+        28
+      ],
+      "drawn": false,
+      "text": "54 Fellow of the Sublime Society of Beef Steaks",
+      "documentId": "1SKFOnlNmzbdo6b4",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "GRWNedBBo6dTyuQs",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.GRWNedBBo6dTyuQs"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        29,
+        29
+      ],
+      "drawn": false,
+      "text": "55 Temple Knight of Telak the Swordbringer",
+      "documentId": "QU24VmrPsaQ6YGEi",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "PrMTUdQ4Vy7jKJn1",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.PrMTUdQ4Vy7jKJn1"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        30,
+        30
+      ],
+      "drawn": false,
+      "text": "56 Thaumaturge",
+      "documentId": "0zwOwFJTkQhbkfOr",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "LUrgiwpe5YZaPhDZ",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.LUrgiwpe5YZaPhDZ"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        31,
+        31
+      ],
+      "drawn": false,
+      "text": "61 Thinking Engine",
+      "documentId": "ykHLVTPD0K0l8Rvz",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "6t69NRlPWIc9aFw3",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.6t69NRlPWIc9aFw3"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "drawn": false,
+      "text": "62 Vengeful Child",
+      "documentId": "tnHklbI04B88zFlz",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "NM38jXI1rwmTBVuz",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.NM38jXI1rwmTBVuz"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        33,
+        33
+      ],
+      "drawn": false,
+      "text": "63 Venturesome Academic",
+      "documentId": "vwR3yAmy7mZ2pFTh",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "FzmYjURap5Jb4qNU",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.FzmYjURap5Jb4qNU"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        34,
+        34
+      ],
+      "drawn": false,
+      "text": "64 Wizard Hunter",
+      "documentId": "w7KFrLqIUe5hSLMz",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "z7UHfiWMOVMcpeQB",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.z7UHfiWMOVMcpeQB"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        35,
+        35
+      ],
+      "drawn": false,
+      "text": "65 Yongardy Lawyer",
+      "documentId": "S8XjrQn5DjTNMII4",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "xQnzTdX8HLdWZh8Y",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.xQnzTdX8HLdWZh8Y"
+    },
+    {
+      "type": 2,
+      "documentCollection": "troika.troika-srd-backgrounds",
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "drawn": false,
+      "text": "66 Zoanthrop",
+      "documentId": "97Q2ozusDyvBa5gc",
+      "img": "icons/svg/mystery-man.svg",
+      "_id": "w2MLP4FRiomDmthT",
+      "flags": {},
+      "_key": "!tables.results!ec1GMEGaFnkFixEp.w2MLP4FRiomDmthT"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "1.0.1",
+    "coreVersion": "11.311",
+    "createdTime": 1700437259572,
+    "modifiedTime": 1700437597224,
+    "lastModifiedBy": "V3MUPdobYszl4e09"
+  },
+  "formula": "",
+  "_id": "ec1GMEGaFnkFixEp",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "V3MUPdobYszl4e09": 3
+  },
+  "_key": "!tables!ec1GMEGaFnkFixEp"
+}

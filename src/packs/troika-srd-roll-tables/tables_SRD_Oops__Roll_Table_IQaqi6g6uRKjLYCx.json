@@ -1,0 +1,603 @@
+{
+  "name": "SRD Oops! Roll Table",
+  "img": "icons/svg/d20-grey.svg",
+  "description": "SRD Magic Fumble Table",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "0B6NaHY7Fw8F65iM",
+      "text": "There is a flash followed by a shriek - the wizard has turned into a pig.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.0B6NaHY7Fw8F65iM"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "kNB0NE4ZTEHnxd90",
+      "text": "Twenty-five years of the wizard’s life drop away in an instant, possibly making them a very small child. If the wizard is younger than twenty-five then they disappear into cosmic pre-birth.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.kNB0NE4ZTEHnxd90"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        13,
+        13
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "uCyEq7KDeEkvKVfA",
+      "text": "A small shoal of herring and the water they had previously swum in appear above the wizard, soaking everyone nearby with freezing sea water.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.uCyEq7KDeEkvKVfA"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        14,
+        14
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "XhLBd7nXCdrJicuW",
+      "text": "The wizard no longer speaks or understands any known tongue, instead favouring a slightly unpleasant language made up of shrieks and mumbles.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.XhLBd7nXCdrJicuW"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        15,
+        15
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "OSiidC4IFYkbxG7z",
+      "text": "The most feared of adolescent academy curses: hiccups! Until dispelled the wizard hiccups uncontrollably, suffering a -4 penalty to further attempts at magic.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.OSiidC4IFYkbxG7z"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        16,
+        16
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "dUAPSvdroihBaWTQ",
+      "text": "The wizard grows an attractive tail. If removed it does not grow back.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.dUAPSvdroihBaWTQ"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        21,
+        21
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "5XYV0OgqdqGX6Hfd",
+      "text": "All currency in the wizard’s possession turns into beautiful butterflies that flap off into the sky.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.5XYV0OgqdqGX6Hfd"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        22,
+        22
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "ARLu8ZzHiEIJqBXs",
+      "text": "A very surprised orc appears beside the wizard (7/8/2 - Club).",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.ARLu8ZzHiEIJqBXs"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        23,
+        23
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "K1LGRMpYGy7Z8Deb",
+      "text": "The wizard catches the Red Eye Curse. Whenever they open their eyes fire shoots out at random (as Fire Bolt).",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.K1LGRMpYGy7Z8Deb"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        24,
+        24
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "cyHY9VXgcmDLlQFv",
+      "text": "All shoes in the vicinity catch fire.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.cyHY9VXgcmDLlQFv"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        25,
+        25
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "0ffnM5cO6BwuU1fx",
+      "text": "The wizard grows a small pair of horns.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.0ffnM5cO6BwuU1fx"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        26,
+        26
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "QUpNjo3UJC0Vf6aY",
+      "text": "All of the wizard’s body hair falls out with an audible “fuff!”",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.QUpNjo3UJC0Vf6aY"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "pM74dlNnSuyxXZBT",
+      "text": "All weapons of war in the vicinity turn into flowers.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.pM74dlNnSuyxXZBT"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        32,
+        32
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "bI4ODE7X7AZEzfai",
+      "text": "The wizard’s old face melts off and reveals a new one. It is quite handsome.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.bI4ODE7X7AZEzfai"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        33,
+        33
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "dweuMFQVj9x9IZrU",
+      "text": "The wizard disappears in a puff of smoke, never to be seen again.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.dweuMFQVj9x9IZrU"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        34,
+        34
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "sYOqqsSoekNSDtce",
+      "text": "The wizard’s hands find a mind of their own and take a severe disliking to the tyranny of control. They set about choking the wizard to death only to lapse back into servitude as soon as they pass out.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.sYOqqsSoekNSDtce"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        35,
+        35
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "Fz5xc1jYLozSCOlP",
+      "text": "All animals in the vicinity are brought back to life. This includes rations and leather, which will crawl and flap about blindly.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.Fz5xc1jYLozSCOlP"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        36,
+        36
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "oJV6PyAPTuZ2aEQu",
+      "text": "A sickness overcomes the wizard, causing them to cough up a thick black fluid. The fluid flows away as though in a hurry to be somewhere. The wizard will soon hear rumours and suffer accusations due to the workings of a sinister doppelgänger.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.oJV6PyAPTuZ2aEQu"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        41,
+        41
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "7eyI8KTeOqwTPYCV",
+      "text": "Everyone in the vicinity turns into a pig except for one embarrassed wizard.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.7eyI8KTeOqwTPYCV"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        42,
+        42
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "JpGE9mthWE1WCNOp",
+      "text": "An overflow of plasmic fluid has found its way into the wizard’s head, which has expanded to the size of a pumpkin. If the wizard is struck for 5+ Damage in one go they must Test their Luck or their head explodes, killing them and dealing 2d6 Damage to anyone standing nearby.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.JpGE9mthWE1WCNOp"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        43,
+        43
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "WxFo1FlNamTT4Zbx",
+      "text": "All vegetation within a mile withers and dies.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.WxFo1FlNamTT4Zbx"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        44,
+        44
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "G6g40qq6wraO3dJF",
+      "text": "A pool of colour opens up under the wizard, sucking them and any other unlucky nearby souls into it. They will be whisked off to a random sphere of existence.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.G6g40qq6wraO3dJF"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        45,
+        45
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "aDythoMd2FgEjTS1",
+      "text": "All exposed liquid within 12 metres turns to milk. That milk then curdles.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.aDythoMd2FgEjTS1"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        46,
+        46
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "G0NHjxzmndxm8MCz",
+      "text": "A random spectator’s bones mysteriously disappear. Even more mysteriously they don’t seem overly put out by it. They can’t fight or cast spells and can only very slowly shuffle about as a gelatinous blob of flesh but they’re generally unphased. After 1d6 hours the bones pop back into place from wherever they went.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.G0NHjxzmndxm8MCz"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        51,
+        51
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "OFbXA1XFn3X0tbvd",
+      "text": "An inanimate object in the wizard’s possession gains sentience and a voice. Its attitude is up to the GM to decide.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.OFbXA1XFn3X0tbvd"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        52,
+        52
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "TWbZreB6yYSeYt7i",
+      "text": "A portal is opened to a paradigmatic battleground, allowing an angelic or demonic figure to pop through.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.TWbZreB6yYSeYt7i"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        53,
+        53
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "4XZ4AlLVjAkROLSJ",
+      "text": "The wizard flies off in a random direction at great speed, landing 50 metres away (or falling back down to earth, as it may be).",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.4XZ4AlLVjAkROLSJ"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        54,
+        54
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "kuuiTWQy3sJvTFBV",
+      "text": "The wizard suffers a coughing fit for 1d6 turns after which 1d6 gremlins tumble out of their mouth and start biting people’s faces.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.kuuiTWQy3sJvTFBV"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        55,
+        55
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "fTVp6AyNKLTk93tS",
+      "text": "The wizard instantly grows an enormous shaggy beard. It tumbles down to the floor and gets in the way. The wizard suffers a -2 penalty to everything until they tame that magnificent beast.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.fTVp6AyNKLTk93tS"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        56,
+        56
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "BV2iYDQ9APaTSBlH",
+      "text": "The wizard becomes 20 years old. Today is their new birthday and they will feel terrible if no one notices.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.BV2iYDQ9APaTSBlH"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        61,
+        61
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "rADyx2WIpSOlUmR8",
+      "text": "A calm and healthy pig appears in place of the Spell.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.rADyx2WIpSOlUmR8"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        62,
+        62
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "cnpGU1RRMIMxw7bD",
+      "text": "The wizard’s teeth all fall out. The sudden loss causes them to suffer a -4 penalty to making magic due to their poor diction. After an hour a fresh set grows in.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.cnpGU1RRMIMxw7bD"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        63,
+        63
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "6zcnbdwY0tsdNbg8",
+      "text": "An entirely different and random Spell goes off, directed at the same target.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.6zcnbdwY0tsdNbg8"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        64,
+        64
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "1V6ex6Xc9JS0M2z4",
+      "text": "The wizard is cursed with curses. They are unable to speak without swearing, thus making magic impossible for the duration. Lasts 1d6 hours.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.1V6ex6Xc9JS0M2z4"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        65,
+        65
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "gyFh3005fuX4zvEj",
+      "text": "The wizard issues forth a mighty sneeze, knocking everyone over in front of them and dealing 1d6 Damage unless they successfully Test their Luck.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.gyFh3005fuX4zvEj"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        66,
+        66
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "_id": "wya0ydwn0j1ZQr5b",
+      "text": "The Spell being cast won’t stop. It goes completely haywire, out of control, firing off madly until the wizard is subdued.",
+      "img": "icons/svg/d20-black.svg",
+      "documentId": null,
+      "flags": {},
+      "_key": "!tables.results!IQaqi6g6uRKjLYCx.wya0ydwn0j1ZQr5b"
+    }
+  ],
+  "formula": "d6*10+d6",
+  "replacement": true,
+  "displayRoll": true,
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676772593086,
+    "modifiedTime": 1676825443850,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "IQaqi6g6uRKjLYCx",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!tables!IQaqi6g6uRKjLYCx"
+}

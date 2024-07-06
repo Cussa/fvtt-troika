@@ -1,0 +1,674 @@
+{
+  "name": "12 Befouler of Ponds",
+  "type": "background",
+  "system": {
+    "skill": "1d3+3",
+    "stamina": "2d6+12",
+    "luck": "1d6+6",
+    "armour": 0,
+    "initiativeTokens": 2,
+    "monies": "2d6",
+    "provisions": {
+      "p1": true,
+      "p2": true,
+      "p3": true,
+      "p4": true,
+      "p5": true,
+      "p6": true,
+      "p7": false,
+      "p8": false,
+      "p9": false,
+      "p10": false,
+      "p11": false,
+      "p12": false
+    },
+    "attribution": {
+      "source": "Troika",
+      "link": "https://troikarpg.com"
+    },
+    "special": "<p>You never contract disease as a result&nbsp;of drinking stagnant liquids.</p>",
+    "notes": "<p>You&rsquo;re a wise man, a high priest, a&nbsp;pond-pisser, a typical but committed&nbsp;adherent of P!P!Ssshrp. The bloated&nbsp;Toad God has no church other than&nbsp;the periphery of ponds where the&nbsp;foulness catches in the reeds and no&nbsp;congregation other than the gnats&nbsp;and dragonflies. You minister to them&nbsp;all the same.</p>"
+  },
+  "items": [
+    {
+      "name": "Knife",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.Bt3M1u6hLCDit8qU"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676773918462,
+        "modifiedTime": 1700331017234,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "tl5amQYAJluUfsKQ",
+      "folder": null,
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.tl5amQYAJluUfsKQ"
+    },
+    {
+      "name": "Lantern and Flask of Oil",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-items.Item.Qr6TwtnTj2Jtt2RE"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676825020075,
+        "modifiedTime": 1700331017234,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "zkBekvpU2NS2aznc",
+      "folder": null,
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.zkBekvpU2NS2aznc"
+    },
+    {
+      "name": "Rucksack",
+      "type": "gear",
+      "system": {
+        "description": "",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 0,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "jIJyJpgOXJy4TZVz",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Actor.lohlXsS3zqtlWEea.Item.k63RHtocvJkHIZXk"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700330816807,
+        "modifiedTime": 1700330835354,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.jIJyJpgOXJy4TZVz"
+    },
+    {
+      "name": "Sackcloth Robes, caked in stinking mud and undergrowth",
+      "type": "gear",
+      "system": {
+        "description": "<p>Caked in stinking mud and undergrowth. +1 to Sneak rolls in marshy terrain while&nbsp;wearing them, -1 everywhere else&nbsp;&lsquo;cos it stinks!</p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": false,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 0,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "_id": "xPk4OOMzh7AtvZBp",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 400000,
+      "ownership": {
+        "default": 0,
+        "V3MUPdobYszl4e09": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1700330925516,
+        "modifiedTime": 1700357978744,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.xPk4OOMzh7AtvZBp"
+    },
+    {
+      "name": "A Large, Worn Wooden Ladle (Mace)",
+      "type": "gear",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Damage as mace.</p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "4",
+          "dr3": "4",
+          "dr4": "6",
+          "dr5": "6",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "inventorySlots": 1,
+        "sortOrder": -1,
+        "canAttack": true,
+        "equipped": true,
+        "armourProvided": 0,
+        "requiresTwoHands": false,
+        "armourIgnored": 1,
+        "quantity": 1,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-weapons.Item.R0L2YQaGjMOCe6G7"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676774064882,
+        "modifiedTime": 1700357995481,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "bHE3B1WkPFIVNa9L",
+      "folder": null,
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.bHE3B1WkPFIVNa9L"
+    },
+    {
+      "name": "Drown",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">Cause a target&rsquo;s lungs to fill with water. They must Test their Luck (or Skill </span><span dir=\"ltr\" aria-owns=\"pdfjs_internal_id_745R\">for Enemies). If they fail they start to Drown (7.9) and are incapacitated </span><span dir=\"ltr\" role=\"presentation\">as water pours from their mouth. They may Test again once per Turn until </span><span dir=\"ltr\" role=\"presentation\">they pass, at which point the Spell ends.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 3,
+        "castingCost": "4",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.WYQgMLd1KVPXgo9W"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676769225113,
+        "modifiedTime": 1700331084760,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "m31zgyEPJHhdpfWf",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.m31zgyEPJHhdpfWf"
+    },
+    {
+      "name": "Swim",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-9feb9b97-7fff-f829-e813-0a9f97d7c03c\">Use this while swimming in dangerous waters, diving, holding your breath for long periods, and so on. If you have this Skill you don&rsquo;t need to roll it for normal conditions. Characters without it are assumed to not be able to swim and need to test Swimming every round they remain in the water or start Drowning (7.9). Receive a penalty to this Skill equal to half the number of item slots filled. </span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700331092715,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "1iVuekgyhaO7zuYK",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.1iVuekgyhaO7zuYK"
+    },
+    {
+      "name": "Tongue Twister",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">Beware! If a wizard screws their nose and twists their fingers at you then </span><span dir=\"ltr\" role=\"presentation\">a Tongue Twister is coming your way. The target must Test their Luck (or </span><span dir=\"ltr\" role=\"presentation\">Skill for Enemies) or have their tongue literally tied in knots. This requires </span><span dir=\"ltr\" role=\"presentation\">some time and a fair bit of patience to disentangle.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "castingCost": "2",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.zinJFbqDLdcL4Wcm"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676770846803,
+        "modifiedTime": 1700331157911,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "D5dU6xK49XdWYrwF",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.D5dU6xK49XdWYrwF"
+    },
+    {
+      "name": "Undo",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">The wizard disentangles a Spell from this instance of reality. To do so they</span><br role=\"presentation\"><span dir=\"ltr\" role=\"presentation\">must Roll Versus the original casting if disentanglement is possible at all.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 2,
+        "castingCost": "double cost of original Spell",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.CGAE3aIGsU0K2FaX"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1674434956209,
+        "modifiedTime": 1700331150484,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "NACaSCKae8tZHiGe",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.NACaSCKae8tZHiGe"
+    },
+    {
+      "name": "Web",
+      "type": "spell",
+      "img": "icons/svg/daze.svg",
+      "system": {
+        "description": "<p><span dir=\"ltr\" role=\"presentation\">Whether this is opening a portal to the plane of slime or channelling the </span><span dir=\"ltr\" role=\"presentation\">sprites of sickness, all can agree that it is quite disgusting. The wizard </span><span dir=\"ltr\" role=\"presentation\">blows forth the &ldquo;web&rdquo; from their nose and all in a cone extending 12 metres </span><span dir=\"ltr\" role=\"presentation\">in front of the wizard are trapped unless they Test their Luck (or Skill for </span><span dir=\"ltr\" role=\"presentation\">Enemies). Each Turn anything passing through or out of it must repeat the </span><span dir=\"ltr\" role=\"presentation\">Test or become stuck. Dries up after 12 rounds.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "castingCost": "2",
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.troika.troika-srd-spells.Item.SLrP2CwASoM4vtL1"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676771003580,
+        "modifiedTime": 1700331115479,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "5vDCIGAn4KK9HgVv",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.5vDCIGAn4KK9HgVv"
+    },
+    {
+      "name": "Sneak",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a501a3bf-7fff-237a-5dbd-96ef338fab05\">The art of remaining unseen. This is Tested only when someone or something is actively trying to detect you. The sneaker would Roll Versus the Awareness of those searching for them; anyone beating the sneaker&rsquo;s score detects them.</span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700331127751,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "FF9XwBFnKjhErkaL",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.FF9XwBFnKjhErkaL"
+    },
+    {
+      "name": "Second Sight",
+      "type": "skill",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-e59d9e9d-7fff-4305-973a-a145ba36f0ec\">Use of this allows the detection of magic. On a successful Test you focus your inner eye and all sorcerous activity glows faintly for a moment. </span></p>",
+        "attack": {
+          "dr1": "2",
+          "dr2": "2",
+          "dr3": "2",
+          "dr4": "2",
+          "dr5": "4",
+          "dr6": "8",
+          "dr7": "10"
+        },
+        "rank": 1,
+        "modifier": 0,
+        "improvement": false,
+        "canAttack": false,
+        "attribution": {}
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Item.cF40jXjQ3ql3R4u4"
+        }
+      },
+      "_stats": {
+        "systemId": "troika",
+        "systemVersion": "1.0.1",
+        "coreVersion": "11.311",
+        "createdTime": 1676781942840,
+        "modifiedTime": 1700331135542,
+        "lastModifiedBy": "V3MUPdobYszl4e09"
+      },
+      "_id": "OLYVCUEoWnWKrcnQ",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "iubUFLpmPB0vkjXq": 3,
+        "V3MUPdobYszl4e09": 3
+      },
+      "_key": "!actors.items!7bGGDkLxs4146tgQ.OLYVCUEoWnWKrcnQ"
+    }
+  ],
+  "folder": null,
+  "_id": "7bGGDkLxs4146tgQ",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "12 Befouler of Ponds",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "stamina"
+    },
+    "bar2": {
+      "attribute": "luck"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Esh40XLe9S2isjmY": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "1.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1720298435727,
+    "modifiedTime": 1720298573408,
+    "lastModifiedBy": "Esh40XLe9S2isjmY"
+  },
+  "_key": "!actors!7bGGDkLxs4146tgQ"
+}

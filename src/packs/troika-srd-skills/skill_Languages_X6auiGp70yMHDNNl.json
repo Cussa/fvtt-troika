@@ -1,0 +1,44 @@
+{
+  "name": "Languages",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "name": "",
+    "description": "<p id=\"docs-internal-guid-56976a83-7fff-5674-fe85-6827a739c7d1\" dir=\"ltr\"><span id=\"docs-internal-guid-a24f0fb2-7fff-73fb-cdda-10cf529f165c\">Represents relative competence in specific languages and would only need to be Tested if trying to understand something incredibly arcane or technical. It&rsquo;s assumed that once you have one point in a language you can understand it passably. You get one tick in a language for every month of intense tuition or complete submersion in it.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.cF40jXjQ3ql3R4u4"
+    }
+  },
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676781942840,
+    "modifiedTime": 1676782632707,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "X6auiGp70yMHDNNl",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!X6auiGp70yMHDNNl"
+}

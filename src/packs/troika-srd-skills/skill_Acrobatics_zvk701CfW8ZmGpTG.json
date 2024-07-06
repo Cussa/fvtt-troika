@@ -1,0 +1,40 @@
+{
+  "name": "Acrobatics",
+  "type": "skill",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span id=\"docs-internal-guid-c84c285f-7fff-0cc7-60cf-a6fb9d1b08df\">Used for rolling, balancing, falling, jumping, etc.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676781942840,
+    "modifiedTime": 1676782632705,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "zvk701CfW8ZmGpTG",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!zvk701CfW8ZmGpTG"
+}

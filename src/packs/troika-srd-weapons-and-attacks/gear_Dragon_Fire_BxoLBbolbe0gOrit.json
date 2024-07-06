@@ -1,0 +1,44 @@
+{
+  "name": "Dragon-Fire",
+  "type": "gear",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "name": "",
+    "description": "",
+    "attack": {
+      "dr1": "6",
+      "dr2": "8",
+      "dr3": "12",
+      "dr4": "16",
+      "dr5": "18",
+      "dr6": "24",
+      "dr7": "36"
+    },
+    "inventorySlots": "0",
+    "sortOrder": -1,
+    "canAttack": true,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": "0",
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676774869953,
+    "modifiedTime": 1676827731619,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "BxoLBbolbe0gOrit",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!BxoLBbolbe0gOrit"
+}

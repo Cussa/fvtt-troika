@@ -1,0 +1,44 @@
+{
+  "name": "Knuckle Dice",
+  "type": "gear",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span id=\"docs-internal-guid-3fa6ce6f-7fff-c905-516f-3bec205a81cd\">Knuckle dice are made from the nimble, petal shaped knuckle bones of goblins and make excellent two sided dice.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "inventorySlots": "1",
+    "sortOrder": -1,
+    "canAttack": false,
+    "equipped": true,
+    "armourProvided": "0",
+    "requiresTwoHands": false,
+    "armourIgnored": 0,
+    "quantity": "1"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676826359294,
+    "modifiedTime": 1676826657623,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "dRRBoigOimkMoegN",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!dRRBoigOimkMoegN"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Amity",
+  "type": "spell",
+  "img": "icons/svg/daze.svg",
+  "system": {
+    "name": "",
+    "description": "<p><span dir=\"ltr\" role=\"presentation\">The College of Friends always sends out its Factotums on nights after Amity </span><span dir=\"ltr\" role=\"presentation\">classes. Clearing out the bars and brothels of their drunken apprentices is </span><span dir=\"ltr\" role=\"presentation\">tiring work. Use of this Spell causes the target to Test their Luck (or Skill </span><span dir=\"ltr\" role=\"presentation\">for Enemies) or become very friendly towards the wizard, as though they </span><span dir=\"ltr\" role=\"presentation\">were an old friend. They won&rsquo;t act irrationally, though, and if they were </span><span dir=\"ltr\" role=\"presentation\">already a bit of a boor this might not change much.</span></p>",
+    "attack": {
+      "dr1": 2,
+      "dr2": 2,
+      "dr3": 2,
+      "dr4": 2,
+      "dr5": 4,
+      "dr6": 8,
+      "dr7": 10
+    },
+    "rank": "1",
+    "castingCost": "4",
+    "modifier": "0",
+    "improvement": false,
+    "canAttack": false
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "troika",
+    "systemVersion": "0.2.7",
+    "coreVersion": "10.291",
+    "createdTime": 1676768463333,
+    "modifiedTime": 1676771738836,
+    "lastModifiedBy": "iubUFLpmPB0vkjXq"
+  },
+  "_id": "Frp4vR4nkhBPb0Yj",
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "iubUFLpmPB0vkjXq": 3
+  },
+  "_key": "!items!Frp4vR4nkhBPb0Yj"
+}
