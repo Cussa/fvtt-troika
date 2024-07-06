@@ -1,5 +1,5 @@
 import { itemEnricher } from "../enricher/item.mjs";
-import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog, rollSkillTestUnder, rollSkillTestOver, showDamageRollDialog, rollDamageForItem } from "../other/roll.js"
+import { simpleDiceRoll, dx6Roll, d36Roll, showSkillTestDialog, rollSkillTestUnder, rollSkillTestOver, showDamageRollDialog, rollDamageForItem, create_roll } from "../other/roll.js"
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -387,5 +387,68 @@ export class TroikaActorSheet extends ActorSheet {
       },
       rejectClose: false
     });
+  }
+
+  async _onDropActor(event, data) {
+    if (!this.actor.isOwner) return false;
+
+    if (this.actor.type != "pc")
+      return false;
+
+    const background = await fromUuid(data.uuid);
+    if (background.type != "background")
+      return false;
+
+    if (this.actor.system.background) {
+      const confirmation = await Dialog.confirm({
+        content: "This PC already have a background. Do you want to continue? If yes, it will clear all the information from the PC. This is a destructive operation and there is no return."
+      });
+      if (!confirmation)
+        return;
+
+      let deleteItems = this.actor.items.map((i) => i.id);
+      this.actor.deleteEmbeddedDocuments("Item", deleteItems);
+    }
+
+    let [skill_roll, skill_animation] = await create_roll(background.system.skill);
+    let [stamina_roll, stamina_animation] = await create_roll(background.system.stamina);
+    let [luck_roll, luck_animation] = await create_roll(background.system.luck);
+    let [monies_roll, monies_animation] = await create_roll(background.system.monies);
+
+    await Promise.all([skill_animation, stamina_animation, luck_animation, monies_animation]);
+
+    let updates = {
+      "system.background": background.name,
+      "system.skill.value": skill_roll.total,
+      "system.stamina.value": stamina_roll.total,
+      "system.stamina.max": stamina_roll.total,
+      "system.luck.value": luck_roll.total,
+      "system.luck.max": luck_roll.total,
+      "system.armour": background.system.armour,
+      "system.initiativeTokens": background.system.initiativeTokens,
+      "system.notes": background.system.notes,
+      "system.special": background.system.special,
+      "system.monies": `${monies_roll.total} silve pence`
+    };
+    for (let index = 1; index <= 12; index++) {
+      updates[`system.provisions.p${index}`] = background.system.provisions[`p${index}`];
+    }
+
+    let content = ``;
+    content += `<p><strong>Skill:</strong> ${skill_roll.total} (${skill_roll.terms[0].results[0].result} + 3)</p>`;
+    content += `<p><strong>Stamina:</strong> ${stamina_roll.total} (${stamina_roll.terms[0].results[0].result} + ${stamina_roll.terms[0].results[1].result} + 12)</p>`;
+    content += `<p><strong>Luck:</strong> ${luck_roll.total} (${luck_roll.terms[0].results[0].result} + 6)</p>`;
+
+    ChatMessage.create({
+      user: game.user._id,
+      content: `<div class="incident-message"><h1>${this.actor.name}</h1><h2>Background choosen:<br>${background.name}</h2>
+        ${content}</div>`,
+      whisper: game.users.filter(u => u.isGM).map(u => u._id)
+    });
+
+    await this.actor.update(updates);
+
+    let items = await Promise.all(background.items.map(async (i) => (await fromUuid(i.uuid)).toObject()));
+    this.actor.createEmbeddedDocuments("Item", items);
   }
 }
