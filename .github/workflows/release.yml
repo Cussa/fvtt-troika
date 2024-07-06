@@ -27,6 +27,10 @@ jobs:
 
     # - name: Disable debug
     #   run: sed -i 's/TRUED6\.debug = true;/TRUED6.debug = false;/g' "module/helpers/config.mjs"
+    - name: Install Foundry VTT Cli and pack the source
+      run: |
+        npm install -g @foundryvtt/foundryvtt-cli
+        node scripts/convertJSONtoLDB.mjs
 
     # Create a zip file with all files required by the system to add to the release
     - run: zip -r ${{ env.package_type }}.zip LICENSE README.md system.json template.json assets/ css/ module/ packs/ templates/
@@ -49,11 +53,17 @@ jobs:
 
     - name: Send package to foundry
       run: |
+        DRY_RUN=false
+        if [[ "${{github.event.release.tag_name}}" == *-beta ]]
+        then
+          DRY_RUN=true
+        fi
         HTTP_RESPONSE=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" -X POST 'https://api.foundryvtt.com/_api/packages/release_version/' \
         --header 'Authorization: ${{ secrets.PACKAGE_TOKEN }}' \
         --header 'Content-Type: application/json' \
         --data '{
             "id": "${{env.package_id}}",
+            "dryRun: $DRY_RUN,
             "release": {
                 "version": "${{ github.event.release.tag_name }}",
                 "manifest": "https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/${{ env.package_type }}.json",
