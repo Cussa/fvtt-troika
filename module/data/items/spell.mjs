@@ -5,7 +5,7 @@ export class TroikaSpell extends TroikaSkill {
     const fields = foundry.data.fields;
     const schema = super.defineSchema();
 
-    schema.castingCost = new fields.StringField({ required: true, blank: false });
+    schema.castingCost = new fields.StringField({ required: true, blank: false, initial: "0" });
 
     return schema;
   }
