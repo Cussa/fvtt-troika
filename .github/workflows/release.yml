@@ -29,7 +29,7 @@ jobs:
     #   run: sed -i 's/TRUED6\.debug = true;/TRUED6.debug = false;/g' "module/helpers/config.mjs"
     - name: Install Foundry VTT Cli and pack the source
       run: |
-        npm install -g @foundryvtt/foundryvtt-cli
+        npm install @foundryvtt/foundryvtt-cli --save-dev
         node scripts/convertJSONtoLDB.mjs
 
     # Create a zip file with all files required by the system to add to the release
