@@ -8,12 +8,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        1,
-        1
+        11,
+        11
       ],
       "drawn": false,
       "text": "11 Ardent Giant of Corda",
-      "documentId": "lohlXsS3zqtlWEea",
+      "documentId": "F2BmdZ0fqg6Wj1Nr",
       "img": "icons/svg/mystery-man.svg",
       "_id": "lm0klBkTXWHF1sOJ",
       "flags": {},
@@ -24,12 +24,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        2,
-        2
+        12,
+        12
       ],
       "drawn": false,
       "text": "12 Befouler of Ponds",
-      "documentId": "MdqbvzYixFgw23yd",
+      "documentId": "7bGGDkLxs4146tgQ",
       "img": "icons/svg/mystery-man.svg",
       "_id": "3KCaiYBP1ChE6kRk",
       "flags": {},
@@ -40,12 +40,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        3,
-        3
+        13,
+        13
       ],
       "drawn": false,
       "text": "13 Burglar",
-      "documentId": "qIwAP9aVh9jp57ms",
+      "documentId": "c0qJjScTcnW1i0NC",
       "img": "icons/svg/mystery-man.svg",
       "_id": "JeH8XMTbo9YAotk3",
       "flags": {},
@@ -56,12 +56,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        4,
-        4
+        14,
+        14
       ],
       "drawn": false,
       "text": "14 Cacogen",
-      "documentId": "nt7MMAqjdk41pPAm",
+      "documentId": "m3XzJXPDcUZTa0uI",
       "img": "icons/svg/mystery-man.svg",
       "_id": "yJOqux8GI7J00niu",
       "flags": {},
@@ -72,12 +72,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        5,
-        5
+        15,
+        15
       ],
       "drawn": false,
       "text": "15 Chaos Champion",
-      "documentId": "9hnmgLgIRUx76TSO",
+      "documentId": "9xAyyWs11QoS4ZOF",
       "img": "icons/svg/mystery-man.svg",
       "_id": "V2CorkHctBtBdVKb",
       "flags": {},
@@ -88,12 +88,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        6,
-        6
+        16,
+        16
       ],
       "drawn": false,
       "text": "16 Claviger",
-      "documentId": "eLRsaQh7tNs38YdH",
+      "documentId": "N63tKDR2Ivj2EdNN",
       "img": "icons/svg/mystery-man.svg",
       "_id": "JKZydlu8wKw1FMqN",
       "flags": {},
@@ -104,12 +104,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        7,
-        7
+        21,
+        21
       ],
       "drawn": false,
       "text": "21 Demon Stalker",
-      "documentId": "IX3D5DaER10HDVOu",
+      "documentId": "CiUngluy2k12KR71",
       "img": "icons/svg/mystery-man.svg",
       "_id": "8MOV54cwJO8l8pYG",
       "flags": {},
@@ -120,12 +120,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        8,
-        8
+        22,
+        22
       ],
       "drawn": false,
       "text": "22 Dwarf",
-      "documentId": "xOdHqjdf71QxYwTL",
+      "documentId": "oEpIwllG8JDQiA0e",
       "img": "icons/svg/mystery-man.svg",
       "_id": "X6qQr0euVJT1gWLJ",
       "flags": {},
@@ -136,12 +136,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        9,
-        9
+        23,
+        23
       ],
       "drawn": false,
       "text": "23 Epopt",
-      "documentId": "lXHV712nLfjf59SS",
+      "documentId": "PNY5qko5wTi5u8KI",
       "img": "icons/svg/mystery-man.svg",
       "_id": "JXaW3LC7dfDNJxAr",
       "flags": {},
@@ -152,12 +152,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        10,
-        10
+        24,
+        24
       ],
       "drawn": false,
       "text": "24 Exographer",
-      "documentId": "Sy7IJtRCQJJKJCL3",
+      "documentId": "yEqdafv50XI8kIGa",
       "img": "icons/svg/mystery-man.svg",
       "_id": "D9eEBfDY4nyAMM7m",
       "flags": {},
@@ -168,12 +168,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        11,
-        11
+        25,
+        25
       ],
       "drawn": false,
       "text": "25 Fellowship of Knidos",
-      "documentId": "WYOXarIUQBMbfXpa",
+      "documentId": "vPVQAfPg0yE6vI5i",
       "img": "icons/svg/mystery-man.svg",
       "_id": "5bqMSsZtjVVYIqNV",
       "flags": {},
@@ -184,12 +184,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        12,
-        12
+        26,
+        26
       ],
       "drawn": false,
       "text": "26 Fellow of the Peerage of Porters &amp; Basin Fillers",
-      "documentId": "aKP4lEvAHqQ0n61c",
+      "documentId": "HkhbvPljeWDCIpDb",
       "img": "icons/svg/mystery-man.svg",
       "_id": "tLwfdOnGQ0Bpcs7y",
       "flags": {},
@@ -200,12 +200,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        13,
-        13
+        31,
+        31
       ],
       "drawn": false,
       "text": "31 Gremlin Catcher",
-      "documentId": "OyfhWYNEcgjK8R7b",
+      "documentId": "pikXlhsFpfZeXSi0",
       "img": "icons/svg/mystery-man.svg",
       "_id": "RvX4lSClpvS3yBzN",
       "flags": {},
@@ -216,12 +216,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        14,
-        14
+        32,
+        32
       ],
       "drawn": false,
       "text": "32 Journeyman of the Guild of Sharp Corners",
-      "documentId": "AyVMliUmgxvoclGb",
+      "documentId": "2hGgJLYKZAfZe6D8",
       "img": "icons/svg/mystery-man.svg",
       "_id": "1NPiPMCqwh2HdC9M",
       "flags": {},
@@ -232,12 +232,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        15,
-        15
+        33,
+        33
       ],
       "drawn": false,
       "text": "33 Lansquenet",
-      "documentId": "lp4mBfWsHeLDlk3L",
+      "documentId": "lg4gAaS8An7pbjV8",
       "img": "icons/svg/mystery-man.svg",
       "_id": "n7cZS2e4lGG7Pejf",
       "flags": {},
@@ -248,12 +248,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        16,
-        16
+        34,
+        34
       ],
       "drawn": false,
       "text": "34 Lonesome Monarch",
-      "documentId": "nrfzviG7Yr51NDv7",
+      "documentId": "T44mUUGhlVGLyzgY",
       "img": "icons/svg/mystery-man.svg",
       "_id": "k9SMQRTGDg7z8SFe",
       "flags": {},
@@ -264,12 +264,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        17,
-        17
+        35,
+        35
       ],
       "drawn": false,
       "text": "35 Member of Miss Kinsey's Dining Club",
-      "documentId": "jIrQZOsMbJxvlbj2",
+      "documentId": "q3AmyFqwWk0yXAqB",
       "img": "icons/svg/mystery-man.svg",
       "_id": "N9YyJj7SKY98u5Ri",
       "flags": {},
@@ -280,12 +280,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        18,
-        18
+        36,
+        36
       ],
       "drawn": false,
       "text": "36 Monkeymonger",
-      "documentId": "7q4PZ0A1uZkgAqD1",
+      "documentId": "ff3MHpg2u3hlc3aS",
       "img": "icons/svg/mystery-man.svg",
       "_id": "b67BKO4y0CIwC85w",
       "flags": {},
@@ -296,12 +296,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        19,
-        19
+        41,
+        41
       ],
       "drawn": false,
       "text": "41 Necromancer",
-      "documentId": "8akH6k44JMbuhp58",
+      "documentId": "xPRc7ivIPjbWNSm1",
       "img": "icons/svg/mystery-man.svg",
       "_id": "pzcs58t23pKFmHle",
       "flags": {},
@@ -312,12 +312,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        20,
-        20
+        42,
+        42
       ],
       "drawn": false,
       "text": "42 Parchment Witch",
-      "documentId": "NALhsMDlwC80Dzj2",
+      "documentId": "nXnIx1jYN8oIBSSN",
       "img": "icons/svg/mystery-man.svg",
       "_id": "VvFogHzW3CJ094EZ",
       "flags": {},
@@ -328,12 +328,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        21,
-        21
+        43,
+        43
       ],
       "drawn": false,
       "text": "43 Derivative Dwarf",
-      "documentId": "gYUOpMA7RLvQOz01",
+      "documentId": "8RcAtopzwU708I6c",
       "img": "icons/svg/mystery-man.svg",
       "_id": "4p0s3OA8zogsUVZs",
       "flags": {},
@@ -344,12 +344,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        22,
-        22
+        44,
+        44
       ],
       "drawn": false,
       "text": "44 Questing Knight",
-      "documentId": "g0I8IdVow4K8TJlw",
+      "documentId": "pcIivzD7izj7c4jp",
       "img": "icons/svg/mystery-man.svg",
       "_id": "Sm6ZpIk1GqD2YEhD",
       "flags": {},
@@ -360,12 +360,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        23,
-        23
+        45,
+        45
       ],
       "drawn": false,
       "text": "45 Red Priest",
-      "documentId": "nTI6eDdBtKSDJwfm",
+      "documentId": "22dhHS24ksw9ZNPH",
       "img": "icons/svg/mystery-man.svg",
       "_id": "p1nxSjxPPB2xgcEb",
       "flags": {},
@@ -376,12 +376,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        24,
-        24
+        46,
+        46
       ],
       "drawn": false,
       "text": "46 Rhino Man",
-      "documentId": "C8Hp1AjKvjipacJM",
+      "documentId": "0rb0By8QlnxVcAmo",
       "img": "icons/svg/mystery-man.svg",
       "_id": "EQ8e1fAXbpnEVFyT",
       "flags": {},
@@ -392,12 +392,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        25,
-        25
+        51,
+        51
       ],
       "drawn": false,
       "text": "51 Sceptical Lamassu",
-      "documentId": "F58lqwhRJotcfRYA",
+      "documentId": "tc7t7KMpz5DSRZMQ",
       "img": "icons/svg/mystery-man.svg",
       "_id": "Xj8Y4aYFK2eTDtO5",
       "flags": {},
@@ -408,12 +408,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        26,
-        26
+        52,
+        52
       ],
       "drawn": false,
       "text": "52 Sorcerer of the Academy of Doors",
-      "documentId": "fmcBqUcZ90PKFtA4",
+      "documentId": "b51luQbiscLpHU4F",
       "img": "icons/svg/mystery-man.svg",
       "_id": "VRXSHeGaJe5GkGxv",
       "flags": {},
@@ -424,12 +424,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        27,
-        27
+        53,
+        53
       ],
       "drawn": false,
       "text": "53 Sorcerer of the College of Friends",
-      "documentId": "jXewg9vKSdvIZLlz",
+      "documentId": "g6vsoUZeIoWDvg5g",
       "img": "icons/svg/mystery-man.svg",
       "_id": "JKVtCNgYNO0Lc0pL",
       "flags": {},
@@ -440,12 +440,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        28,
-        28
+        54,
+        54
       ],
       "drawn": false,
       "text": "54 Fellow of the Sublime Society of Beef Steaks",
-      "documentId": "1SKFOnlNmzbdo6b4",
+      "documentId": "4lenIFAr1bUPEPQv",
       "img": "icons/svg/mystery-man.svg",
       "_id": "GRWNedBBo6dTyuQs",
       "flags": {},
@@ -456,12 +456,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        29,
-        29
+        55,
+        55
       ],
       "drawn": false,
       "text": "55 Temple Knight of Telak the Swordbringer",
-      "documentId": "QU24VmrPsaQ6YGEi",
+      "documentId": "aqu78rrJt3WY7uAv",
       "img": "icons/svg/mystery-man.svg",
       "_id": "PrMTUdQ4Vy7jKJn1",
       "flags": {},
@@ -472,12 +472,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        30,
-        30
+        56,
+        56
       ],
       "drawn": false,
       "text": "56 Thaumaturge",
-      "documentId": "0zwOwFJTkQhbkfOr",
+      "documentId": "oEy0sqAVTWkrwsmh",
       "img": "icons/svg/mystery-man.svg",
       "_id": "LUrgiwpe5YZaPhDZ",
       "flags": {},
@@ -488,12 +488,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        31,
-        31
+        61,
+        61
       ],
       "drawn": false,
       "text": "61 Thinking Engine",
-      "documentId": "ykHLVTPD0K0l8Rvz",
+      "documentId": "fNPKrZYZrBw7zoEF",
       "img": "icons/svg/mystery-man.svg",
       "_id": "6t69NRlPWIc9aFw3",
       "flags": {},
@@ -504,12 +504,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        32,
-        32
+        62,
+        62
       ],
       "drawn": false,
       "text": "62 Vengeful Child",
-      "documentId": "tnHklbI04B88zFlz",
+      "documentId": "rP3IrK3sTKpNxGVs",
       "img": "icons/svg/mystery-man.svg",
       "_id": "NM38jXI1rwmTBVuz",
       "flags": {},
@@ -520,12 +520,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        33,
-        33
+        63,
+        63
       ],
       "drawn": false,
       "text": "63 Venturesome Academic",
-      "documentId": "vwR3yAmy7mZ2pFTh",
+      "documentId": "DdRD81UtVub16SU1",
       "img": "icons/svg/mystery-man.svg",
       "_id": "FzmYjURap5Jb4qNU",
       "flags": {},
@@ -536,12 +536,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        34,
-        34
+        64,
+        64
       ],
       "drawn": false,
       "text": "64 Wizard Hunter",
-      "documentId": "w7KFrLqIUe5hSLMz",
+      "documentId": "6i3BbTlGlANxx7ew",
       "img": "icons/svg/mystery-man.svg",
       "_id": "z7UHfiWMOVMcpeQB",
       "flags": {},
@@ -552,12 +552,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        35,
-        35
+        65,
+        65
       ],
       "drawn": false,
       "text": "65 Yongardy Lawyer",
-      "documentId": "S8XjrQn5DjTNMII4",
+      "documentId": "TQwjuVpE9aEl7kxw",
       "img": "icons/svg/mystery-man.svg",
       "_id": "xQnzTdX8HLdWZh8Y",
       "flags": {},
@@ -568,12 +568,12 @@
       "documentCollection": "troika.troika-srd-backgrounds",
       "weight": 1,
       "range": [
-        36,
-        36
+        66,
+        66
       ],
       "drawn": false,
       "text": "66 Zoanthrop",
-      "documentId": "97Q2ozusDyvBa5gc",
+      "documentId": "gcggmVvxuRCgO1nB",
       "img": "icons/svg/mystery-man.svg",
       "_id": "w2MLP4FRiomDmthT",
       "flags": {},
@@ -588,13 +588,13 @@
   },
   "_stats": {
     "systemId": "troika",
-    "systemVersion": "1.0.1",
-    "coreVersion": "11.311",
+    "systemVersion": "1.5.0",
+    "coreVersion": "11.315",
     "createdTime": 1700437259572,
-    "modifiedTime": 1700437597224,
-    "lastModifiedBy": "V3MUPdobYszl4e09"
+    "modifiedTime": 1720563205207,
+    "lastModifiedBy": "Esh40XLe9S2isjmY"
   },
-  "formula": "",
+  "formula": "1d6*10+1d6",
   "_id": "ec1GMEGaFnkFixEp",
   "sort": 0,
   "ownership": {
