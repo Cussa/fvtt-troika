@@ -5,12 +5,6 @@
 
 @font-face {
     font-family: 'AveriaLibre';
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-Light.ttf') format('truetype');
-    font-weight: lighter;
-}
-
-@font-face {
-    font-family: 'AveriaLibre';
     font-weight: bold;
     src: url('../css/fonts/Averia_Libre/AveriaLibre-Bold.ttf') format('truetype');
 }
@@ -21,20 +15,24 @@
     src: url('../css/fonts/Averia_Libre/AveriaLibre-Italic.ttf') format('truetype');
 }
 
-/*
+@font-face {
+    font-family: 'AveriaLibre';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../css/fonts/Averia_Libre/AveriaLibre-BoldItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'AveriaLibre';
+    src: url('../css/fonts/Averia_Libre/AveriaLibre-Light.ttf') format('truetype');
+    font-weight: lighter;
+}
 @font-face {
     font-family: 'AveriaLibre';
     src: url('../css/fonts/Averia_Libre/AveriaLibre-LightItalic.ttf') format('truetype');
     font-weight: lighter;
     font-style: italic;
-}
-*/
-
-@font-face {
-    font-family: 'AveriaLibre';
-    font-weight: bold;
-    font-style: italic;
-    src: url('../css/fonts/Averia_Libre/AveriaLibre-BoldItalic.ttf') format('truetype');
 }
 
 /* Set font to Averia Libre, but have to exclude 'fas' class or we break all FAS icons! */
