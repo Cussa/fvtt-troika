@@ -7,8 +7,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        1,
-        1
+        11,
+        11
       ],
       "drawn": false,
       "text": "Assassin's Daggers",
@@ -23,8 +23,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        2,
-        2
+        12,
+        12
       ],
       "drawn": false,
       "text": "Animate",
@@ -39,8 +39,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        3,
-        3
+        13,
+        13
       ],
       "drawn": false,
       "text": "Affix",
@@ -55,8 +55,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        4,
-        4
+        14,
+        14
       ],
       "drawn": false,
       "text": "Assume Shape",
@@ -71,8 +71,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        5,
-        5
+        15,
+        15
       ],
       "drawn": false,
       "text": "Befuddle",
@@ -87,8 +87,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        6,
-        6
+        16,
+        16
       ],
       "drawn": false,
       "text": "Breach",
@@ -103,8 +103,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        7,
-        7
+        21,
+        21
       ],
       "drawn": false,
       "text": "Cone of Air",
@@ -119,8 +119,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        8,
-        8
+        22,
+        22
       ],
       "drawn": false,
       "text": "Banish Spirit",
@@ -135,8 +135,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        9,
-        9
+        23,
+        23
       ],
       "drawn": false,
       "text": "Ember",
@@ -151,8 +151,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        10,
-        10
+        24,
+        24
       ],
       "drawn": false,
       "text": "Cockroach",
@@ -167,8 +167,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        11,
-        11
+        25,
+        25
       ],
       "drawn": false,
       "text": "Darksee",
@@ -183,8 +183,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        12,
-        12
+        26,
+        26
       ],
       "drawn": false,
       "text": "Diminish",
@@ -199,8 +199,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        13,
-        13
+        31,
+        31
       ],
       "drawn": false,
       "text": "Earthquake",
@@ -215,8 +215,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        14,
-        14
+        32,
+        32
       ],
       "drawn": false,
       "text": "Fear",
@@ -231,8 +231,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        15,
-        15
+        33,
+        33
       ],
       "drawn": false,
       "text": "Firebolt",
@@ -247,8 +247,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        16,
-        16
+        34,
+        34
       ],
       "drawn": false,
       "text": "Flash",
@@ -263,8 +263,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        17,
-        17
+        35,
+        35
       ],
       "drawn": false,
       "text": "Farseeing",
@@ -279,8 +279,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        18,
-        18
+        36,
+        36
       ],
       "drawn": false,
       "text": "Find",
@@ -295,8 +295,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        19,
-        19
+        41,
+        41
       ],
       "drawn": false,
       "text": "Grow",
@@ -311,8 +311,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        20,
-        20
+        42,
+        42
       ],
       "drawn": false,
       "text": "Hurricane",
@@ -327,8 +327,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        21,
-        21
+        43,
+        43
       ],
       "drawn": false,
       "text": "Helping Hands",
@@ -343,8 +343,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        22,
-        22
+        44,
+        44
       ],
       "drawn": false,
       "text": "Illusion",
@@ -359,8 +359,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        23,
-        23
+        45,
+        45
       ],
       "drawn": false,
       "text": "Invisibility",
@@ -375,8 +375,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        24,
-        24
+        44,
+        46
       ],
       "drawn": false,
       "text": "Jolt",
@@ -391,8 +391,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        25,
-        25
+        51,
+        51
       ],
       "drawn": false,
       "text": "Light",
@@ -407,8 +407,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        26,
-        26
+        52,
+        52
       ],
       "drawn": false,
       "text": "Lock",
@@ -423,8 +423,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        27,
-        27
+        53,
+        53
       ],
       "drawn": false,
       "text": "Languages",
@@ -439,8 +439,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        28,
-        28
+        54,
+        54
       ],
       "drawn": false,
       "text": "Levitate",
@@ -455,8 +455,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        29,
-        29
+        55,
+        55
       ],
       "drawn": false,
       "text": "Sentry",
@@ -471,8 +471,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        30,
-        30
+        56,
+        56
       ],
       "drawn": false,
       "text": "Shatter",
@@ -487,8 +487,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        31,
-        31
+        61,
+        61
       ],
       "drawn": false,
       "text": "Sleep",
@@ -503,8 +503,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        32,
-        32
+        62,
+        62
       ],
       "drawn": false,
       "text": "Thunder",
@@ -519,8 +519,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        33,
-        33
+        63,
+        63
       ],
       "drawn": false,
       "text": "Tongue Twister",
@@ -535,8 +535,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        34,
-        34
+        64,
+        64
       ],
       "drawn": false,
       "text": "Undo",
@@ -551,8 +551,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        35,
-        35
+        65,
+        65
       ],
       "drawn": false,
       "text": "Ward",
@@ -567,8 +567,8 @@
       "type": 2,
       "weight": 1,
       "range": [
-        36,
-        36
+        66,
+        66
       ],
       "drawn": false,
       "text": "Wall of Power",
