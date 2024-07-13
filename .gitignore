@@ -1,4 +1,4 @@
-packs
+packs/**/*
 
 # Ignore npm modules
 node_modules
