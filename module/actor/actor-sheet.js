@@ -297,7 +297,7 @@ export class TroikaActorSheet extends ActorSheet {
     await item.update({ ["system.quantity"]: newQuantity });
   }
 
-  _onItemCreate(event) {
+  async _onItemCreate(event) {
 
     event.preventDefault();
 
@@ -316,7 +316,9 @@ export class TroikaActorSheet extends ActorSheet {
       system: {}
     };
 
-    return this.actor.createEmbeddedDocuments("Item", [itemData]);
+    const finalItem = await Item.create(itemData, { parent: this.actor });
+    finalItem.sheet.render(true);
+    return finalItem;
   }
 
   _getHeaderButtons() {
