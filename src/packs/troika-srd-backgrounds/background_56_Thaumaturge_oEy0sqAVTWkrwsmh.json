@@ -512,7 +512,7 @@
           "dr7": "10"
         },
         "rank": 2,
-        "castingCost": "1",
+        "castingCost": "?",
         "modifier": 0,
         "improvement": false,
         "canAttack": false,
@@ -603,7 +603,7 @@
           "dr7": "10"
         },
         "rank": 1,
-        "castingCost": "1",
+        "castingCost": "?",
         "modifier": 0,
         "improvement": false,
         "canAttack": false,
