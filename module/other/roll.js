@@ -1,7 +1,7 @@
 export async function rollSkillTestOver(actor, totalRank, rollLabel) {
 
   let formula = `2d6+${totalRank}`
-  const roll = await new Roll(formula, {}).roll({ async: true });
+  const roll = await new Roll(formula).roll();
   rollLabel += " (Roll Against)";
 
   roll.toMessage({
@@ -13,7 +13,7 @@ export async function rollSkillTestOver(actor, totalRank, rollLabel) {
 export async function rollSkillTestUnder(actor, totalRank, rollLabel) {
 
   let formula = `2d6`;
-  const roll = await new Roll(formula, {}).roll({ async: true });
+  const roll = await new Roll(formula).roll();
   let dieResult = roll.total;
 
   rollLabel += " (Roll Under)";
@@ -155,7 +155,7 @@ export async function rollDamageForItem(actor, item, damageModifier, isMightyBlo
     formula += damageModifier.toString();
   }
 
-  const roll = await new Roll(formula, {}).roll({ async: true });
+  const roll = await new Roll(formula).roll();
 
   let dieResult = roll.terms[0].results[0].result;
   let actualResult = roll.total;
@@ -264,7 +264,7 @@ export async function dx6Roll(actor, numberOfD6) {
   let dxtotal = '';
   let formulaLabel = 'd';
 
-  const roll = await new Roll(formula, {}).roll({ async: true });
+  const roll = await new Roll(formula).roll();
 
   for (let i = 0; i < numberOfD6; i++) {
     formulaLabel += "6";
@@ -311,7 +311,7 @@ export async function d36Roll(actor) {
   let val1 = 0;
   let val2 = 0;
 
-  const roll = await new Roll(formula, {}).roll({ async: true });
+  const roll = await new Roll(formula).roll();
 
   val1 = roll.terms[0].results[0].result;
   val2 = roll.terms[2].results[0].result;
@@ -349,7 +349,7 @@ export async function d36Roll(actor) {
 // roll something simple and send right to chat
 export async function simpleDiceRoll(actor, formula, formulaLabel) {
 
-  const roll = await new Roll(formula, {}).roll({ async: true });
+  const roll = await new Roll(formula).roll();
 
   roll.toMessage({
     speaker: ChatMessage.getSpeaker({ actor: actor })

@@ -282,13 +282,11 @@ export class TroikaActorSheet extends ActorSheet {
       }
 
       let formula = '1d' + size.toString();
-      const roll = await new Roll(formula, {}).roll({ async: true });
+      const roll = await new Roll(formula).roll();
       let dieResult = roll.terms[0].results[0].result;
       let newMien = mienOptions[dieResult];
 
-      let updatedData = duplicate(this.actor.system);
-      updatedData.mien = newMien;
-      this.actor.update({ 'data': updatedData });
+      this.actor.update({ 'system.mien': newMien });
     }
 
   }
