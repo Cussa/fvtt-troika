@@ -433,6 +433,10 @@ export class TroikaActorSheet extends ActorSheet {
     for (let index = 1; index <= 12; index++) {
       updates[`system.provisions.p${index}`] = background.system.provisions[`p${index}`];
     }
+    if (this.actor.img == "icons/svg/mystery-man.svg") {
+      updates["img"] = background.img;
+      updates["prototypeToken.texture.src"] = background.img;
+    }
 
     let content = ``;
     content += `<p><strong>Skill:</strong> ${skill_roll.total} (${skill_roll.terms[0].results[0].result} + 3)</p>`;
