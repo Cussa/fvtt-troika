@@ -1,17 +1,9 @@
 import { addAttribution, requiredInteger } from "../common.mjs";
 
 export class TroikaActorBase extends foundry.abstract.TypeDataModel {
-
-  
   static numberField(fields, initial, min, max) {
     return new fields.NumberField({ ...requiredInteger, initial, min, max });
   }
-  static attributeProperty(fields) {
-    return {
-      value: new fields.NumberField({ ...requiredInteger, initial: 10, min: 0, max: 18 }),
-      max: new fields.NumberField({ ...requiredInteger, initial: 10, min: 0, max: 18 })
-    };
-  };
 
   static defineSchema() {
     const fields = foundry.data.fields;
