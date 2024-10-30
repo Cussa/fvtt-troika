@@ -111,6 +111,20 @@
       }
     }
   ],
+  "packFolders": [
+    {
+      "name": "Troika - SRD",
+      "sorting": "m",
+      "packs": [
+        "troika-srd-spells",
+        "troika-srd-roll-tables",
+        "troika-srd-weapons",
+        "troika-srd-skills",
+        "troika-srd-items",
+        "troika-srd-backgrounds"
+      ]
+    }
+  ],
   "flags": {
     "hotReload": {
       "extensions": ["css", "hbs", "json"],
