@@ -10,14 +10,14 @@ export class TroikaActorBase extends foundry.abstract.TypeDataModel {
     const schema = {};
 
     schema.skill = new fields.SchemaField({
-      value: this.numberField(fields, 4, 0, 50)
+      value: this.numberField(fields, 4, 0, 100)
     });
     schema.stamina = new fields.SchemaField({
-      value: this.numberField(fields, 14, 0, 100),
-      max: this.numberField(fields, 14, 0, 100)
+      value: this.numberField(fields, 14, 0, 999),
+      max: this.numberField(fields, 14, 0, 999)
     });
-    schema.armour = this.numberField(fields, 0, 0, 20);
-    schema.initiativeTokens = this.numberField(fields, 2, 0, 20);
+    schema.armour = this.numberField(fields, 0, 0, 100);
+    schema.initiativeTokens = this.numberField(fields, 2, 0, 100);
 
     schema.monies = new fields.StringField({ required: false, blank: true });
     schema.provisions = new fields.SchemaField({
