@@ -1,5 +1,14 @@
 # Troika System Change Log
 
+## 2024-10-30 v1.6.0
+
+* ✨ Increate max values - In preparation for **Get it at Sutler's** module.
+  * Stamina: to 999
+  * Skill: to 100
+  * Armour: to 100
+  * Initiative: to 100
+* ✨ Create compendium folder for Troika SRD (to improve organization).
+
 ## 2024-04-28 v1.4.0
 
 * ✨ Add Henchmen actor [closes #14] - In preparation for **Fronds of Benevolence** module.
